@@ -1,0 +1,474 @@
+<?xml version="1.0" ?>
+<GroundTruthRoot>
+  <gtruth>
+    <vehicle iframe="58" lane="1" moto="True" plate="True" radar="False" sema="False">
+      <region h="41" w="52" x="493" y="696"/>
+    </vehicle>
+    <vehicle iframe="71" lane="3" moto="False" plate="True" radar="True" sema="False">
+      <region h="35" w="106" x="1632" y="930"/>
+      <radar frame_end="111" frame_start="71" speed="56.65"/>
+    </vehicle>
+    <vehicle iframe="107" lane="3" moto="False" plate="True" radar="True" sema="False">
+      <region h="27" w="103" x="1563" y="896"/>
+      <radar frame_end="147" frame_start="107" speed="53.74"/>
+    </vehicle>
+    <vehicle iframe="187" lane="2" moto="False" plate="True" radar="True" sema="False">
+      <region h="28" w="108" x="880" y="926"/>
+      <radar frame_end="227" frame_start="187" speed="52.13"/>
+    </vehicle>
+    <vehicle iframe="245" lane="3" moto="False" plate="True" radar="True" sema="False">
+      <region h="32" w="103" x="1722" y="892"/>
+      <radar frame_end="285" frame_start="245" speed="49.06"/>
+    </vehicle>
+    <vehicle iframe="253" lane="2" moto="False" plate="True" radar="True" sema="False">
+      <region h="28" w="103" x="843" y="938"/>
+      <radar frame_end="293" frame_start="253" speed="50.51"/>
+    </vehicle>
+    <vehicle iframe="275" lane="3" moto="False" plate="True" radar="True" sema="False">
+      <region h="24" w="104" x="1644" y="932"/>
+      <radar frame_end="315" frame_start="275" speed="48.89"/>
+    </vehicle>
+    <vehicle iframe="281" lane="1" moto="False" plate="True" radar="True" sema="False">
+      <region h="21" w="107" x="128" y="863"/>
+      <radar frame_end="321" frame_start="281" speed="59.57"/>
+    </vehicle>
+    <vehicle iframe="295" lane="2" moto="False" plate="True" radar="True" sema="False">
+      <region h="30" w="107" x="850" y="883"/>
+      <radar frame_end="335" frame_start="295" speed="48.83"/>
+    </vehicle>
+    <vehicle iframe="314" lane="3" moto="False" plate="True" radar="True" sema="False">
+      <region h="35" w="96" x="1702" y="841"/>
+      <radar frame_end="354" frame_start="314" speed="56.01"/>
+    </vehicle>
+    <vehicle iframe="373" lane="3" moto="False" plate="True" radar="True" sema="False">
+      <region h="30" w="93" x="1672" y="833"/>
+      <radar frame_end="413" frame_start="373" speed="51.12"/>
+    </vehicle>
+    <vehicle iframe="384" lane="2" moto="False" plate="True" radar="True" sema="False">
+      <region h="24" w="108" x="850" y="865"/>
+      <radar frame_end="424" frame_start="384" speed="49.16"/>
+    </vehicle>
+    <vehicle iframe="414" lane="2" moto="False" plate="False" radar="True" sema="False">
+      <region h="28" w="151" x="1080" y="866"/>
+      <radar frame_end="454" frame_start="414" speed="48.44"/>
+    </vehicle>
+    <vehicle iframe="436" lane="1" moto="False" plate="True" radar="True" sema="False">
+      <region h="34" w="106" x="78" y="897"/>
+      <radar frame_end="476" frame_start="436" speed="51.92"/>
+    </vehicle>
+    <vehicle iframe="478" lane="2" moto="False" plate="True" radar="True" sema="False">
+      <region h="30" w="106" x="891" y="940"/>
+      <radar frame_end="518" frame_start="478" speed="58.33"/>
+    </vehicle>
+    <vehicle iframe="575" lane="2" moto="False" plate="True" radar="True" sema="False">
+      <region h="25" w="96" x="860" y="881"/>
+      <radar frame_end="615" frame_start="575" speed="53.55"/>
+    </vehicle>
+    <vehicle iframe="622" lane="1" moto="True" plate="True" radar="False" sema="False">
+      <region h="36" w="58" x="154" y="788"/>
+    </vehicle>
+    <vehicle iframe="708" lane="3" moto="False" plate="True" radar="True" sema="False">
+      <region h="27" w="101" x="1782" y="784"/>
+      <radar frame_end="748" frame_start="708" speed="52.86"/>
+    </vehicle>
+    <vehicle iframe="750" lane="3" moto="False" plate="True" radar="True" sema="False">
+      <region h="28" w="96" x="1604" y="840"/>
+      <radar frame_end="790" frame_start="750" speed="54.23"/>
+    </vehicle>
+    <vehicle iframe="757" lane="1" moto="False" plate="True" radar="True" sema="False">
+      <region h="31" w="108" x="37" y="858"/>
+      <radar frame_end="797" frame_start="757" speed="50.59"/>
+    </vehicle>
+    <vehicle iframe="806" lane="1" moto="False" plate="True" radar="True" sema="False">
+      <region h="28" w="96" x="155" y="872"/>
+      <radar frame_end="846" frame_start="806" speed="50.06"/>
+    </vehicle>
+    <vehicle iframe="867" lane="3" moto="False" plate="True" radar="True" sema="False">
+      <region h="28" w="107" x="1790" y="891"/>
+      <radar frame_end="907" frame_start="867" speed="52.39"/>
+    </vehicle>
+    <vehicle iframe="869" lane="2" moto="False" plate="True" radar="True" sema="False">
+      <region h="26" w="104" x="792" y="874"/>
+      <radar frame_end="909" frame_start="869" speed="50.84"/>
+    </vehicle>
+    <vehicle iframe="936" lane="3" moto="False" plate="True" radar="True" sema="False">
+      <region h="32" w="102" x="1591" y="862"/>
+      <radar frame_end="976" frame_start="936" speed="54.76"/>
+    </vehicle>
+    <vehicle iframe="1078" lane="3" moto="False" plate="False" radar="False" sema="False">
+      <region h="32" w="133" x="1466" y="631"/>
+      <radar frame_end="1118" frame_start="1078" speed="53.55"/>
+    </vehicle>
+    <vehicle iframe="1849" lane="3" moto="False" plate="True" radar="False" sema="True">
+      <region h="31" w="95" x="1641" y="923"/>
+    </vehicle>
+    <vehicle iframe="2129" lane="2" moto="True" plate="True" radar="True" sema="True">
+      <region h="33" w="42" x="527" y="610"/>
+      <radar frame_end="2169" frame_start="2129" speed="21.51"/>
+    </vehicle>
+    <vehicle iframe="2157" lane="3" moto="False" plate="True" radar="True" sema="True">
+      <region h="27" w="81" x="1423" y="548"/>
+      <radar frame_end="2197" frame_start="2157" speed="16.69"/>
+    </vehicle>
+    <vehicle iframe="2162" lane="1" moto="False" plate="True" radar="True" sema="False">
+      <region h="28" w="104" x="43" y="842"/>
+      <radar frame_end="2202" frame_start="2162" speed="23.19"/>
+    </vehicle>
+    <vehicle iframe="2167" lane="2" moto="False" plate="True" radar="True" sema="True">
+      <region h="33" w="105" x="845" y="868"/>
+      <radar frame_end="2207" frame_start="2167" speed="19.33"/>
+    </vehicle>
+    <vehicle iframe="2222" lane="3" moto="False" plate="True" radar="True" sema="False">
+      <region h="28" w="107" x="1652" y="861"/>
+      <radar frame_end="2262" frame_start="2222" speed="22.13"/>
+    </vehicle>
+    <vehicle iframe="2265" lane="2" moto="False" plate="True" radar="True" sema="False">
+      <region h="27" w="103" x="853" y="893"/>
+      <radar frame_end="2305" frame_start="2265" speed="24.87"/>
+    </vehicle>
+    <vehicle iframe="2271" lane="1" moto="False" plate="True" radar="True" sema="False">
+      <region h="23" w="102" x="43" y="818"/>
+      <radar frame_end="2311" frame_start="2271" speed="21.02"/>
+    </vehicle>
+    <vehicle iframe="2289" lane="3" moto="False" plate="True" radar="True" sema="False">
+      <region h="31" w="98" x="1671" y="887"/>
+      <radar frame_end="2329" frame_start="2289" speed="27.55"/>
+    </vehicle>
+    <vehicle iframe="2319" lane="2" moto="False" plate="True" radar="True" sema="False">
+      <region h="31" w="107" x="871" y="891"/>
+      <radar frame_end="2359" frame_start="2319" speed="30.53"/>
+    </vehicle>
+    <vehicle iframe="2332" lane="3" moto="False" plate="True" radar="True" sema="False">
+      <region h="31" w="100" x="1617" y="873"/>
+      <radar frame_end="2372" frame_start="2332" speed="31.31"/>
+    </vehicle>
+    <vehicle iframe="2337" lane="1" moto="False" plate="True" radar="True" sema="False">
+      <region h="30" w="104" x="130" y="882"/>
+      <radar frame_end="2377" frame_start="2337" speed="23.36"/>
+    </vehicle>
+    <vehicle iframe="2389" lane="3" moto="False" plate="True" radar="True" sema="False">
+      <region h="35" w="97" x="1661" y="895"/>
+      <radar frame_end="2429" frame_start="2389" speed="35.56"/>
+    </vehicle>
+    <vehicle iframe="2404" lane="1" moto="False" plate="True" radar="True" sema="False">
+      <region h="24" w="105" x="87" y="900"/>
+      <radar frame_end="2444" frame_start="2404" speed="29.68"/>
+    </vehicle>
+    <vehicle iframe="2463" lane="1" moto="False" plate="True" radar="True" sema="False">
+      <region h="27" w="108" x="86" y="912"/>
+      <radar frame_end="2503" frame_start="2463" speed="26.54"/>
+    </vehicle>
+    <vehicle iframe="2505" lane="2" moto="False" plate="True" radar="True" sema="False">
+      <region h="32" w="114" x="923" y="843"/>
+      <radar frame_end="2545" frame_start="2505" speed="57.07"/>
+    </vehicle>
+    <vehicle iframe="2539" lane="1" moto="False" plate="True" radar="True" sema="False">
+      <region h="33" w="104" x="65" y="861"/>
+      <radar frame_end="2579" frame_start="2539" speed="25.78"/>
+    </vehicle>
+    <vehicle iframe="2569" lane="2" moto="False" plate="True" radar="True" sema="False">
+      <region h="23" w="103" x="934" y="896"/>
+      <radar frame_end="2609" frame_start="2569" speed="50.59"/>
+    </vehicle>
+    <vehicle iframe="2579" lane="3" moto="False" plate="True" radar="True" sema="False">
+      <region h="26" w="105" x="1597" y="885"/>
+      <radar frame_end="2619" frame_start="2579" speed="48.86"/>
+    </vehicle>
+    <vehicle iframe="2597" lane="1" moto="False" plate="True" radar="True" sema="False">
+      <region h="28" w="106" x="93" y="877"/>
+      <radar frame_end="2637" frame_start="2597" speed="29.12"/>
+    </vehicle>
+    <vehicle iframe="2612" lane="2" moto="False" plate="True" radar="True" sema="False">
+      <region h="32" w="113" x="833" y="876"/>
+      <radar frame_end="2652" frame_start="2612" speed="51.02"/>
+    </vehicle>
+    <vehicle iframe="2625" lane="3" moto="False" plate="True" radar="True" sema="False">
+      <region h="30" w="102" x="1592" y="843"/>
+      <radar frame_end="2665" frame_start="2625" speed="50.03"/>
+    </vehicle>
+    <vehicle iframe="2665" lane="2" moto="False" plate="True" radar="True" sema="False">
+      <region h="25" w="94" x="804" y="836"/>
+      <radar frame_end="2705" frame_start="2665" speed="48.42"/>
+    </vehicle>
+    <vehicle iframe="2727" lane="2" moto="False" plate="True" radar="True" sema="False">
+      <region h="34" w="104" x="545" y="846"/>
+      <radar frame_end="2767" frame_start="2727" speed="51.11"/>
+    </vehicle>
+    <vehicle iframe="2760" lane="2" moto="False" plate="True" radar="True" sema="False">
+      <region h="30" w="103" x="748" y="884"/>
+      <radar frame_end="2800" frame_start="2760" speed="44.33"/>
+    </vehicle>
+    <vehicle iframe="2798" lane="1" moto="False" plate="True" radar="True" sema="False">
+      <region h="25" w="112" x="146" y="918"/>
+      <radar frame_end="2838" frame_start="2798" speed="46.94"/>
+    </vehicle>
+    <vehicle iframe="2802" lane="3" moto="False" plate="False" radar="True" sema="False">
+      <region h="26" w="104" x="1703" y="853"/>
+      <radar frame_end="2842" frame_start="2802" speed="51.53"/>
+    </vehicle>
+    <vehicle iframe="2860" lane="2" moto="False" plate="True" radar="True" sema="False">
+      <region h="31" w="108" x="750" y="855"/>
+      <radar frame_end="2900" frame_start="2860" speed="50.03"/>
+    </vehicle>
+    <vehicle iframe="2878" lane="3" moto="False" plate="True" radar="True" sema="False">
+      <region h="23" w="98" x="1751" y="917"/>
+      <radar frame_end="2918" frame_start="2878" speed="48.87"/>
+    </vehicle>
+    <vehicle iframe="2906" lane="1" moto="False" plate="True" radar="True" sema="False">
+      <region h="28" w="113" x="85" y="894"/>
+      <radar frame_end="2946" frame_start="2906" speed="40.72"/>
+    </vehicle>
+    <vehicle iframe="2919" lane="3" moto="False" plate="True" radar="True" sema="False">
+      <region h="28" w="96" x="1670" y="871"/>
+      <radar frame_end="2959" frame_start="2919" speed="46.56"/>
+    </vehicle>
+    <vehicle iframe="2953" lane="3" moto="False" plate="True" radar="True" sema="False">
+      <region h="30" w="101" x="1624" y="885"/>
+      <radar frame_end="2993" frame_start="2953" speed="43.53"/>
+    </vehicle>
+    <vehicle iframe="3034" lane="2" moto="False" plate="True" radar="True" sema="False">
+      <region h="30" w="114" x="764" y="882"/>
+      <radar frame_end="3074" frame_start="3034" speed="42.23"/>
+    </vehicle>
+    <vehicle iframe="3101" lane="2" moto="False" plate="True" radar="True" sema="False">
+      <region h="26" w="107" x="961" y="882"/>
+      <radar frame_end="3141" frame_start="3101" speed="52.97"/>
+    </vehicle>
+    <vehicle iframe="3179" lane="3" moto="False" plate="True" radar="True" sema="False">
+      <region h="32" w="95" x="1733" y="812"/>
+      <radar frame_end="3219" frame_start="3179" speed="56.6"/>
+    </vehicle>
+    <vehicle iframe="3223" lane="3" moto="False" plate="True" radar="True" sema="False">
+      <region h="25" w="91" x="1760" y="774"/>
+      <radar frame_end="3263" frame_start="3223" speed="53.87"/>
+    </vehicle>
+    <vehicle iframe="3225" lane="2" moto="False" plate="True" radar="True" sema="False">
+      <region h="28" w="115" x="897" y="924"/>
+      <radar frame_end="3265" frame_start="3225" speed="50.06"/>
+    </vehicle>
+    <vehicle iframe="3257" lane="3" moto="False" plate="True" radar="True" sema="False">
+      <region h="30" w="101" x="1540" y="885"/>
+      <radar frame_end="3297" frame_start="3257" speed="51.47"/>
+    </vehicle>
+    <vehicle iframe="3339" lane="3" moto="False" plate="True" radar="True" sema="False">
+      <region h="26" w="98" x="1586" y="885"/>
+      <radar frame_end="3379" frame_start="3339" speed="55.25"/>
+    </vehicle>
+    <vehicle iframe="3354" lane="2" moto="False" plate="True" radar="True" sema="False">
+      <region h="38" w="51" x="848" y="856"/>
+      <radar frame_end="3394" frame_start="3354" speed="55.83"/>
+    </vehicle>
+    <vehicle iframe="3385" lane="3" moto="False" plate="True" radar="True" sema="False">
+      <region h="26" w="98" x="1597" y="871"/>
+      <radar frame_end="3425" frame_start="3385" speed="56.96"/>
+    </vehicle>
+    <vehicle iframe="3469" lane="3" moto="False" plate="True" radar="True" sema="False">
+      <region h="32" w="96" x="1720" y="918"/>
+      <radar frame_end="3509" frame_start="3469" speed="56.86"/>
+    </vehicle>
+    <vehicle iframe="3479" lane="1" moto="False" plate="True" radar="True" sema="False">
+      <region h="32" w="102" x="123" y="895"/>
+      <radar frame_end="3519" frame_start="3479" speed="49.07"/>
+    </vehicle>
+    <vehicle iframe="3500" lane="2" moto="False" plate="True" radar="True" sema="False">
+      <region h="31" w="114" x="907" y="826"/>
+      <radar frame_end="3540" frame_start="3500" speed="54.43"/>
+    </vehicle>
+    <vehicle iframe="3508" lane="3" moto="False" plate="True" radar="True" sema="False">
+      <region h="28" w="108" x="1622" y="882"/>
+      <radar frame_end="3548" frame_start="3508" speed="56.86"/>
+    </vehicle>
+    <vehicle iframe="3571" lane="2" moto="False" plate="True" radar="False" sema="True">
+      <region h="32" w="113" x="674" y="904"/>
+    </vehicle>
+    <vehicle iframe="4407" lane="1" moto="False" plate="True" radar="False" sema="True">
+      <region h="45" w="53" x="391" y="864"/>
+    </vehicle>
+    <vehicle iframe="4594" lane="1" moto="False" plate="True" radar="True" sema="True">
+      <region h="28" w="98" x="8" y="648"/>
+      <radar frame_end="4634" frame_start="4594" speed="21.59"/>
+    </vehicle>
+    <vehicle iframe="4640" lane="2" moto="False" plate="True" radar="True" sema="True">
+      <region h="34" w="111" x="782" y="865"/>
+      <radar frame_end="4680" frame_start="4640" speed="24.78"/>
+    </vehicle>
+    <vehicle iframe="4646" lane="3" moto="False" plate="True" radar="True" sema="True">
+      <region h="31" w="104" x="1705" y="801"/>
+      <radar frame_end="4686" frame_start="4646" speed="19.82"/>
+    </vehicle>
+    <vehicle iframe="4667" lane="1" moto="False" plate="True" radar="True" sema="False">
+      <region h="31" w="113" x="33" y="854"/>
+      <radar frame_end="4707" frame_start="4667" speed="26.63"/>
+    </vehicle>
+    <vehicle iframe="4714" lane="2" moto="False" plate="True" radar="True" sema="False">
+      <region h="36" w="119" x="683" y="882"/>
+      <radar frame_end="4754" frame_start="4714" speed="30.1"/>
+    </vehicle>
+    <vehicle iframe="4765" lane="2" moto="False" plate="True" radar="True" sema="False">
+      <region h="30" w="98" x="858" y="893"/>
+      <radar frame_end="4805" frame_start="4765" speed="34.74"/>
+    </vehicle>
+    <vehicle iframe="4779" lane="3" moto="False" plate="True" radar="True" sema="False">
+      <region h="30" w="104" x="1684" y="848"/>
+      <radar frame_end="4819" frame_start="4779" speed="23.44"/>
+    </vehicle>
+    <vehicle iframe="4802" lane="1" moto="False" plate="True" radar="True" sema="False">
+      <region h="22" w="102" x="67" y="856"/>
+      <radar frame_end="4842" frame_start="4802" speed="44.74"/>
+    </vehicle>
+    <vehicle iframe="4827" lane="2" moto="False" plate="True" radar="True" sema="False">
+      <region h="35" w="114" x="787" y="896"/>
+      <radar frame_end="4867" frame_start="4827" speed="38.09"/>
+    </vehicle>
+    <vehicle iframe="4829" lane="3" moto="False" plate="True" radar="True" sema="False">
+      <region h="33" w="115" x="1641" y="890"/>
+      <radar frame_end="4869" frame_start="4829" speed="31.19"/>
+    </vehicle>
+    <vehicle iframe="4873" lane="2" moto="False" plate="True" radar="True" sema="False">
+      <region h="32" w="95" x="867" y="863"/>
+      <radar frame_end="4913" frame_start="4873" speed="40.95"/>
+    </vehicle>
+    <vehicle iframe="4894" lane="1" moto="False" plate="True" radar="True" sema="False">
+      <region h="20" w="100" x="20" y="682"/>
+      <radar frame_end="4934" frame_start="4894" speed="48.18"/>
+    </vehicle>
+    <vehicle iframe="4906" lane="3" moto="False" plate="True" radar="True" sema="False">
+      <region h="34" w="104" x="1642" y="891"/>
+      <radar frame_end="4946" frame_start="4906" speed="34.92"/>
+    </vehicle>
+    <vehicle iframe="4913" lane="2" moto="False" plate="True" radar="True" sema="False">
+      <region h="24" w="102" x="790" y="768"/>
+      <radar frame_end="4953" frame_start="4913" speed="42.39"/>
+    </vehicle>
+    <vehicle iframe="4963" lane="3" moto="False" plate="True" radar="True" sema="False">
+      <region h="31" w="94" x="1650" y="876"/>
+      <radar frame_end="5003" frame_start="4963" speed="35.29"/>
+    </vehicle>
+    <vehicle iframe="4979" lane="1" moto="True" plate="True" radar="False" sema="False">
+      <region h="44" w="58" x="113" y="824"/>
+    </vehicle>
+    <vehicle iframe="4990" lane="2" moto="False" plate="True" radar="True" sema="False">
+      <region h="28" w="102" x="788" y="858"/>
+      <radar frame_end="5030" frame_start="4990" speed="40.4"/>
+    </vehicle>
+    <vehicle iframe="5026" lane="3" moto="False" plate="True" radar="True" sema="False">
+      <region h="28" w="101" x="1632" y="907"/>
+      <radar frame_end="5066" frame_start="5026" speed="36.7"/>
+    </vehicle>
+    <vehicle iframe="5080" lane="2" moto="False" plate="True" radar="True" sema="False">
+      <region h="28" w="111" x="791" y="922"/>
+      <radar frame_end="5120" frame_start="5080" speed="45.87"/>
+    </vehicle>
+    <vehicle iframe="5110" lane="2" moto="False" plate="True" radar="True" sema="False">
+      <region h="31" w="107" x="1068" y="871"/>
+      <radar frame_end="5150" frame_start="5110" speed="37.65"/>
+    </vehicle>
+    <vehicle iframe="5142" lane="3" moto="False" plate="True" radar="True" sema="False">
+      <region h="27" w="100" x="1731" y="827"/>
+      <radar frame_end="5182" frame_start="5142" speed="42.86"/>
+    </vehicle>
+    <vehicle iframe="5162" lane="2" moto="False" plate="True" radar="True" sema="False">
+      <region h="31" w="104" x="848" y="920"/>
+      <radar frame_end="5202" frame_start="5162" speed="48.45"/>
+    </vehicle>
+    <vehicle iframe="5171" lane="1" moto="False" plate="True" radar="True" sema="False">
+      <region h="31" w="106" x="62" y="863"/>
+      <radar frame_end="5211" frame_start="5171" speed="41.97"/>
+    </vehicle>
+    <vehicle iframe="5174" lane="3" moto="False" plate="True" radar="True" sema="False">
+      <region h="35" w="104" x="1752" y="906"/>
+      <radar frame_end="5214" frame_start="5174" speed="46.37"/>
+    </vehicle>
+    <vehicle iframe="5223" lane="2" moto="False" plate="True" radar="True" sema="False">
+      <region h="24" w="105" x="844" y="878"/>
+      <radar frame_end="5263" frame_start="5223" speed="49.76"/>
+    </vehicle>
+    <vehicle iframe="5271" lane="2" moto="False" plate="True" radar="True" sema="False">
+      <region h="26" w="111" x="805" y="926"/>
+      <radar frame_end="5311" frame_start="5271" speed="50.71"/>
+    </vehicle>
+    <vehicle iframe="5302" lane="1" moto="False" plate="True" radar="True" sema="False">
+      <region h="27" w="98" x="45" y="842"/>
+      <radar frame_end="5342" frame_start="5302" speed="53.02"/>
+    </vehicle>
+    <vehicle iframe="5344" lane="3" moto="False" plate="True" radar="True" sema="False">
+      <region h="26" w="98" x="1688" y="858"/>
+      <radar frame_end="5384" frame_start="5344" speed="47.7"/>
+    </vehicle>
+    <vehicle iframe="5361" lane="1" moto="False" plate="True" radar="True" sema="False">
+      <region h="32" w="128" x="58" y="878"/>
+      <radar frame_end="5401" frame_start="5361" speed="52.97"/>
+    </vehicle>
+    <vehicle iframe="5375" lane="2" moto="False" plate="True" radar="True" sema="False">
+      <region h="26" w="108" x="760" y="921"/>
+      <radar frame_end="5415" frame_start="5375" speed="51.07"/>
+    </vehicle>
+    <vehicle iframe="5377" lane="3" moto="False" plate="True" radar="True" sema="False">
+      <region h="21" w="105" x="1714" y="895"/>
+      <radar frame_end="5417" frame_start="5377" speed="47.98"/>
+    </vehicle>
+    <vehicle iframe="5426" lane="3" moto="False" plate="False" radar="True" sema="False">
+      <region h="44" w="127" x="1658" y="705"/>
+      <radar frame_end="5466" frame_start="5426" speed="47.74"/>
+    </vehicle>
+    <vehicle iframe="5428" lane="1" moto="False" plate="True" radar="True" sema="False">
+      <region h="24" w="108" x="58" y="842"/>
+      <radar frame_end="5468" frame_start="5428" speed="53.59"/>
+    </vehicle>
+    <vehicle iframe="5430" lane="2" moto="False" plate="True" radar="True" sema="False">
+      <region h="23" w="107" x="868" y="865"/>
+      <radar frame_end="5470" frame_start="5430" speed="54.07"/>
+    </vehicle>
+    <vehicle iframe="5519" lane="1" moto="False" plate="True" radar="True" sema="False">
+      <region h="28" w="118" x="36" y="894"/>
+      <radar frame_end="5559" frame_start="5519" speed="49.24"/>
+    </vehicle>
+    <vehicle iframe="5528" lane="2" moto="False" plate="True" radar="True" sema="False">
+      <region h="26" w="106" x="890" y="726"/>
+      <radar frame_end="5568" frame_start="5528" speed="55.71"/>
+    </vehicle>
+    <vehicle iframe="5532" lane="3" moto="False" plate="True" radar="True" sema="False">
+      <region h="32" w="100" x="1702" y="873"/>
+      <radar frame_end="5572" frame_start="5532" speed="50.88"/>
+    </vehicle>
+    <vehicle iframe="5584" lane="2" moto="False" plate="True" radar="True" sema="False">
+      <region h="35" w="103" x="1214" y="838"/>
+      <radar frame_end="5624" frame_start="5584" speed="51.52"/>
+    </vehicle>
+    <vehicle iframe="5615" lane="2" moto="False" plate="True" radar="True" sema="False">
+      <region h="33" w="111" x="986" y="861"/>
+      <radar frame_end="5655" frame_start="5615" speed="48.9"/>
+    </vehicle>
+    <vehicle iframe="5647" lane="1" moto="False" plate="True" radar="True" sema="False">
+      <region h="25" w="110" x="132" y="842"/>
+      <radar frame_end="5687" frame_start="5647" speed="52.97"/>
+    </vehicle>
+    <vehicle iframe="5711" lane="1" moto="False" plate="True" radar="True" sema="False">
+      <region h="35" w="110" x="117" y="852"/>
+      <radar frame_end="5751" frame_start="5711" speed="49.97"/>
+    </vehicle>
+    <vehicle iframe="5738" lane="2" moto="False" plate="True" radar="True" sema="False">
+      <region h="30" w="106" x="832" y="792"/>
+      <radar frame_end="5778" frame_start="5738" speed="54.33"/>
+    </vehicle>
+    <vehicle iframe="5754" lane="3" moto="False" plate="True" radar="True" sema="False">
+      <region h="34" w="107" x="1655" y="912"/>
+      <radar frame_end="5794" frame_start="5754" speed="49.79"/>
+    </vehicle>
+    <vehicle iframe="5760" lane="1" moto="False" plate="True" radar="True" sema="False">
+      <region h="33" w="107" x="63" y="883"/>
+      <radar frame_end="5800" frame_start="5760" speed="48.42"/>
+    </vehicle>
+    <vehicle iframe="5914" lane="3" moto="False" plate="True" radar="True" sema="False">
+      <region h="30" w="102" x="1638" y="806"/>
+      <radar frame_end="5954" frame_start="5914" speed="53.69"/>
+    </vehicle>
+    <vehicle iframe="6486" lane="2" moto="True" plate="True" radar="False" sema="True">
+      <region h="33" w="49" x="995" y="673"/>
+    </vehicle>
+    <vehicle iframe="6817" lane="3" moto="False" plate="True" radar="False" sema="True">
+      <region h="33" w="106" x="1540" y="904"/>
+    </vehicle>
+  </gtruth>
+  <videoframes total="6918"/>
+</GroundTruthRoot>
