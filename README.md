@@ -1,14 +1,24 @@
 # Motion-based Vehicle Speed Measurement
-This is a Vehicle Speed Measurement system for Vision-based Intelligent Transportation Systems which can estimeate vehicles' speed by their motion features (in case correct calibration is provided)
 
-# Environment
-- C# (Windows Form)
-The project is implemented by C# EmguCV and AForge.Net image processing libraries.
+This project is a vehicle speed measurement application for vision-based Intelligent Transportation Systems (ITS). These systems utilize roadway camera outputs to apply video processing techniques and extract the desired information, which is vehicle instantaneous speed in this special case. This approach is able to estimate the vehicles' speed by their **motion features** (in case a correct calibration is provided). Thus by analyzing each vehicle's motion parameters inside a pre-defined Region of Interest (ROI), the amount of displacement in sequential frames are provided, which is an essential parameter to calculate instantaneous speed.
 
-# Publication
-How to cite this paper?
-- Ali Tourani, Asadollah Shahbahrami, Alireza Akoushideh, Saeed Khazaee, Ching. Y Suen, "Motion-based Vehicle  Speed  Measurement  for  Intelligent  Transportation  Systems",  International  Journal  of  Image, Graphics and Signal Processing(IJIGSP), Vol.11, No.4, pp.42-54, 2019.DOI: 10.5815/ijigsp.2019.04.04 
-- Also available from: https://www.researchgate.net/publication/332297032_Motion-based_Vehicle_Speed_Measurement_for_Intelligent_Transportation_Systems
+### Algorithms
+Each moving object (vehicle or non-vehicle) is detected as it enters the ROI by the means of **Mixture-of-Gaussian** background subtraction method. Then by applying **morphology transforms**, the distinct parts of these objects turn into unified filled shapes. Then, some defined filtration functions leave behind only the objects with the highest possibility of being a vehicle. Detected vehicles are then tracked using **blob tracking **algorithm and their displacement among sequential frames are calculated for final speed measurement purpose. 
 
-# Sample Performance
-You can see a sample performance of the system in https://www.youtube.com/watch?v=Qs-alxle-FU
+### Inputs/Outputs of the System
+The input of the system can be a video (default) or a series of images which needs to be callibrated for furthur analysis and correct calculations. Calibration parameters include the ground-truth speed of each vehicle (to be compare to the calculated speed) in the format of a XML type, the real width and height of the ROI and Image processing parameters (e.g. morphology kernel sizes, gaussian filter kernel size, etc). The ouput of the system is a series of vehicle images with their corresponding speed, detected frame and the status of commiting a speeding violation.
+
+### Environment
+The project is implemented by **C#** EmguCV and AForge.Net image processing libraries.
+
+![](http://alitourani.ir/wp-content/uploads/AliTourani-SpeedMeasurement2.png)
+
+![Speed Measurement](http://alitourani.ir/wp-content/uploads/AliTourani-SpeedMeasurement1.png "Speed Measurement")
+
+### Sample Performance
+You can see a sample performance of the system in this [link](https://www.youtube.com/watch?v=Qs-alxle-FU "link").
+
+### Publications and CopyRight
+The project was my MSc. thesis entitled "Automatic Vehicle Speeding Violation Detection using Video Processing Techniques" which has been performed in 2017-2018. Below papers have been published in this manner:
+1. A. Tourani, A. Shahbahrami, A. Akoushideh, S. Khazaee, and C. Y Suen "Motion-based Vehicle Speed Measurement for Intelligent Transportation Systems," International Journal of Image, Graphics and Signal Processing, vol. 11, no. 4, pp. 42-54, 2019. ([link](https://www.researchgate.net/publication/332297032_Motion-based_Vehicle_Speed_Measurement_for_Intelligent_Transportation_Systems "link"))
+2. A. Tourani, A. Shahbahrami and A. Akoushideh, "Challenges of Video-Based Vehicle Detection and Tracking in Intelligent Transportation Systems," International Conference on Soft Computing, Rudsar, 2017. ([link](https://www.researchgate.net/publication/321254958_Challenges_of_Video-Based_Vehicle_Detection_and_Tracking_in_Intelligent_Transportation_Systems "link"))
