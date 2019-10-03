@@ -18,6 +18,12 @@ The project is implemented by **C#** EmguCV and AForge.Net image processing libr
 ### Sample Performance
 You can see a sample performance of the system in this [link](https://www.youtube.com/watch?v=Qs-alxle-FU "link").
 
+### Run the Project
+Simply Clone the project and install the require packages by NuGet Package Manager. Here's the list of the packages:
+1. EmguCV -Version 3.0.0 ([link](https://www.nuget.org/packages/EmguCV/3.0.0 "link"))
+2. AForge -Version 2.2.5 ([link](https://www.nuget.org/packages/AForge/ "link"))
+3. AForge.Imaging -Version 2.2.5 ([link](https://www.nuget.org/packages/AForge.Imaging/ "link"))
+
 ### Publications and CopyRight
 The project was my MSc. thesis entitled "Automatic Vehicle Speeding Violation Detection using Video Processing Techniques" which has been performed in 2017-2018. Below papers have been published in this manner:
 1. A. Tourani, A. Shahbahrami, A. Akoushideh, S. Khazaee, and C. Y Suen "Motion-based Vehicle Speed Measurement for Intelligent Transportation Systems," International Journal of Image, Graphics and Signal Processing, vol. 11, no. 4, pp. 42-54, 2019. ([link](https://www.researchgate.net/publication/332297032_Motion-based_Vehicle_Speed_Measurement_for_Intelligent_Transportation_Systems "link"))
