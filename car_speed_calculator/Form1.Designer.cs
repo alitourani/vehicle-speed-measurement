@@ -141,6 +141,9 @@
             this.label24 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.CalibrationConstantButton = new System.Windows.Forms.Button();
+            this.label29 = new System.Windows.Forms.Label();
+            this.CalibrationConstantTextbox = new System.Windows.Forms.TextBox();
             this.labelPixelDensity = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.Button_Ref_meter_Change = new System.Windows.Forms.Button();
@@ -182,9 +185,6 @@
             this.button_ImageSet = new System.Windows.Forms.Button();
             this.labelROIEnabled = new System.Windows.Forms.Label();
             this.checkBoxROIEnabled = new System.Windows.Forms.CheckBox();
-            this.CalibrationConstantButton = new System.Windows.Forms.Button();
-            this.label29 = new System.Windows.Forms.Label();
-            this.CalibrationConstantTextbox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarErode)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarGaussian)).BeginInit();
@@ -222,13 +222,14 @@
             // button_select_video
             // 
             this.button_select_video.BackColor = System.Drawing.Color.Transparent;
-            this.button_select_video.Font = new System.Drawing.Font("B Titr", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.button_select_video.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_select_video.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button_select_video.Location = new System.Drawing.Point(1092, 57);
             this.button_select_video.Name = "button_select_video";
+            this.button_select_video.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button_select_video.Size = new System.Drawing.Size(107, 31);
             this.button_select_video.TabIndex = 4;
-            this.button_select_video.Text = "انتخاب ویدئو ...";
+            this.button_select_video.Text = "Choose Video ...";
             this.button_select_video.UseVisualStyleBackColor = false;
             this.button_select_video.Click += new System.EventHandler(this.button8_Click);
             // 
@@ -246,7 +247,7 @@
             this.labelSpeed.Font = new System.Drawing.Font("B Titr", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.labelSpeed.Location = new System.Drawing.Point(337, 464);
             this.labelSpeed.Name = "labelSpeed";
-            this.labelSpeed.Size = new System.Drawing.Size(107, 23);
+            this.labelSpeed.Size = new System.Drawing.Size(135, 30);
             this.labelSpeed.TabIndex = 29;
             this.labelSpeed.Text = "سرعت مشاهده شده:";
             // 
@@ -256,7 +257,7 @@
             this.labelSpeedValue.Font = new System.Drawing.Font("B Titr", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.labelSpeedValue.Location = new System.Drawing.Point(198, 457);
             this.labelSpeedValue.Name = "labelSpeedValue";
-            this.labelSpeedValue.Size = new System.Drawing.Size(23, 33);
+            this.labelSpeedValue.Size = new System.Drawing.Size(29, 42);
             this.labelSpeedValue.TabIndex = 30;
             this.labelSpeedValue.Text = "0";
             // 
@@ -266,7 +267,7 @@
             this.KMPHLabel.Font = new System.Drawing.Font("B Titr", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.KMPHLabel.Location = new System.Drawing.Point(78, 465);
             this.KMPHLabel.Name = "KMPHLabel";
-            this.KMPHLabel.Size = new System.Drawing.Size(79, 21);
+            this.KMPHLabel.Size = new System.Drawing.Size(98, 26);
             this.KMPHLabel.TabIndex = 31;
             this.KMPHLabel.Text = "کیلومتر بر ساعت";
             // 
@@ -274,21 +275,21 @@
             // 
             this.SourceSelectLabel.AutoSize = true;
             this.SourceSelectLabel.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.SourceSelectLabel.Font = new System.Drawing.Font("B Titr", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.SourceSelectLabel.Location = new System.Drawing.Point(1059, 30);
+            this.SourceSelectLabel.Font = new System.Drawing.Font("Cambria", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SourceSelectLabel.Location = new System.Drawing.Point(1037, 25);
             this.SourceSelectLabel.Name = "SourceSelectLabel";
-            this.SourceSelectLabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.SourceSelectLabel.Size = new System.Drawing.Size(69, 24);
+            this.SourceSelectLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.SourceSelectLabel.Size = new System.Drawing.Size(126, 22);
             this.SourceSelectLabel.TabIndex = 37;
-            this.SourceSelectLabel.Text = "انتخاب منبع";
+            this.SourceSelectLabel.Text = "Select Source";
             // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Cambria", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.Location = new System.Drawing.Point(1078, 660);
+            this.linkLabel1.Location = new System.Drawing.Point(1030, 660);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(134, 12);
+            this.linkLabel1.Size = new System.Drawing.Size(176, 16);
             this.linkLabel1.TabIndex = 39;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "a.tourani1991@gmail.com";
@@ -298,37 +299,34 @@
             // 
             this.label_ROI_size.AutoSize = true;
             this.label_ROI_size.BackColor = System.Drawing.Color.Transparent;
-            this.label_ROI_size.Font = new System.Drawing.Font("B Titr", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label_ROI_size.Location = new System.Drawing.Point(766, 622);
+            this.label_ROI_size.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_ROI_size.Location = new System.Drawing.Point(15, 620);
             this.label_ROI_size.Name = "label_ROI_size";
-            this.label_ROI_size.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label_ROI_size.Size = new System.Drawing.Size(101, 20);
+            this.label_ROI_size.Size = new System.Drawing.Size(109, 20);
             this.label_ROI_size.TabIndex = 45;
-            this.label_ROI_size.Text = "تنظیمات ناحیه پردازش:";
+            this.label_ROI_size.Text = "ROI Settings:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Font = new System.Drawing.Font("B Titr", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label1.Location = new System.Drawing.Point(318, 655);
+            this.label1.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(484, 660);
             this.label1.Name = "label1";
-            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label1.Size = new System.Drawing.Size(25, 21);
+            this.label1.Size = new System.Drawing.Size(50, 17);
             this.label1.TabIndex = 50;
-            this.label1.Text = "پهنا";
+            this.label1.Text = "Width";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Font = new System.Drawing.Font("B Titr", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label2.Location = new System.Drawing.Point(146, 655);
+            this.label2.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(294, 658);
             this.label2.Name = "label2";
-            this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label2.Size = new System.Drawing.Size(32, 21);
+            this.label2.Size = new System.Drawing.Size(54, 17);
             this.label2.TabIndex = 51;
-            this.label2.Text = "درازا";
+            this.label2.Text = "Height";
             // 
             // violence_label
             // 
@@ -336,7 +334,7 @@
             this.violence_label.Font = new System.Drawing.Font("B Titr", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.violence_label.Location = new System.Drawing.Point(62, 505);
             this.violence_label.Name = "violence_label";
-            this.violence_label.Size = new System.Drawing.Size(19, 23);
+            this.violence_label.Size = new System.Drawing.Size(25, 30);
             this.violence_label.TabIndex = 52;
             this.violence_label.Text = "-";
             // 
@@ -348,7 +346,7 @@
             this.label3.Location = new System.Drawing.Point(1108, 142);
             this.label3.Name = "label3";
             this.label3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label3.Size = new System.Drawing.Size(73, 18);
+            this.label3.Size = new System.Drawing.Size(89, 23);
             this.label3.TabIndex = 53;
             this.label3.Text = "نرخ فریم بر ثانیه:";
             // 
@@ -360,7 +358,7 @@
             this.labelFps.Location = new System.Drawing.Point(1007, 142);
             this.labelFps.Name = "labelFps";
             this.labelFps.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelFps.Size = new System.Drawing.Size(12, 18);
+            this.labelFps.Size = new System.Drawing.Size(16, 23);
             this.labelFps.TabIndex = 54;
             this.labelFps.Text = "-";
             // 
@@ -372,7 +370,7 @@
             this.labelTotalFrames.Location = new System.Drawing.Point(1007, 164);
             this.labelTotalFrames.Name = "labelTotalFrames";
             this.labelTotalFrames.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelTotalFrames.Size = new System.Drawing.Size(12, 18);
+            this.labelTotalFrames.Size = new System.Drawing.Size(16, 23);
             this.labelTotalFrames.TabIndex = 56;
             this.labelTotalFrames.Text = "-";
             // 
@@ -384,7 +382,7 @@
             this.label5.Location = new System.Drawing.Point(1106, 164);
             this.label5.Name = "label5";
             this.label5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label5.Size = new System.Drawing.Size(75, 18);
+            this.label5.Size = new System.Drawing.Size(93, 23);
             this.label5.TabIndex = 55;
             this.label5.Text = "تعداد کل فریم ها:";
             // 
@@ -428,6 +426,7 @@
             this.buttonNext.Font = new System.Drawing.Font("B Titr", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.buttonNext.Location = new System.Drawing.Point(1143, 94);
             this.buttonNext.Name = "buttonNext";
+            this.buttonNext.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonNext.Size = new System.Drawing.Size(56, 31);
             this.buttonNext.TabIndex = 60;
             this.buttonNext.Text = "فریم بعد";
@@ -442,7 +441,7 @@
             this.labelCurrent.Location = new System.Drawing.Point(1007, 188);
             this.labelCurrent.Name = "labelCurrent";
             this.labelCurrent.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelCurrent.Size = new System.Drawing.Size(12, 18);
+            this.labelCurrent.Size = new System.Drawing.Size(16, 23);
             this.labelCurrent.TabIndex = 62;
             this.labelCurrent.Text = "-";
             // 
@@ -454,7 +453,7 @@
             this.label6.Location = new System.Drawing.Point(1130, 188);
             this.label6.Name = "label6";
             this.label6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label6.Size = new System.Drawing.Size(51, 18);
+            this.label6.Size = new System.Drawing.Size(64, 23);
             this.label6.TabIndex = 61;
             this.label6.Text = "فریم جاری:";
             // 
@@ -466,7 +465,7 @@
             this.trackBarErode.Minimum = 2;
             this.trackBarErode.Name = "trackBarErode";
             this.trackBarErode.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.trackBarErode.Size = new System.Drawing.Size(135, 45);
+            this.trackBarErode.Size = new System.Drawing.Size(135, 56);
             this.trackBarErode.SmallChange = 2;
             this.trackBarErode.TabIndex = 64;
             this.trackBarErode.Value = 10;
@@ -480,7 +479,7 @@
             this.label8.Location = new System.Drawing.Point(184, 203);
             this.label8.Name = "label8";
             this.label8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label8.Size = new System.Drawing.Size(37, 21);
+            this.label8.Size = new System.Drawing.Size(46, 26);
             this.label8.TabIndex = 67;
             this.label8.Text = "کاهش";
             // 
@@ -492,7 +491,7 @@
             this.label10.Location = new System.Drawing.Point(164, 288);
             this.label10.Name = "label10";
             this.label10.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label10.Size = new System.Drawing.Size(57, 21);
+            this.label10.Size = new System.Drawing.Size(72, 26);
             this.label10.TabIndex = 70;
             this.label10.Text = "فیلتر گوسی";
             // 
@@ -504,7 +503,7 @@
             this.trackBarGaussian.Minimum = 5;
             this.trackBarGaussian.Name = "trackBarGaussian";
             this.trackBarGaussian.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.trackBarGaussian.Size = new System.Drawing.Size(135, 45);
+            this.trackBarGaussian.Size = new System.Drawing.Size(135, 56);
             this.trackBarGaussian.SmallChange = 5;
             this.trackBarGaussian.TabIndex = 69;
             this.trackBarGaussian.Value = 10;
@@ -513,13 +512,13 @@
             // trackBarRoiWidth
             // 
             this.trackBarRoiWidth.LargeChange = 10;
-            this.trackBarRoiWidth.Location = new System.Drawing.Point(261, 620);
+            this.trackBarRoiWidth.Location = new System.Drawing.Point(434, 621);
             this.trackBarRoiWidth.Margin = new System.Windows.Forms.Padding(1);
             this.trackBarRoiWidth.Maximum = 300;
             this.trackBarRoiWidth.Name = "trackBarRoiWidth";
             this.trackBarRoiWidth.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.trackBarRoiWidth.RightToLeftLayout = true;
-            this.trackBarRoiWidth.Size = new System.Drawing.Size(145, 45);
+            this.trackBarRoiWidth.Size = new System.Drawing.Size(145, 56);
             this.trackBarRoiWidth.SmallChange = 5;
             this.trackBarRoiWidth.TabIndex = 72;
             this.trackBarRoiWidth.Value = 200;
@@ -528,13 +527,13 @@
             // trackBarRoiH
             // 
             this.trackBarRoiH.LargeChange = 10;
-            this.trackBarRoiH.Location = new System.Drawing.Point(93, 620);
+            this.trackBarRoiH.Location = new System.Drawing.Point(249, 621);
             this.trackBarRoiH.Margin = new System.Windows.Forms.Padding(1);
             this.trackBarRoiH.Maximum = 300;
             this.trackBarRoiH.Name = "trackBarRoiH";
             this.trackBarRoiH.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.trackBarRoiH.RightToLeftLayout = true;
-            this.trackBarRoiH.Size = new System.Drawing.Size(145, 45);
+            this.trackBarRoiH.Size = new System.Drawing.Size(145, 56);
             this.trackBarRoiH.SmallChange = 5;
             this.trackBarRoiH.TabIndex = 73;
             this.trackBarRoiH.Value = 200;
@@ -543,13 +542,13 @@
             // trackBarRoiY
             // 
             this.trackBarRoiY.LargeChange = 10;
-            this.trackBarRoiY.Location = new System.Drawing.Point(421, 620);
+            this.trackBarRoiY.Location = new System.Drawing.Point(625, 621);
             this.trackBarRoiY.Margin = new System.Windows.Forms.Padding(1);
             this.trackBarRoiY.Maximum = 300;
             this.trackBarRoiY.Name = "trackBarRoiY";
             this.trackBarRoiY.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.trackBarRoiY.RightToLeftLayout = true;
-            this.trackBarRoiY.Size = new System.Drawing.Size(146, 45);
+            this.trackBarRoiY.Size = new System.Drawing.Size(146, 56);
             this.trackBarRoiY.SmallChange = 5;
             this.trackBarRoiY.TabIndex = 77;
             this.trackBarRoiY.Value = 200;
@@ -558,13 +557,13 @@
             // trackBarRoiX
             // 
             this.trackBarRoiX.LargeChange = 10;
-            this.trackBarRoiX.Location = new System.Drawing.Point(588, 620);
+            this.trackBarRoiX.Location = new System.Drawing.Point(813, 621);
             this.trackBarRoiX.Margin = new System.Windows.Forms.Padding(1);
             this.trackBarRoiX.Maximum = 500;
             this.trackBarRoiX.Name = "trackBarRoiX";
             this.trackBarRoiX.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.trackBarRoiX.RightToLeftLayout = true;
-            this.trackBarRoiX.Size = new System.Drawing.Size(146, 45);
+            this.trackBarRoiX.Size = new System.Drawing.Size(146, 56);
             this.trackBarRoiX.SmallChange = 5;
             this.trackBarRoiX.TabIndex = 76;
             this.trackBarRoiX.Value = 200;
@@ -574,32 +573,30 @@
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.label11.Font = new System.Drawing.Font("B Titr", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label11.Location = new System.Drawing.Point(449, 655);
+            this.label11.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(632, 659);
             this.label11.Name = "label11";
-            this.label11.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label11.Size = new System.Drawing.Size(80, 21);
+            this.label11.Size = new System.Drawing.Size(140, 17);
             this.label11.TabIndex = 75;
-            this.label11.Text = "جابجایی عمودی";
+            this.label11.Text = "Vertical Relocation";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.label12.Font = new System.Drawing.Font("B Titr", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label12.Location = new System.Drawing.Point(631, 655);
+            this.label12.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(809, 658);
             this.label12.Name = "label12";
-            this.label12.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label12.Size = new System.Drawing.Size(69, 21);
+            this.label12.Size = new System.Drawing.Size(161, 17);
             this.label12.TabIndex = 74;
-            this.label12.Text = "جابجایی افقی";
+            this.label12.Text = "Horizontal Relocation";
             // 
             // checkBoxGaussianEnabled
             // 
             this.checkBoxGaussianEnabled.AutoSize = true;
             this.checkBoxGaussianEnabled.Location = new System.Drawing.Point(224, 293);
             this.checkBoxGaussianEnabled.Name = "checkBoxGaussianEnabled";
-            this.checkBoxGaussianEnabled.Size = new System.Drawing.Size(15, 14);
+            this.checkBoxGaussianEnabled.Size = new System.Drawing.Size(18, 17);
             this.checkBoxGaussianEnabled.TabIndex = 79;
             this.checkBoxGaussianEnabled.UseVisualStyleBackColor = true;
             this.checkBoxGaussianEnabled.CheckedChanged += new System.EventHandler(this.checkBoxGaussianEnabled_CheckedChanged);
@@ -609,7 +606,7 @@
             this.checkBoxErode.AutoSize = true;
             this.checkBoxErode.Location = new System.Drawing.Point(224, 207);
             this.checkBoxErode.Name = "checkBoxErode";
-            this.checkBoxErode.Size = new System.Drawing.Size(15, 14);
+            this.checkBoxErode.Size = new System.Drawing.Size(18, 17);
             this.checkBoxErode.TabIndex = 80;
             this.checkBoxErode.UseVisualStyleBackColor = true;
             this.checkBoxErode.CheckedChanged += new System.EventHandler(this.checkBoxErode_CheckedChanged);
@@ -619,7 +616,7 @@
             this.checkBoxDilate.AutoSize = true;
             this.checkBoxDilate.Location = new System.Drawing.Point(224, 247);
             this.checkBoxDilate.Name = "checkBoxDilate";
-            this.checkBoxDilate.Size = new System.Drawing.Size(15, 14);
+            this.checkBoxDilate.Size = new System.Drawing.Size(18, 17);
             this.checkBoxDilate.TabIndex = 83;
             this.checkBoxDilate.UseVisualStyleBackColor = true;
             this.checkBoxDilate.CheckedChanged += new System.EventHandler(this.checkBoxDilate_CheckedChanged);
@@ -632,7 +629,7 @@
             this.label14.Location = new System.Drawing.Point(178, 242);
             this.label14.Name = "label14";
             this.label14.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label14.Size = new System.Drawing.Size(43, 21);
+            this.label14.Size = new System.Drawing.Size(53, 26);
             this.label14.TabIndex = 82;
             this.label14.Text = "گسترش";
             // 
@@ -644,7 +641,7 @@
             this.trackBarDilate.Minimum = 2;
             this.trackBarDilate.Name = "trackBarDilate";
             this.trackBarDilate.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.trackBarDilate.Size = new System.Drawing.Size(135, 45);
+            this.trackBarDilate.Size = new System.Drawing.Size(135, 56);
             this.trackBarDilate.SmallChange = 2;
             this.trackBarDilate.TabIndex = 81;
             this.trackBarDilate.Value = 12;
@@ -657,7 +654,7 @@
             this.checkBoxOpening.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxOpening.Location = new System.Drawing.Point(224, 105);
             this.checkBoxOpening.Name = "checkBoxOpening";
-            this.checkBoxOpening.Size = new System.Drawing.Size(15, 14);
+            this.checkBoxOpening.Size = new System.Drawing.Size(18, 17);
             this.checkBoxOpening.TabIndex = 87;
             this.checkBoxOpening.UseVisualStyleBackColor = true;
             this.checkBoxOpening.CheckedChanged += new System.EventHandler(this.checkBoxOpening_CheckedChanged);
@@ -670,7 +667,7 @@
             this.label15.Location = new System.Drawing.Point(172, 101);
             this.label15.Name = "label15";
             this.label15.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label15.Size = new System.Drawing.Size(49, 21);
+            this.label15.Size = new System.Drawing.Size(61, 26);
             this.label15.TabIndex = 86;
             this.label15.Text = "باز کردن";
             // 
@@ -682,7 +679,7 @@
             this.trackBarOpening.Minimum = 1;
             this.trackBarOpening.Name = "trackBarOpening";
             this.trackBarOpening.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.trackBarOpening.Size = new System.Drawing.Size(135, 45);
+            this.trackBarOpening.Size = new System.Drawing.Size(135, 56);
             this.trackBarOpening.TabIndex = 85;
             this.trackBarOpening.Value = 10;
             this.trackBarOpening.Scroll += new System.EventHandler(this.trackBarOpening_Scroll);
@@ -695,7 +692,7 @@
             this.labelOpeningValue.Location = new System.Drawing.Point(10, 104);
             this.labelOpeningValue.Name = "labelOpeningValue";
             this.labelOpeningValue.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelOpeningValue.Size = new System.Drawing.Size(15, 16);
+            this.labelOpeningValue.Size = new System.Drawing.Size(19, 21);
             this.labelOpeningValue.TabIndex = 88;
             this.labelOpeningValue.Text = "-";
             this.labelOpeningValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -708,7 +705,7 @@
             this.labelClosingValue.Location = new System.Drawing.Point(10, 22);
             this.labelClosingValue.Name = "labelClosingValue";
             this.labelClosingValue.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelClosingValue.Size = new System.Drawing.Size(15, 16);
+            this.labelClosingValue.Size = new System.Drawing.Size(19, 21);
             this.labelClosingValue.TabIndex = 92;
             this.labelClosingValue.Text = "-";
             this.labelClosingValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -720,7 +717,7 @@
             this.checkBoxClosing.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxClosing.Location = new System.Drawing.Point(224, 23);
             this.checkBoxClosing.Name = "checkBoxClosing";
-            this.checkBoxClosing.Size = new System.Drawing.Size(15, 14);
+            this.checkBoxClosing.Size = new System.Drawing.Size(18, 17);
             this.checkBoxClosing.TabIndex = 91;
             this.checkBoxClosing.UseVisualStyleBackColor = true;
             this.checkBoxClosing.CheckedChanged += new System.EventHandler(this.checkBoxClosing_CheckedChanged);
@@ -733,7 +730,7 @@
             this.label18.Location = new System.Drawing.Point(190, 16);
             this.label18.Name = "label18";
             this.label18.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label18.Size = new System.Drawing.Size(31, 21);
+            this.label18.Size = new System.Drawing.Size(38, 26);
             this.label18.TabIndex = 90;
             this.label18.Text = "بستن";
             // 
@@ -745,7 +742,7 @@
             this.trackBarClosing.Minimum = 1;
             this.trackBarClosing.Name = "trackBarClosing";
             this.trackBarClosing.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.trackBarClosing.Size = new System.Drawing.Size(135, 45);
+            this.trackBarClosing.Size = new System.Drawing.Size(135, 56);
             this.trackBarClosing.TabIndex = 89;
             this.trackBarClosing.Value = 10;
             this.trackBarClosing.Scroll += new System.EventHandler(this.trackBarClosing_Scroll);
@@ -758,7 +755,7 @@
             this.labelErodeValue.Location = new System.Drawing.Point(10, 209);
             this.labelErodeValue.Name = "labelErodeValue";
             this.labelErodeValue.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelErodeValue.Size = new System.Drawing.Size(15, 16);
+            this.labelErodeValue.Size = new System.Drawing.Size(19, 21);
             this.labelErodeValue.TabIndex = 93;
             this.labelErodeValue.Text = "-";
             this.labelErodeValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -771,7 +768,7 @@
             this.labelDilateValue.Location = new System.Drawing.Point(10, 246);
             this.labelDilateValue.Name = "labelDilateValue";
             this.labelDilateValue.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelDilateValue.Size = new System.Drawing.Size(15, 16);
+            this.labelDilateValue.Size = new System.Drawing.Size(19, 21);
             this.labelDilateValue.TabIndex = 94;
             this.labelDilateValue.Text = "-";
             this.labelDilateValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -784,7 +781,7 @@
             this.labelGaussianValue.Location = new System.Drawing.Point(10, 293);
             this.labelGaussianValue.Name = "labelGaussianValue";
             this.labelGaussianValue.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelGaussianValue.Size = new System.Drawing.Size(15, 16);
+            this.labelGaussianValue.Size = new System.Drawing.Size(19, 21);
             this.labelGaussianValue.TabIndex = 95;
             this.labelGaussianValue.Text = "-";
             this.labelGaussianValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -797,6 +794,7 @@
             this.tabControl.Controls.Add(this.tabPage7);
             this.tabControl.Controls.Add(this.tabPage4);
             this.tabControl.Controls.Add(this.tabPage9);
+            this.tabControl.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl.Location = new System.Drawing.Point(12, 25);
             this.tabControl.Name = "tabControl";
             this.tabControl.RightToLeftLayout = true;
@@ -807,23 +805,23 @@
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.pictureBox4);
-            this.tabPage1.Location = new System.Drawing.Point(4, 30);
+            this.tabPage1.Location = new System.Drawing.Point(4, 26);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(930, 551);
+            this.tabPage1.Size = new System.Drawing.Size(930, 555);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "ویدئوی اصلی";
+            this.tabPage1.Text = "Main Video";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.pictureBoxDiffrence);
-            this.tabPage2.Location = new System.Drawing.Point(4, 30);
+            this.tabPage2.Location = new System.Drawing.Point(4, 29);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(930, 551);
+            this.tabPage2.Size = new System.Drawing.Size(930, 552);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "تفاضل فریم ها";
+            this.tabPage2.Text = "Frame Difference";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // pictureBoxDiffrence
@@ -837,11 +835,11 @@
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.pictureBoxPreprocess);
-            this.tabPage3.Location = new System.Drawing.Point(4, 30);
+            this.tabPage3.Location = new System.Drawing.Point(4, 29);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(930, 551);
+            this.tabPage3.Size = new System.Drawing.Size(930, 552);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "اعمال فیلترها";
+            this.tabPage3.Text = "Filters";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // pictureBoxPreprocess
@@ -864,11 +862,11 @@
             this.tabPage7.Controls.Add(this.labelSpeedValue);
             this.tabPage7.Controls.Add(this.KMPHLabel);
             this.tabPage7.Controls.Add(this.violence_label);
-            this.tabPage7.Location = new System.Drawing.Point(4, 30);
+            this.tabPage7.Location = new System.Drawing.Point(4, 29);
             this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(930, 551);
+            this.tabPage7.Size = new System.Drawing.Size(930, 552);
             this.tabPage7.TabIndex = 4;
-            this.tabPage7.Text = "پردازشگر محاسبه سرعت";
+            this.tabPage7.Text = "Speed Calculation";
             // 
             // trackBarMotionThreshold
             // 
@@ -878,7 +876,7 @@
             this.trackBarMotionThreshold.Minimum = 1;
             this.trackBarMotionThreshold.Name = "trackBarMotionThreshold";
             this.trackBarMotionThreshold.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.trackBarMotionThreshold.Size = new System.Drawing.Size(287, 45);
+            this.trackBarMotionThreshold.Size = new System.Drawing.Size(287, 56);
             this.trackBarMotionThreshold.TabIndex = 102;
             this.trackBarMotionThreshold.Value = 3;
             this.trackBarMotionThreshold.Scroll += new System.EventHandler(this.trackBarMotionThreshold_Scroll);
@@ -891,7 +889,7 @@
             this.labelMotionThresholdValue.Location = new System.Drawing.Point(23, 398);
             this.labelMotionThresholdValue.Name = "labelMotionThresholdValue";
             this.labelMotionThresholdValue.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelMotionThresholdValue.Size = new System.Drawing.Size(15, 16);
+            this.labelMotionThresholdValue.Size = new System.Drawing.Size(19, 21);
             this.labelMotionThresholdValue.TabIndex = 103;
             this.labelMotionThresholdValue.Text = "-";
             this.labelMotionThresholdValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -902,7 +900,7 @@
             this.label25.Font = new System.Drawing.Font("B Titr", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label25.Location = new System.Drawing.Point(339, 399);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(203, 23);
+            this.label25.Size = new System.Drawing.Size(257, 30);
             this.label25.TabIndex = 54;
             this.label25.Text = "نسبت ناحیه نظارتی به حد آستانه ردیابی:";
             this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -916,7 +914,7 @@
             this.columnROI,
             this.columnPPrev,
             this.columnPCurr});
-            this.listViewTracking.Font = new System.Drawing.Font("Adobe Arabic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listViewTracking.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listViewTracking.FullRowSelect = true;
             this.listViewTracking.GridLines = true;
             listViewGroup1.Header = "شناسه خودرو";
@@ -936,6 +934,7 @@
             listViewGroup2,
             listViewGroup3,
             listViewGroup4});
+            this.listViewTracking.HideSelection = false;
             this.listViewTracking.HoverSelection = true;
             this.listViewTracking.Location = new System.Drawing.Point(559, 16);
             this.listViewTracking.Name = "listViewTracking";
@@ -984,11 +983,11 @@
             this.tabPage4.Controls.Add(this.labelViolationSet);
             this.tabPage4.Controls.Add(this.label27);
             this.tabPage4.Controls.Add(this.label26);
-            this.tabPage4.Location = new System.Drawing.Point(4, 30);
+            this.tabPage4.Location = new System.Drawing.Point(4, 29);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(930, 551);
+            this.tabPage4.Size = new System.Drawing.Size(930, 552);
             this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "تخلفات تشخیص داده شده";
+            this.tabPage4.Text = "Detected Violations";
             // 
             // listViewViolation
             // 
@@ -1001,7 +1000,7 @@
             this.columnHeader14,
             this.columnHeader8,
             this.columnHeader9});
-            this.listViewViolation.Font = new System.Drawing.Font("Adobe Arabic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listViewViolation.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listViewViolation.FullRowSelect = true;
             this.listViewViolation.GridLines = true;
             listViewGroup5.Header = "شناسه خودرو";
@@ -1021,6 +1020,7 @@
             listViewGroup6,
             listViewGroup7,
             listViewGroup8});
+            this.listViewViolation.HideSelection = false;
             this.listViewViolation.Location = new System.Drawing.Point(87, 68);
             this.listViewViolation.Name = "listViewViolation";
             this.listViewViolation.Size = new System.Drawing.Size(788, 466);
@@ -1075,7 +1075,7 @@
             this.trackBarViolationSet.Minimum = 40;
             this.trackBarViolationSet.Name = "trackBarViolationSet";
             this.trackBarViolationSet.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.trackBarViolationSet.Size = new System.Drawing.Size(582, 45);
+            this.trackBarViolationSet.Size = new System.Drawing.Size(582, 56);
             this.trackBarViolationSet.SmallChange = 5;
             this.trackBarViolationSet.TabIndex = 105;
             this.trackBarViolationSet.Value = 90;
@@ -1089,7 +1089,7 @@
             this.labelViolationSet.Location = new System.Drawing.Point(707, 17);
             this.labelViolationSet.Name = "labelViolationSet";
             this.labelViolationSet.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelViolationSet.Size = new System.Drawing.Size(25, 29);
+            this.labelViolationSet.Size = new System.Drawing.Size(29, 36);
             this.labelViolationSet.TabIndex = 104;
             this.labelViolationSet.Text = "-";
             // 
@@ -1101,7 +1101,7 @@
             this.label27.Location = new System.Drawing.Point(615, 22);
             this.label27.Name = "label27";
             this.label27.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label27.Size = new System.Drawing.Size(81, 21);
+            this.label27.Size = new System.Drawing.Size(102, 26);
             this.label27.TabIndex = 103;
             this.label27.Text = "کیلومتر در ساعت";
             // 
@@ -1113,7 +1113,7 @@
             this.label26.Location = new System.Drawing.Point(750, 22);
             this.label26.Name = "label26";
             this.label26.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label26.Size = new System.Drawing.Size(161, 21);
+            this.label26.Size = new System.Drawing.Size(201, 26);
             this.label26.TabIndex = 102;
             this.label26.Text = "حداکثر سرعت مجاز تردد خودروها:";
             // 
@@ -1129,11 +1129,11 @@
             this.tabPage9.Controls.Add(this.LoadXMLButton);
             this.tabPage9.Controls.Add(this.TextboxXMLLoader);
             this.tabPage9.Controls.Add(this.label24);
-            this.tabPage9.Location = new System.Drawing.Point(4, 30);
+            this.tabPage9.Location = new System.Drawing.Point(4, 29);
             this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Size = new System.Drawing.Size(930, 551);
+            this.tabPage9.Size = new System.Drawing.Size(930, 552);
             this.tabPage9.TabIndex = 5;
-            this.tabPage9.Text = "ارزیابی دقت";
+            this.tabPage9.Text = "Accuracy Asessment";
             // 
             // button1
             // 
@@ -1174,6 +1174,7 @@
             listViewGroup10,
             listViewGroup11,
             listViewGroup12});
+            this.listViewCalculatedXML.HideSelection = false;
             this.listViewCalculatedXML.Location = new System.Drawing.Point(57, 77);
             this.listViewCalculatedXML.MultiSelect = false;
             this.listViewCalculatedXML.Name = "listViewCalculatedXML";
@@ -1223,7 +1224,7 @@
             this.textBoxCalculatedXMLLoader.Location = new System.Drawing.Point(117, 44);
             this.textBoxCalculatedXMLLoader.Name = "textBoxCalculatedXMLLoader";
             this.textBoxCalculatedXMLLoader.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBoxCalculatedXMLLoader.Size = new System.Drawing.Size(294, 22);
+            this.textBoxCalculatedXMLLoader.Size = new System.Drawing.Size(294, 26);
             this.textBoxCalculatedXMLLoader.TabIndex = 111;
             this.textBoxCalculatedXMLLoader.Text = "E:\\Dataset\\Dataset II - Speed Measurement\\Report.xml";
             // 
@@ -1235,7 +1236,7 @@
             this.label28.Location = new System.Drawing.Point(50, 13);
             this.label28.Name = "label28";
             this.label28.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label28.Size = new System.Drawing.Size(379, 20);
+            this.label28.Size = new System.Drawing.Size(486, 24);
             this.label28.TabIndex = 109;
             this.label28.Text = "ابتدا مسیر فایل XML شامل مقادیر اندازه گیری شده را وارد کنید و دکمه بارگذاری را ب" +
     "فشارید:";
@@ -1268,6 +1269,7 @@
             listViewGroup14,
             listViewGroup15,
             listViewGroup16});
+            this.listViewXMLLoad.HideSelection = false;
             this.listViewXMLLoad.Location = new System.Drawing.Point(558, 77);
             this.listViewXMLLoad.MultiSelect = false;
             this.listViewXMLLoad.Name = "listViewXMLLoad";
@@ -1317,7 +1319,7 @@
             this.TextboxXMLLoader.Location = new System.Drawing.Point(615, 45);
             this.TextboxXMLLoader.Name = "TextboxXMLLoader";
             this.TextboxXMLLoader.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.TextboxXMLLoader.Size = new System.Drawing.Size(294, 22);
+            this.TextboxXMLLoader.Size = new System.Drawing.Size(294, 26);
             this.TextboxXMLLoader.TabIndex = 107;
             this.TextboxXMLLoader.Text = "E:\\Dataset\\Dataset II - Speed Measurement\\Set01_video01.xml";
             // 
@@ -1329,7 +1331,7 @@
             this.label24.Location = new System.Drawing.Point(552, 13);
             this.label24.Name = "label24";
             this.label24.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label24.Size = new System.Drawing.Size(361, 20);
+            this.label24.Size = new System.Drawing.Size(464, 24);
             this.label24.TabIndex = 101;
             this.label24.Text = "ابتدا مسیر فایل XML شامل مقادیر دنیای واقعی را وارد کنید و دکمه بارگذاری را بفشار" +
     "ید:";
@@ -1364,11 +1366,43 @@
             this.tabPage8.Controls.Add(this.label16);
             this.tabPage8.Controls.Add(this.labelVideoH);
             this.tabPage8.Controls.Add(this.label7);
-            this.tabPage8.Location = new System.Drawing.Point(4, 30);
+            this.tabPage8.Location = new System.Drawing.Point(4, 35);
             this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Size = new System.Drawing.Size(250, 345);
+            this.tabPage8.Size = new System.Drawing.Size(250, 340);
             this.tabPage8.TabIndex = 2;
             this.tabPage8.Text = "میدان دید";
+            // 
+            // CalibrationConstantButton
+            // 
+            this.CalibrationConstantButton.Font = new System.Drawing.Font("B Titr", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.CalibrationConstantButton.Location = new System.Drawing.Point(8, 151);
+            this.CalibrationConstantButton.Name = "CalibrationConstantButton";
+            this.CalibrationConstantButton.Size = new System.Drawing.Size(39, 31);
+            this.CalibrationConstantButton.TabIndex = 111;
+            this.CalibrationConstantButton.Text = "تغییر";
+            this.CalibrationConstantButton.UseVisualStyleBackColor = true;
+            this.CalibrationConstantButton.Click += new System.EventHandler(this.CalibrationConstantButton_Click);
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.BackColor = System.Drawing.Color.Transparent;
+            this.label29.Font = new System.Drawing.Font("B Titr", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label29.Location = new System.Drawing.Point(152, 155);
+            this.label29.Name = "label29";
+            this.label29.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label29.Size = new System.Drawing.Size(107, 26);
+            this.label29.TabIndex = 113;
+            this.label29.Text = "ثابت کالیبراسیون:";
+            this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CalibrationConstantTextbox
+            // 
+            this.CalibrationConstantTextbox.Location = new System.Drawing.Point(51, 152);
+            this.CalibrationConstantTextbox.Name = "CalibrationConstantTextbox";
+            this.CalibrationConstantTextbox.Size = new System.Drawing.Size(45, 34);
+            this.CalibrationConstantTextbox.TabIndex = 112;
+            this.CalibrationConstantTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // labelPixelDensity
             // 
@@ -1378,7 +1412,7 @@
             this.labelPixelDensity.Location = new System.Drawing.Point(33, 198);
             this.labelPixelDensity.Name = "labelPixelDensity";
             this.labelPixelDensity.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelPixelDensity.Size = new System.Drawing.Size(12, 18);
+            this.labelPixelDensity.Size = new System.Drawing.Size(16, 23);
             this.labelPixelDensity.TabIndex = 110;
             this.labelPixelDensity.Text = "-";
             // 
@@ -1390,7 +1424,7 @@
             this.label22.Location = new System.Drawing.Point(145, 195);
             this.label22.Name = "label22";
             this.label22.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label22.Size = new System.Drawing.Size(93, 21);
+            this.label22.Size = new System.Drawing.Size(114, 26);
             this.label22.TabIndex = 109;
             this.label22.Text = "نسبت متر به پیکسل:";
             this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1414,7 +1448,7 @@
             this.label21.Location = new System.Drawing.Point(108, 115);
             this.label21.Name = "label21";
             this.label21.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label21.Size = new System.Drawing.Size(131, 21);
+            this.label21.Size = new System.Drawing.Size(161, 26);
             this.label21.TabIndex = 108;
             this.label21.Text = "ناحیه موردنظر بر حسب متر:";
             this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1427,7 +1461,7 @@
             this.labelROI_H.Location = new System.Drawing.Point(33, 83);
             this.labelROI_H.Name = "labelROI_H";
             this.labelROI_H.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelROI_H.Size = new System.Drawing.Size(12, 18);
+            this.labelROI_H.Size = new System.Drawing.Size(16, 23);
             this.labelROI_H.TabIndex = 107;
             this.labelROI_H.Text = "-";
             // 
@@ -1439,7 +1473,7 @@
             this.label19.Location = new System.Drawing.Point(95, 80);
             this.label19.Name = "label19";
             this.label19.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label19.Size = new System.Drawing.Size(144, 21);
+            this.label19.Size = new System.Drawing.Size(177, 26);
             this.label19.TabIndex = 106;
             this.label19.Text = "ناحیه موردنظر بر حسب پیکسل:";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1448,7 +1482,7 @@
             // 
             this.textBox_Ref_meter.Location = new System.Drawing.Point(51, 112);
             this.textBox_Ref_meter.Name = "textBox_Ref_meter";
-            this.textBox_Ref_meter.Size = new System.Drawing.Size(45, 29);
+            this.textBox_Ref_meter.Size = new System.Drawing.Size(45, 34);
             this.textBox_Ref_meter.TabIndex = 105;
             this.textBox_Ref_meter.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1460,7 +1494,7 @@
             this.label9.Location = new System.Drawing.Point(182, 45);
             this.label9.Name = "label9";
             this.label9.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label9.Size = new System.Drawing.Size(30, 18);
+            this.label9.Size = new System.Drawing.Size(37, 23);
             this.label9.TabIndex = 104;
             this.label9.Text = "عرض:";
             // 
@@ -1472,7 +1506,7 @@
             this.labelVideoW.Location = new System.Drawing.Point(154, 45);
             this.labelVideoW.Name = "labelVideoW";
             this.labelVideoW.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelVideoW.Size = new System.Drawing.Size(12, 18);
+            this.labelVideoW.Size = new System.Drawing.Size(16, 23);
             this.labelVideoW.TabIndex = 103;
             this.labelVideoW.Text = "-";
             // 
@@ -1484,7 +1518,7 @@
             this.label16.Location = new System.Drawing.Point(67, 45);
             this.label16.Name = "label16";
             this.label16.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label16.Size = new System.Drawing.Size(27, 18);
+            this.label16.Size = new System.Drawing.Size(33, 23);
             this.label16.TabIndex = 102;
             this.label16.Text = "طول:";
             // 
@@ -1496,7 +1530,7 @@
             this.labelVideoH.Location = new System.Drawing.Point(33, 45);
             this.labelVideoH.Name = "labelVideoH";
             this.labelVideoH.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelVideoH.Size = new System.Drawing.Size(12, 18);
+            this.labelVideoH.Size = new System.Drawing.Size(16, 23);
             this.labelVideoH.TabIndex = 99;
             this.labelVideoH.Text = "-";
             // 
@@ -1508,7 +1542,7 @@
             this.label7.Location = new System.Drawing.Point(110, 14);
             this.label7.Name = "label7";
             this.label7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label7.Size = new System.Drawing.Size(129, 21);
+            this.label7.Size = new System.Drawing.Size(158, 26);
             this.label7.TabIndex = 101;
             this.label7.Text = "ابعاد تصویر بر حسب پیکسل:";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1528,10 +1562,10 @@
             this.tabPage5.Controls.Add(this.trackBar_mog_history);
             this.tabPage5.Controls.Add(this.label4);
             this.tabPage5.Controls.Add(this.label_mog_history);
-            this.tabPage5.Location = new System.Drawing.Point(4, 30);
+            this.tabPage5.Location = new System.Drawing.Point(4, 35);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(250, 345);
+            this.tabPage5.Size = new System.Drawing.Size(250, 340);
             this.tabPage5.TabIndex = 0;
             this.tabPage5.Text = "تفاضل پس زمینه";
             // 
@@ -1542,7 +1576,7 @@
             this.trackBar_mog_noiseSigma.Maximum = 2;
             this.trackBar_mog_noiseSigma.Name = "trackBar_mog_noiseSigma";
             this.trackBar_mog_noiseSigma.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.trackBar_mog_noiseSigma.Size = new System.Drawing.Size(197, 45);
+            this.trackBar_mog_noiseSigma.Size = new System.Drawing.Size(197, 56);
             this.trackBar_mog_noiseSigma.TabIndex = 108;
             this.trackBar_mog_noiseSigma.Scroll += new System.EventHandler(this.trackBar_mog_noiseSigma_Scroll);
             // 
@@ -1554,7 +1588,7 @@
             this.label20.Location = new System.Drawing.Point(143, 203);
             this.label20.Name = "label20";
             this.label20.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label20.Size = new System.Drawing.Size(92, 21);
+            this.label20.Size = new System.Drawing.Size(116, 26);
             this.label20.TabIndex = 109;
             this.label20.Text = "مقدار زیگمای نویز:";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1567,7 +1601,7 @@
             this.label_mog_noiseSigma_.Location = new System.Drawing.Point(13, 227);
             this.label_mog_noiseSigma_.Name = "label_mog_noiseSigma_";
             this.label_mog_noiseSigma_.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label_mog_noiseSigma_.Size = new System.Drawing.Size(15, 16);
+            this.label_mog_noiseSigma_.Size = new System.Drawing.Size(19, 21);
             this.label_mog_noiseSigma_.TabIndex = 110;
             this.label_mog_noiseSigma_.Text = "-";
             this.label_mog_noiseSigma_.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1578,7 +1612,7 @@
             this.trackBar_mog_backgroundRatio.Location = new System.Drawing.Point(35, 160);
             this.trackBar_mog_backgroundRatio.Name = "trackBar_mog_backgroundRatio";
             this.trackBar_mog_backgroundRatio.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.trackBar_mog_backgroundRatio.Size = new System.Drawing.Size(197, 45);
+            this.trackBar_mog_backgroundRatio.Size = new System.Drawing.Size(197, 56);
             this.trackBar_mog_backgroundRatio.TabIndex = 105;
             this.trackBar_mog_backgroundRatio.Value = 5;
             this.trackBar_mog_backgroundRatio.Scroll += new System.EventHandler(this.trackBar_mog_backgroundRatio_Scroll);
@@ -1591,7 +1625,7 @@
             this.label17.Location = new System.Drawing.Point(157, 136);
             this.label17.Name = "label17";
             this.label17.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label17.Size = new System.Drawing.Size(78, 21);
+            this.label17.Size = new System.Drawing.Size(97, 26);
             this.label17.TabIndex = 106;
             this.label17.Text = "نسبت پس زمینه:";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1604,7 +1638,7 @@
             this.label_mog_backgroundRatio.Location = new System.Drawing.Point(14, 160);
             this.label_mog_backgroundRatio.Name = "label_mog_backgroundRatio";
             this.label_mog_backgroundRatio.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label_mog_backgroundRatio.Size = new System.Drawing.Size(15, 16);
+            this.label_mog_backgroundRatio.Size = new System.Drawing.Size(19, 21);
             this.label_mog_backgroundRatio.TabIndex = 107;
             this.label_mog_backgroundRatio.Text = "-";
             this.label_mog_backgroundRatio.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1616,7 +1650,7 @@
             this.trackBar_mog_nMixtures.Minimum = 1;
             this.trackBar_mog_nMixtures.Name = "trackBar_mog_nMixtures";
             this.trackBar_mog_nMixtures.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.trackBar_mog_nMixtures.Size = new System.Drawing.Size(197, 45);
+            this.trackBar_mog_nMixtures.Size = new System.Drawing.Size(197, 56);
             this.trackBar_mog_nMixtures.SmallChange = 2;
             this.trackBar_mog_nMixtures.TabIndex = 102;
             this.trackBar_mog_nMixtures.Value = 15;
@@ -1630,7 +1664,7 @@
             this.label13.Location = new System.Drawing.Point(105, 73);
             this.label13.Name = "label13";
             this.label13.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label13.Size = new System.Drawing.Size(130, 21);
+            this.label13.Size = new System.Drawing.Size(164, 26);
             this.label13.TabIndex = 103;
             this.label13.Text = "حداکثر تعداد پارامتر گوسی:";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1643,7 +1677,7 @@
             this.label_mog_nMixtures.Location = new System.Drawing.Point(14, 97);
             this.label_mog_nMixtures.Name = "label_mog_nMixtures";
             this.label_mog_nMixtures.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label_mog_nMixtures.Size = new System.Drawing.Size(15, 16);
+            this.label_mog_nMixtures.Size = new System.Drawing.Size(19, 21);
             this.label_mog_nMixtures.TabIndex = 104;
             this.label_mog_nMixtures.Text = "-";
             this.label_mog_nMixtures.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1656,7 +1690,7 @@
             this.trackBar_mog_history.Minimum = 10;
             this.trackBar_mog_history.Name = "trackBar_mog_history";
             this.trackBar_mog_history.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.trackBar_mog_history.Size = new System.Drawing.Size(197, 45);
+            this.trackBar_mog_history.Size = new System.Drawing.Size(197, 56);
             this.trackBar_mog_history.SmallChange = 5;
             this.trackBar_mog_history.TabIndex = 99;
             this.trackBar_mog_history.Value = 15;
@@ -1670,7 +1704,7 @@
             this.label4.Location = new System.Drawing.Point(58, 13);
             this.label4.Name = "label4";
             this.label4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label4.Size = new System.Drawing.Size(177, 21);
+            this.label4.Size = new System.Drawing.Size(222, 26);
             this.label4.TabIndex = 100;
             this.label4.Text = "تعداد فریم های درنظر گرفته شده قبلی:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1683,7 +1717,7 @@
             this.label_mog_history.Location = new System.Drawing.Point(13, 37);
             this.label_mog_history.Name = "label_mog_history";
             this.label_mog_history.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label_mog_history.Size = new System.Drawing.Size(15, 16);
+            this.label_mog_history.Size = new System.Drawing.Size(19, 21);
             this.label_mog_history.TabIndex = 101;
             this.label_mog_history.Text = "-";
             this.label_mog_history.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1715,10 +1749,10 @@
             this.tabPage6.Controls.Add(this.label18);
             this.tabPage6.Controls.Add(this.trackBarErode);
             this.tabPage6.Controls.Add(this.label8);
-            this.tabPage6.Location = new System.Drawing.Point(4, 30);
+            this.tabPage6.Location = new System.Drawing.Point(4, 35);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(250, 345);
+            this.tabPage6.Size = new System.Drawing.Size(250, 340);
             this.tabPage6.TabIndex = 1;
             this.tabPage6.Text = "فیلترها";
             // 
@@ -1729,7 +1763,7 @@
             this.trackBarFillHoles.Minimum = 1;
             this.trackBarFillHoles.Name = "trackBarFillHoles";
             this.trackBarFillHoles.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.trackBarFillHoles.Size = new System.Drawing.Size(135, 45);
+            this.trackBarFillHoles.Size = new System.Drawing.Size(135, 56);
             this.trackBarFillHoles.TabIndex = 96;
             this.trackBarFillHoles.Value = 10;
             this.trackBarFillHoles.Scroll += new System.EventHandler(this.trackBarFillHoles_Scroll);
@@ -1742,7 +1776,7 @@
             this.label23.Location = new System.Drawing.Point(173, 56);
             this.label23.Name = "label23";
             this.label23.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label23.Size = new System.Drawing.Size(44, 21);
+            this.label23.Size = new System.Drawing.Size(53, 26);
             this.label23.TabIndex = 97;
             this.label23.Text = "پرکردن";
             // 
@@ -1751,7 +1785,7 @@
             this.checkBoxFillHoles.AutoSize = true;
             this.checkBoxFillHoles.Location = new System.Drawing.Point(224, 61);
             this.checkBoxFillHoles.Name = "checkBoxFillHoles";
-            this.checkBoxFillHoles.Size = new System.Drawing.Size(15, 14);
+            this.checkBoxFillHoles.Size = new System.Drawing.Size(18, 17);
             this.checkBoxFillHoles.TabIndex = 98;
             this.checkBoxFillHoles.UseVisualStyleBackColor = true;
             this.checkBoxFillHoles.CheckedChanged += new System.EventHandler(this.checkBoxFillHoles_CheckedChanged);
@@ -1764,7 +1798,7 @@
             this.labelFillHolesValue.Location = new System.Drawing.Point(9, 59);
             this.labelFillHolesValue.Name = "labelFillHolesValue";
             this.labelFillHolesValue.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelFillHolesValue.Size = new System.Drawing.Size(15, 16);
+            this.labelFillHolesValue.Size = new System.Drawing.Size(19, 21);
             this.labelFillHolesValue.TabIndex = 99;
             this.labelFillHolesValue.Text = "-";
             this.labelFillHolesValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1774,14 +1808,14 @@
             this.فایلToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.بازکردنویدئوToolStripMenuItem});
             this.فایلToolStripMenuItem.Name = "فایلToolStripMenuItem";
-            this.فایلToolStripMenuItem.Size = new System.Drawing.Size(39, 23);
-            this.فایلToolStripMenuItem.Text = "فایل";
+            this.فایلToolStripMenuItem.Size = new System.Drawing.Size(45, 26);
+            this.فایلToolStripMenuItem.Text = "File";
             // 
             // بازکردنویدئوToolStripMenuItem
             // 
             this.بازکردنویدئوToolStripMenuItem.Name = "بازکردنویدئوToolStripMenuItem";
-            this.بازکردنویدئوToolStripMenuItem.Size = new System.Drawing.Size(135, 24);
-            this.بازکردنویدئوToolStripMenuItem.Text = "بازکردن ویدئو";
+            this.بازکردنویدئوToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.بازکردنویدئوToolStripMenuItem.Text = "Open Video ...";
             this.بازکردنویدئوToolStripMenuItem.Click += new System.EventHandler(this.بازکردنویدئوToolStripMenuItem_Click);
             // 
             // راهنماToolStripMenuItem
@@ -1789,19 +1823,20 @@
             this.راهنماToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.کیلدهایراهنماToolStripMenuItem});
             this.راهنماToolStripMenuItem.Name = "راهنماToolStripMenuItem";
-            this.راهنماToolStripMenuItem.Size = new System.Drawing.Size(51, 23);
-            this.راهنماToolStripMenuItem.Text = "ویرایش";
+            this.راهنماToolStripMenuItem.Size = new System.Drawing.Size(48, 26);
+            this.راهنماToolStripMenuItem.Text = "Edit";
             // 
             // کیلدهایراهنماToolStripMenuItem
             // 
             this.کیلدهایراهنماToolStripMenuItem.Name = "کیلدهایراهنماToolStripMenuItem";
-            this.کیلدهایراهنماToolStripMenuItem.Size = new System.Drawing.Size(91, 24);
-            this.کیلدهایراهنماToolStripMenuItem.Text = "منو";
+            this.کیلدهایراهنماToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.کیلدهایراهنماToolStripMenuItem.Text = "Menu";
             // 
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.Transparent;
-            this.menuStrip1.Font = new System.Drawing.Font("B Nazanin", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.menuStrip1.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.فایلToolStripMenuItem,
             this.راهنماToolStripMenuItem,
@@ -1809,7 +1844,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.menuStrip1.Size = new System.Drawing.Size(1219, 27);
+            this.menuStrip1.Size = new System.Drawing.Size(1219, 30);
             this.menuStrip1.TabIndex = 98;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -1819,33 +1854,33 @@
             this.میانبرهاToolStripMenuItem,
             this.دربارهToolStripMenuItem});
             this.راهنماToolStripMenuItem1.Name = "راهنماToolStripMenuItem1";
-            this.راهنماToolStripMenuItem1.Size = new System.Drawing.Size(45, 23);
-            this.راهنماToolStripMenuItem1.Text = "راهنما";
+            this.راهنماToolStripMenuItem1.Size = new System.Drawing.Size(51, 26);
+            this.راهنماToolStripMenuItem1.Text = "Help";
             // 
             // میانبرهاToolStripMenuItem
             // 
             this.میانبرهاToolStripMenuItem.Name = "میانبرهاToolStripMenuItem";
-            this.میانبرهاToolStripMenuItem.Size = new System.Drawing.Size(108, 24);
-            this.میانبرهاToolStripMenuItem.Text = "میانبرها";
+            this.میانبرهاToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.میانبرهاToolStripMenuItem.Text = "Shortcuts";
             this.میانبرهاToolStripMenuItem.Click += new System.EventHandler(this.میانبرهاToolStripMenuItem_Click);
             // 
             // دربارهToolStripMenuItem
             // 
             this.دربارهToolStripMenuItem.Name = "دربارهToolStripMenuItem";
-            this.دربارهToolStripMenuItem.Size = new System.Drawing.Size(108, 24);
-            this.دربارهToolStripMenuItem.Text = "درباره";
+            this.دربارهToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.دربارهToolStripMenuItem.Text = "About";
             this.دربارهToolStripMenuItem.Click += new System.EventHandler(this.دربارهToolStripMenuItem_Click);
             // 
             // button_ImageSet
             // 
             this.button_ImageSet.BackColor = System.Drawing.Color.Transparent;
-            this.button_ImageSet.Font = new System.Drawing.Font("B Titr", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.button_ImageSet.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_ImageSet.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button_ImageSet.Location = new System.Drawing.Point(979, 57);
             this.button_ImageSet.Name = "button_ImageSet";
             this.button_ImageSet.Size = new System.Drawing.Size(107, 31);
             this.button_ImageSet.TabIndex = 99;
-            this.button_ImageSet.Text = "انتخاب مجموعه تصویر";
+            this.button_ImageSet.Text = "Choose Image-set";
             this.button_ImageSet.UseVisualStyleBackColor = false;
             this.button_ImageSet.Click += new System.EventHandler(this.button_ImageSet_Click);
             // 
@@ -1853,57 +1888,24 @@
             // 
             this.labelROIEnabled.AutoSize = true;
             this.labelROIEnabled.BackColor = System.Drawing.Color.Transparent;
-            this.labelROIEnabled.Font = new System.Drawing.Font("B Titr", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.labelROIEnabled.Location = new System.Drawing.Point(738, 649);
+            this.labelROIEnabled.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelROIEnabled.Location = new System.Drawing.Point(55, 650);
             this.labelROIEnabled.Name = "labelROIEnabled";
-            this.labelROIEnabled.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelROIEnabled.Size = new System.Drawing.Size(110, 20);
+            this.labelROIEnabled.Size = new System.Drawing.Size(130, 16);
             this.labelROIEnabled.TabIndex = 100;
-            this.labelROIEnabled.Text = "فعال/غیرفعال کردن ناحیه";
+            this.labelROIEnabled.Text = "Enable/Disable ROI";
             // 
             // checkBoxROIEnabled
             // 
             this.checkBoxROIEnabled.AutoSize = true;
             this.checkBoxROIEnabled.Checked = true;
             this.checkBoxROIEnabled.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBoxROIEnabled.Location = new System.Drawing.Point(848, 653);
+            this.checkBoxROIEnabled.Location = new System.Drawing.Point(31, 649);
             this.checkBoxROIEnabled.Name = "checkBoxROIEnabled";
-            this.checkBoxROIEnabled.Size = new System.Drawing.Size(15, 14);
+            this.checkBoxROIEnabled.Size = new System.Drawing.Size(18, 17);
             this.checkBoxROIEnabled.TabIndex = 100;
             this.checkBoxROIEnabled.UseVisualStyleBackColor = true;
             this.checkBoxROIEnabled.CheckedChanged += new System.EventHandler(this.checkBoxROIEnabled_CheckedChanged);
-            // 
-            // CalibrationConstantButton
-            // 
-            this.CalibrationConstantButton.Font = new System.Drawing.Font("B Titr", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.CalibrationConstantButton.Location = new System.Drawing.Point(8, 151);
-            this.CalibrationConstantButton.Name = "CalibrationConstantButton";
-            this.CalibrationConstantButton.Size = new System.Drawing.Size(39, 31);
-            this.CalibrationConstantButton.TabIndex = 111;
-            this.CalibrationConstantButton.Text = "تغییر";
-            this.CalibrationConstantButton.UseVisualStyleBackColor = true;
-            this.CalibrationConstantButton.Click += new System.EventHandler(this.CalibrationConstantButton_Click);
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.BackColor = System.Drawing.Color.Transparent;
-            this.label29.Font = new System.Drawing.Font("B Titr", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label29.Location = new System.Drawing.Point(152, 155);
-            this.label29.Name = "label29";
-            this.label29.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label29.Size = new System.Drawing.Size(86, 21);
-            this.label29.TabIndex = 113;
-            this.label29.Text = "ثابت کالیبراسیون:";
-            this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // CalibrationConstantTextbox
-            // 
-            this.CalibrationConstantTextbox.Location = new System.Drawing.Point(51, 152);
-            this.CalibrationConstantTextbox.Name = "CalibrationConstantTextbox";
-            this.CalibrationConstantTextbox.Size = new System.Drawing.Size(45, 29);
-            this.CalibrationConstantTextbox.TabIndex = 112;
-            this.CalibrationConstantTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Form1
             // 
@@ -1941,7 +1943,7 @@
             this.KeyPreview = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "Vehicle Speed Calculation";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
