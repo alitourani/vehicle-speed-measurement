@@ -40,10 +40,10 @@
             System.Windows.Forms.ListViewGroup listViewGroup10 = new System.Windows.Forms.ListViewGroup("ناحیه موردنظر", System.Windows.Forms.HorizontalAlignment.Center);
             System.Windows.Forms.ListViewGroup listViewGroup11 = new System.Windows.Forms.ListViewGroup("موقعیت قبلی", System.Windows.Forms.HorizontalAlignment.Center);
             System.Windows.Forms.ListViewGroup listViewGroup12 = new System.Windows.Forms.ListViewGroup("موقعیت فعلی", System.Windows.Forms.HorizontalAlignment.Center);
-            System.Windows.Forms.ListViewGroup listViewGroup13 = new System.Windows.Forms.ListViewGroup("شناسه خودرو", System.Windows.Forms.HorizontalAlignment.Center);
-            System.Windows.Forms.ListViewGroup listViewGroup14 = new System.Windows.Forms.ListViewGroup("ناحیه موردنظر", System.Windows.Forms.HorizontalAlignment.Center);
-            System.Windows.Forms.ListViewGroup listViewGroup15 = new System.Windows.Forms.ListViewGroup("موقعیت قبلی", System.Windows.Forms.HorizontalAlignment.Center);
-            System.Windows.Forms.ListViewGroup listViewGroup16 = new System.Windows.Forms.ListViewGroup("موقعیت فعلی", System.Windows.Forms.HorizontalAlignment.Center);
+            System.Windows.Forms.ListViewGroup listViewGroup13 = new System.Windows.Forms.ListViewGroup("Vehicle ID", System.Windows.Forms.HorizontalAlignment.Center);
+            System.Windows.Forms.ListViewGroup listViewGroup14 = new System.Windows.Forms.ListViewGroup("ROI", System.Windows.Forms.HorizontalAlignment.Center);
+            System.Windows.Forms.ListViewGroup listViewGroup15 = new System.Windows.Forms.ListViewGroup("Prev. location", System.Windows.Forms.HorizontalAlignment.Center);
+            System.Windows.Forms.ListViewGroup listViewGroup16 = new System.Windows.Forms.ListViewGroup("Curr. location", System.Windows.Forms.HorizontalAlignment.Center);
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button_select_video = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
@@ -56,7 +56,6 @@
             this.label_ROI_size = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.violence_label = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.labelFps = new System.Windows.Forms.Label();
             this.labelTotalFrames = new System.Windows.Forms.Label();
@@ -101,7 +100,6 @@
             this.pictureBoxPreprocess = new System.Windows.Forms.PictureBox();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.trackBarMotionThreshold = new System.Windows.Forms.TrackBar();
-            this.labelMotionThresholdValue = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.listViewTracking = new System.Windows.Forms.ListView();
             this.columnVehicleID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -185,6 +183,7 @@
             this.button_ImageSet = new System.Windows.Forms.Button();
             this.labelROIEnabled = new System.Windows.Forms.Label();
             this.checkBoxROIEnabled = new System.Windows.Forms.CheckBox();
+            this.labelMotionThresholdValue = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarErode)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarGaussian)).BeginInit();
@@ -244,32 +243,32 @@
             // labelSpeed
             // 
             this.labelSpeed.AutoSize = true;
-            this.labelSpeed.Font = new System.Drawing.Font("B Titr", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.labelSpeed.Location = new System.Drawing.Point(337, 464);
+            this.labelSpeed.Font = new System.Drawing.Font("Cambria", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSpeed.Location = new System.Drawing.Point(38, 490);
             this.labelSpeed.Name = "labelSpeed";
-            this.labelSpeed.Size = new System.Drawing.Size(135, 30);
+            this.labelSpeed.Size = new System.Drawing.Size(162, 22);
             this.labelSpeed.TabIndex = 29;
-            this.labelSpeed.Text = "سرعت مشاهده شده:";
+            this.labelSpeed.Text = "Calculated Speed:";
             // 
             // labelSpeedValue
             // 
             this.labelSpeedValue.AutoSize = true;
-            this.labelSpeedValue.Font = new System.Drawing.Font("B Titr", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.labelSpeedValue.Location = new System.Drawing.Point(198, 457);
+            this.labelSpeedValue.Font = new System.Drawing.Font("Cambria", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSpeedValue.Location = new System.Drawing.Point(248, 490);
             this.labelSpeedValue.Name = "labelSpeedValue";
-            this.labelSpeedValue.Size = new System.Drawing.Size(29, 42);
+            this.labelSpeedValue.Size = new System.Drawing.Size(21, 22);
             this.labelSpeedValue.TabIndex = 30;
             this.labelSpeedValue.Text = "0";
             // 
             // KMPHLabel
             // 
             this.KMPHLabel.AutoSize = true;
-            this.KMPHLabel.Font = new System.Drawing.Font("B Titr", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.KMPHLabel.Location = new System.Drawing.Point(78, 465);
+            this.KMPHLabel.Font = new System.Drawing.Font("Cambria", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.KMPHLabel.Location = new System.Drawing.Point(304, 490);
             this.KMPHLabel.Name = "KMPHLabel";
-            this.KMPHLabel.Size = new System.Drawing.Size(98, 26);
+            this.KMPHLabel.Size = new System.Drawing.Size(61, 22);
             this.KMPHLabel.TabIndex = 31;
-            this.KMPHLabel.Text = "کیلومتر بر ساعت";
+            this.KMPHLabel.Text = "Km/h";
             // 
             // SourceSelectLabel
             // 
@@ -327,16 +326,6 @@
             this.label2.Size = new System.Drawing.Size(54, 17);
             this.label2.TabIndex = 51;
             this.label2.Text = "Height";
-            // 
-            // violence_label
-            // 
-            this.violence_label.AutoSize = true;
-            this.violence_label.Font = new System.Drawing.Font("B Titr", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.violence_label.Location = new System.Drawing.Point(62, 505);
-            this.violence_label.Name = "violence_label";
-            this.violence_label.Size = new System.Drawing.Size(25, 30);
-            this.violence_label.TabIndex = 52;
-            this.violence_label.Text = "-";
             // 
             // label3
             // 
@@ -816,10 +805,10 @@
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.pictureBoxDiffrence);
-            this.tabPage2.Location = new System.Drawing.Point(4, 29);
+            this.tabPage2.Location = new System.Drawing.Point(4, 26);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(930, 552);
+            this.tabPage2.Size = new System.Drawing.Size(930, 555);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Frame Difference";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -835,9 +824,9 @@
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.pictureBoxPreprocess);
-            this.tabPage3.Location = new System.Drawing.Point(4, 29);
+            this.tabPage3.Location = new System.Drawing.Point(4, 26);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(930, 552);
+            this.tabPage3.Size = new System.Drawing.Size(930, 555);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Filters";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -853,25 +842,24 @@
             // tabPage7
             // 
             this.tabPage7.BackColor = System.Drawing.Color.Transparent;
-            this.tabPage7.Controls.Add(this.trackBarMotionThreshold);
             this.tabPage7.Controls.Add(this.labelMotionThresholdValue);
+            this.tabPage7.Controls.Add(this.trackBarMotionThreshold);
             this.tabPage7.Controls.Add(this.label25);
             this.tabPage7.Controls.Add(this.listViewTracking);
             this.tabPage7.Controls.Add(this.pictureBoxROI);
             this.tabPage7.Controls.Add(this.labelSpeed);
             this.tabPage7.Controls.Add(this.labelSpeedValue);
             this.tabPage7.Controls.Add(this.KMPHLabel);
-            this.tabPage7.Controls.Add(this.violence_label);
-            this.tabPage7.Location = new System.Drawing.Point(4, 29);
+            this.tabPage7.Location = new System.Drawing.Point(4, 26);
             this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(930, 552);
+            this.tabPage7.Size = new System.Drawing.Size(930, 555);
             this.tabPage7.TabIndex = 4;
             this.tabPage7.Text = "Speed Calculation";
             // 
             // trackBarMotionThreshold
             // 
             this.trackBarMotionThreshold.LargeChange = 50;
-            this.trackBarMotionThreshold.Location = new System.Drawing.Point(44, 394);
+            this.trackBarMotionThreshold.Location = new System.Drawing.Point(252, 401);
             this.trackBarMotionThreshold.Maximum = 300;
             this.trackBarMotionThreshold.Minimum = 1;
             this.trackBarMotionThreshold.Name = "trackBarMotionThreshold";
@@ -881,28 +869,15 @@
             this.trackBarMotionThreshold.Value = 3;
             this.trackBarMotionThreshold.Scroll += new System.EventHandler(this.trackBarMotionThreshold_Scroll);
             // 
-            // labelMotionThresholdValue
-            // 
-            this.labelMotionThresholdValue.AutoSize = true;
-            this.labelMotionThresholdValue.BackColor = System.Drawing.Color.Transparent;
-            this.labelMotionThresholdValue.Font = new System.Drawing.Font("B Titr", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.labelMotionThresholdValue.Location = new System.Drawing.Point(23, 398);
-            this.labelMotionThresholdValue.Name = "labelMotionThresholdValue";
-            this.labelMotionThresholdValue.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelMotionThresholdValue.Size = new System.Drawing.Size(19, 21);
-            this.labelMotionThresholdValue.TabIndex = 103;
-            this.labelMotionThresholdValue.Text = "-";
-            this.labelMotionThresholdValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("B Titr", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label25.Location = new System.Drawing.Point(339, 399);
+            this.label25.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(16, 416);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(257, 30);
+            this.label25.Size = new System.Drawing.Size(190, 20);
             this.label25.TabIndex = 54;
-            this.label25.Text = "نسبت ناحیه نظارتی به حد آستانه ردیابی:";
+            this.label25.Text = "ROI to Threshold ratio:";
             this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // listViewTracking
@@ -914,7 +889,7 @@
             this.columnROI,
             this.columnPPrev,
             this.columnPCurr});
-            this.listViewTracking.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listViewTracking.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listViewTracking.FullRowSelect = true;
             this.listViewTracking.GridLines = true;
             listViewGroup1.Header = "شناسه خودرو";
@@ -946,24 +921,24 @@
             // 
             // columnVehicleID
             // 
-            this.columnVehicleID.Text = "شناسه";
-            this.columnVehicleID.Width = 82;
+            this.columnVehicleID.Text = "ID";
+            this.columnVehicleID.Width = 61;
             // 
             // columnROI
             // 
-            this.columnROI.Text = "ناحیه";
+            this.columnROI.Text = "Lane";
             this.columnROI.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.columnROI.Width = 62;
             // 
             // columnPPrev
             // 
-            this.columnPPrev.Text = "فریم";
+            this.columnPPrev.Text = "Frame";
             this.columnPPrev.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.columnPPrev.Width = 77;
             // 
             // columnPCurr
             // 
-            this.columnPCurr.Text = "جابجایی (پیکسل)";
+            this.columnPCurr.Text = "Relocation (pixels)";
             this.columnPCurr.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.columnPCurr.Width = 110;
             // 
@@ -980,12 +955,12 @@
             this.tabPage4.BackColor = System.Drawing.SystemColors.Control;
             this.tabPage4.Controls.Add(this.listViewViolation);
             this.tabPage4.Controls.Add(this.trackBarViolationSet);
-            this.tabPage4.Controls.Add(this.labelViolationSet);
             this.tabPage4.Controls.Add(this.label27);
             this.tabPage4.Controls.Add(this.label26);
-            this.tabPage4.Location = new System.Drawing.Point(4, 29);
+            this.tabPage4.Controls.Add(this.labelViolationSet);
+            this.tabPage4.Location = new System.Drawing.Point(4, 26);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(930, 552);
+            this.tabPage4.Size = new System.Drawing.Size(930, 555);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Detected Violations";
             // 
@@ -1000,7 +975,7 @@
             this.columnHeader14,
             this.columnHeader8,
             this.columnHeader9});
-            this.listViewViolation.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listViewViolation.Font = new System.Drawing.Font("Cambria", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listViewViolation.FullRowSelect = true;
             this.listViewViolation.GridLines = true;
             listViewGroup5.Header = "شناسه خودرو";
@@ -1030,52 +1005,52 @@
             // 
             // columnHeader5
             // 
-            this.columnHeader5.Text = "تصویر خودرو";
+            this.columnHeader5.Text = "Vehicle image";
             this.columnHeader5.Width = 176;
             // 
             // columnHeader7
             // 
             this.columnHeader7.DisplayIndex = 5;
-            this.columnHeader7.Text = "شناسه";
+            this.columnHeader7.Text = "ID";
             this.columnHeader7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.columnHeader7.Width = 117;
             // 
             // columnHeader6
             // 
             this.columnHeader6.DisplayIndex = 4;
-            this.columnHeader6.Text = "ناحیه";
+            this.columnHeader6.Text = "Lane";
             this.columnHeader6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.columnHeader6.Width = 90;
             // 
             // columnHeader14
             // 
-            this.columnHeader14.Text = "تعداد فریم";
+            this.columnHeader14.Text = "Frame number";
             this.columnHeader14.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.columnHeader14.Width = 94;
             // 
             // columnHeader8
             // 
             this.columnHeader8.DisplayIndex = 2;
-            this.columnHeader8.Text = "سرعت";
+            this.columnHeader8.Text = "Speed";
             this.columnHeader8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.columnHeader8.Width = 143;
             // 
             // columnHeader9
             // 
             this.columnHeader9.DisplayIndex = 1;
-            this.columnHeader9.Text = "تخلف";
+            this.columnHeader9.Text = "Violations?";
             this.columnHeader9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.columnHeader9.Width = 143;
             // 
             // trackBarViolationSet
             // 
             this.trackBarViolationSet.LargeChange = 10;
-            this.trackBarViolationSet.Location = new System.Drawing.Point(20, 17);
+            this.trackBarViolationSet.Location = new System.Drawing.Point(418, 6);
             this.trackBarViolationSet.Maximum = 120;
             this.trackBarViolationSet.Minimum = 40;
             this.trackBarViolationSet.Name = "trackBarViolationSet";
             this.trackBarViolationSet.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.trackBarViolationSet.Size = new System.Drawing.Size(582, 56);
+            this.trackBarViolationSet.Size = new System.Drawing.Size(498, 56);
             this.trackBarViolationSet.SmallChange = 5;
             this.trackBarViolationSet.TabIndex = 105;
             this.trackBarViolationSet.Value = 90;
@@ -1085,11 +1060,11 @@
             // 
             this.labelViolationSet.AutoSize = true;
             this.labelViolationSet.BackColor = System.Drawing.Color.Transparent;
-            this.labelViolationSet.Font = new System.Drawing.Font("B Titr", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.labelViolationSet.Location = new System.Drawing.Point(707, 17);
+            this.labelViolationSet.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelViolationSet.Location = new System.Drawing.Point(217, 13);
             this.labelViolationSet.Name = "labelViolationSet";
-            this.labelViolationSet.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelViolationSet.Size = new System.Drawing.Size(29, 36);
+            this.labelViolationSet.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.labelViolationSet.Size = new System.Drawing.Size(15, 20);
             this.labelViolationSet.TabIndex = 104;
             this.labelViolationSet.Text = "-";
             // 
@@ -1097,25 +1072,25 @@
             // 
             this.label27.AutoSize = true;
             this.label27.BackColor = System.Drawing.Color.Transparent;
-            this.label27.Font = new System.Drawing.Font("B Titr", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label27.Location = new System.Drawing.Point(615, 22);
+            this.label27.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(264, 20);
             this.label27.Name = "label27";
-            this.label27.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label27.Size = new System.Drawing.Size(102, 26);
+            this.label27.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label27.Size = new System.Drawing.Size(55, 20);
             this.label27.TabIndex = 103;
-            this.label27.Text = "کیلومتر در ساعت";
+            this.label27.Text = "Km/h";
             // 
             // label26
             // 
             this.label26.AutoSize = true;
             this.label26.BackColor = System.Drawing.Color.Transparent;
-            this.label26.Font = new System.Drawing.Font("B Titr", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label26.Location = new System.Drawing.Point(750, 22);
+            this.label26.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(15, 20);
             this.label26.Name = "label26";
-            this.label26.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label26.Size = new System.Drawing.Size(201, 26);
+            this.label26.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label26.Size = new System.Drawing.Size(162, 20);
             this.label26.TabIndex = 102;
-            this.label26.Text = "حداکثر سرعت مجاز تردد خودروها:";
+            this.label26.Text = "Max allowed speed:";
             // 
             // tabPage9
             // 
@@ -1129,20 +1104,20 @@
             this.tabPage9.Controls.Add(this.LoadXMLButton);
             this.tabPage9.Controls.Add(this.TextboxXMLLoader);
             this.tabPage9.Controls.Add(this.label24);
-            this.tabPage9.Location = new System.Drawing.Point(4, 29);
+            this.tabPage9.Location = new System.Drawing.Point(4, 26);
             this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Size = new System.Drawing.Size(930, 552);
+            this.tabPage9.Size = new System.Drawing.Size(930, 555);
             this.tabPage9.TabIndex = 5;
             this.tabPage9.Text = "Accuracy Asessment";
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("B Titr", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.button1.Location = new System.Drawing.Point(453, 210);
+            this.button1.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(432, 210);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(56, 31);
+            this.button1.Size = new System.Drawing.Size(92, 31);
             this.button1.TabIndex = 113;
-            this.button1.Text = "مقایسه";
+            this.button1.Text = "Compare";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -1186,35 +1161,35 @@
             // 
             // columnHeader10
             // 
-            this.columnHeader10.Text = "شناسه خودرو";
+            this.columnHeader10.Text = "VehicleID";
             this.columnHeader10.Width = 84;
             // 
             // columnHeader11
             // 
-            this.columnHeader11.Text = "ناحیه";
+            this.columnHeader11.Text = "ROI";
             this.columnHeader11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.columnHeader11.Width = 44;
             // 
             // columnHeader12
             // 
-            this.columnHeader12.Text = "فریم خروج";
+            this.columnHeader12.Text = "Exit frame";
             this.columnHeader12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.columnHeader12.Width = 66;
             // 
             // columnHeader13
             // 
-            this.columnHeader13.Text = "سرعت بدست آمده";
+            this.columnHeader13.Text = "Calculated Speed";
             this.columnHeader13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.columnHeader13.Width = 127;
             // 
             // LoadCalculatedXMLButton
             // 
-            this.LoadCalculatedXMLButton.Font = new System.Drawing.Font("B Titr", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.LoadCalculatedXMLButton.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoadCalculatedXMLButton.Location = new System.Drawing.Point(57, 39);
             this.LoadCalculatedXMLButton.Name = "LoadCalculatedXMLButton";
             this.LoadCalculatedXMLButton.Size = new System.Drawing.Size(56, 31);
             this.LoadCalculatedXMLButton.TabIndex = 110;
-            this.LoadCalculatedXMLButton.Text = "بارگذاری";
+            this.LoadCalculatedXMLButton.Text = "Load";
             this.LoadCalculatedXMLButton.UseVisualStyleBackColor = true;
             this.LoadCalculatedXMLButton.Click += new System.EventHandler(this.LoadCalculatedXMLButton_Click);
             // 
@@ -1232,14 +1207,13 @@
             // 
             this.label28.AutoSize = true;
             this.label28.BackColor = System.Drawing.Color.Transparent;
-            this.label28.Font = new System.Drawing.Font("B Titr", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label28.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.Location = new System.Drawing.Point(50, 13);
             this.label28.Name = "label28";
-            this.label28.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label28.Size = new System.Drawing.Size(486, 24);
+            this.label28.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label28.Size = new System.Drawing.Size(263, 20);
             this.label28.TabIndex = 109;
-            this.label28.Text = "ابتدا مسیر فایل XML شامل مقادیر اندازه گیری شده را وارد کنید و دکمه بارگذاری را ب" +
-    "فشارید:";
+            this.label28.Text = "Select calculated speed data (XML):";
             // 
             // listViewXMLLoad
             // 
@@ -1252,16 +1226,16 @@
             this.columnHeader4});
             this.listViewXMLLoad.FullRowSelect = true;
             this.listViewXMLLoad.GridLines = true;
-            listViewGroup13.Header = "شناسه خودرو";
+            listViewGroup13.Header = "Vehicle ID";
             listViewGroup13.HeaderAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             listViewGroup13.Name = "VehicleID";
-            listViewGroup14.Header = "ناحیه موردنظر";
+            listViewGroup14.Header = "ROI";
             listViewGroup14.HeaderAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             listViewGroup14.Name = "ROI";
-            listViewGroup15.Header = "موقعیت قبلی";
+            listViewGroup15.Header = "Prev. location";
             listViewGroup15.HeaderAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             listViewGroup15.Name = "PreviousLocation";
-            listViewGroup16.Header = "موقعیت فعلی";
+            listViewGroup16.Header = "Curr. location";
             listViewGroup16.HeaderAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             listViewGroup16.Name = "CurrentLocation";
             this.listViewXMLLoad.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
@@ -1281,35 +1255,35 @@
             // 
             // columnHeader1
             // 
-            this.columnHeader1.Text = "لاین";
+            this.columnHeader1.Text = "Lane";
             this.columnHeader1.Width = 84;
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "فریم ورود";
+            this.columnHeader2.Text = "Enter frame";
             this.columnHeader2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.columnHeader2.Width = 88;
             // 
             // columnHeader3
             // 
-            this.columnHeader3.Text = "فریم خروج";
+            this.columnHeader3.Text = "Exit frame";
             this.columnHeader3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.columnHeader3.Width = 78;
             // 
             // columnHeader4
             // 
-            this.columnHeader4.Text = "سرعت واقعی";
+            this.columnHeader4.Text = "Ground-truth speed";
             this.columnHeader4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.columnHeader4.Width = 88;
             // 
             // LoadXMLButton
             // 
-            this.LoadXMLButton.Font = new System.Drawing.Font("B Titr", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.LoadXMLButton.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoadXMLButton.Location = new System.Drawing.Point(555, 40);
             this.LoadXMLButton.Name = "LoadXMLButton";
             this.LoadXMLButton.Size = new System.Drawing.Size(56, 31);
             this.LoadXMLButton.TabIndex = 106;
-            this.LoadXMLButton.Text = "بارگذاری";
+            this.LoadXMLButton.Text = "Load";
             this.LoadXMLButton.UseVisualStyleBackColor = true;
             this.LoadXMLButton.Click += new System.EventHandler(this.LoadXMLButton_Click);
             // 
@@ -1327,14 +1301,13 @@
             // 
             this.label24.AutoSize = true;
             this.label24.BackColor = System.Drawing.Color.Transparent;
-            this.label24.Font = new System.Drawing.Font("B Titr", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label24.Location = new System.Drawing.Point(552, 13);
+            this.label24.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(554, 13);
             this.label24.Name = "label24";
-            this.label24.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label24.Size = new System.Drawing.Size(464, 24);
+            this.label24.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label24.Size = new System.Drawing.Size(235, 20);
             this.label24.TabIndex = 101;
-            this.label24.Text = "ابتدا مسیر فایل XML شامل مقادیر دنیای واقعی را وارد کنید و دکمه بارگذاری را بفشار" +
-    "ید:";
+            this.label24.Text = "Enter ground-truth data (XML):";
             // 
             // tabControl1
             // 
@@ -1562,10 +1535,10 @@
             this.tabPage5.Controls.Add(this.trackBar_mog_history);
             this.tabPage5.Controls.Add(this.label4);
             this.tabPage5.Controls.Add(this.label_mog_history);
-            this.tabPage5.Location = new System.Drawing.Point(4, 35);
+            this.tabPage5.Location = new System.Drawing.Point(4, 25);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(250, 340);
+            this.tabPage5.Size = new System.Drawing.Size(250, 350);
             this.tabPage5.TabIndex = 0;
             this.tabPage5.Text = "تفاضل پس زمینه";
             // 
@@ -1749,10 +1722,10 @@
             this.tabPage6.Controls.Add(this.label18);
             this.tabPage6.Controls.Add(this.trackBarErode);
             this.tabPage6.Controls.Add(this.label8);
-            this.tabPage6.Location = new System.Drawing.Point(4, 35);
+            this.tabPage6.Location = new System.Drawing.Point(4, 25);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(250, 340);
+            this.tabPage6.Size = new System.Drawing.Size(250, 350);
             this.tabPage6.TabIndex = 1;
             this.tabPage6.Text = "فیلترها";
             // 
@@ -1808,7 +1781,7 @@
             this.فایلToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.بازکردنویدئوToolStripMenuItem});
             this.فایلToolStripMenuItem.Name = "فایلToolStripMenuItem";
-            this.فایلToolStripMenuItem.Size = new System.Drawing.Size(45, 26);
+            this.فایلToolStripMenuItem.Size = new System.Drawing.Size(45, 21);
             this.فایلToolStripMenuItem.Text = "File";
             // 
             // بازکردنویدئوToolStripMenuItem
@@ -1823,7 +1796,7 @@
             this.راهنماToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.کیلدهایراهنماToolStripMenuItem});
             this.راهنماToolStripMenuItem.Name = "راهنماToolStripMenuItem";
-            this.راهنماToolStripMenuItem.Size = new System.Drawing.Size(48, 26);
+            this.راهنماToolStripMenuItem.Size = new System.Drawing.Size(48, 21);
             this.راهنماToolStripMenuItem.Text = "Edit";
             // 
             // کیلدهایراهنماToolStripMenuItem
@@ -1844,7 +1817,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.menuStrip1.Size = new System.Drawing.Size(1219, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(1219, 25);
             this.menuStrip1.TabIndex = 98;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -1854,7 +1827,7 @@
             this.میانبرهاToolStripMenuItem,
             this.دربارهToolStripMenuItem});
             this.راهنماToolStripMenuItem1.Name = "راهنماToolStripMenuItem1";
-            this.راهنماToolStripMenuItem1.Size = new System.Drawing.Size(51, 26);
+            this.راهنماToolStripMenuItem1.Size = new System.Drawing.Size(51, 21);
             this.راهنماToolStripMenuItem1.Text = "Help";
             // 
             // میانبرهاToolStripMenuItem
@@ -1906,6 +1879,16 @@
             this.checkBoxROIEnabled.TabIndex = 100;
             this.checkBoxROIEnabled.UseVisualStyleBackColor = true;
             this.checkBoxROIEnabled.CheckedChanged += new System.EventHandler(this.checkBoxROIEnabled_CheckedChanged);
+            // 
+            // labelMotionThresholdValue
+            // 
+            this.labelMotionThresholdValue.AutoSize = true;
+            this.labelMotionThresholdValue.Font = new System.Drawing.Font("Cambria", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMotionThresholdValue.Location = new System.Drawing.Point(457, 490);
+            this.labelMotionThresholdValue.Name = "labelMotionThresholdValue";
+            this.labelMotionThresholdValue.Size = new System.Drawing.Size(16, 22);
+            this.labelMotionThresholdValue.TabIndex = 103;
+            this.labelMotionThresholdValue.Text = "-";
             // 
             // Form1
             // 
@@ -2004,7 +1987,6 @@
         private System.Windows.Forms.Label label_ROI_size;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label violence_label;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label labelFps;
         private System.Windows.Forms.Label labelTotalFrames;
@@ -2109,7 +2091,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.TrackBar trackBarMotionThreshold;
-        private System.Windows.Forms.Label labelMotionThresholdValue;
         private System.Windows.Forms.TrackBar trackBarViolationSet;
         private System.Windows.Forms.Label labelViolationSet;
         private System.Windows.Forms.Label label27;
@@ -2133,6 +2114,7 @@
         private System.Windows.Forms.Button CalibrationConstantButton;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.TextBox CalibrationConstantTextbox;
+        private System.Windows.Forms.Label labelMotionThresholdValue;
     }
 }
 
