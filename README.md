@@ -10,10 +10,8 @@ The input of the system can be a video (default) or a series of images which nee
 
 ### Environment
 The project is implemented by **C#** EmguCV and AForge.Net image processing libraries.
-
-![](http://alitourani.ir/wp-content/uploads/AliTourani-SpeedMeasurement2.png)
-
-![Speed Measurement](http://alitourani.ir/wp-content/uploads/AliTourani-SpeedMeasurement1.png "Speed Measurement")
+![Speed Measurement](http://alitourani.ir/wp-content/uploads/ProjectSpeed1.png "Vehicle Speed Measurement")
+![Speed Measurement](http://alitourani.ir/wp-content/uploads/ProjectSpeed2.png "Vehicle Speed Measurement")
 
 ### Sample Performance
 You can see a sample performance of the system in this [link](https://www.youtube.com/watch?v=Qs-alxle-FU "link").
