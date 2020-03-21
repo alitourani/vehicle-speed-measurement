@@ -99,6 +99,7 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.pictureBoxPreprocess = new System.Windows.Forms.PictureBox();
             this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.labelMotionThresholdValue = new System.Windows.Forms.Label();
             this.trackBarMotionThreshold = new System.Windows.Forms.TrackBar();
             this.label25 = new System.Windows.Forms.Label();
             this.listViewTracking = new System.Windows.Forms.ListView();
@@ -116,9 +117,9 @@
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.trackBarViolationSet = new System.Windows.Forms.TrackBar();
-            this.labelViolationSet = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
+            this.labelViolationSet = new System.Windows.Forms.Label();
             this.tabPage9 = new System.Windows.Forms.TabPage();
             this.button1 = new System.Windows.Forms.Button();
             this.listViewCalculatedXML = new System.Windows.Forms.ListView();
@@ -183,7 +184,6 @@
             this.button_ImageSet = new System.Windows.Forms.Button();
             this.labelROIEnabled = new System.Windows.Forms.Label();
             this.checkBoxROIEnabled = new System.Windows.Forms.CheckBox();
-            this.labelMotionThresholdValue = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarErode)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarGaussian)).BeginInit();
@@ -331,23 +331,23 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.label3.Font = new System.Drawing.Font("B Nazanin", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label3.Location = new System.Drawing.Point(1108, 142);
+            this.label3.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(983, 142);
             this.label3.Name = "label3";
-            this.label3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label3.Size = new System.Drawing.Size(89, 23);
+            this.label3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label3.Size = new System.Drawing.Size(121, 17);
             this.label3.TabIndex = 53;
-            this.label3.Text = "نرخ فریم بر ثانیه:";
+            this.label3.Text = "Frame-rate (FPS):";
             // 
             // labelFps
             // 
             this.labelFps.AutoSize = true;
             this.labelFps.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelFps.Font = new System.Drawing.Font("B Nazanin", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.labelFps.Location = new System.Drawing.Point(1007, 142);
+            this.labelFps.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFps.Location = new System.Drawing.Point(1175, 142);
             this.labelFps.Name = "labelFps";
             this.labelFps.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelFps.Size = new System.Drawing.Size(16, 23);
+            this.labelFps.Size = new System.Drawing.Size(13, 17);
             this.labelFps.TabIndex = 54;
             this.labelFps.Text = "-";
             // 
@@ -355,11 +355,11 @@
             // 
             this.labelTotalFrames.AutoSize = true;
             this.labelTotalFrames.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelTotalFrames.Font = new System.Drawing.Font("B Nazanin", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.labelTotalFrames.Location = new System.Drawing.Point(1007, 164);
+            this.labelTotalFrames.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTotalFrames.Location = new System.Drawing.Point(1175, 164);
             this.labelTotalFrames.Name = "labelTotalFrames";
             this.labelTotalFrames.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelTotalFrames.Size = new System.Drawing.Size(16, 23);
+            this.labelTotalFrames.Size = new System.Drawing.Size(13, 17);
             this.labelTotalFrames.TabIndex = 56;
             this.labelTotalFrames.Text = "-";
             // 
@@ -367,58 +367,58 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.label5.Font = new System.Drawing.Font("B Nazanin", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label5.Location = new System.Drawing.Point(1106, 164);
+            this.label5.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(981, 164);
             this.label5.Name = "label5";
-            this.label5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label5.Size = new System.Drawing.Size(93, 23);
+            this.label5.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label5.Size = new System.Drawing.Size(125, 17);
             this.label5.TabIndex = 55;
-            this.label5.Text = "تعداد کل فریم ها:";
+            this.label5.Text = "Number of frames:";
             // 
             // buttonPlay
             // 
-            this.buttonPlay.Font = new System.Drawing.Font("B Titr", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.buttonPlay.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPlay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.buttonPlay.Location = new System.Drawing.Point(1041, 94);
             this.buttonPlay.Name = "buttonPlay";
             this.buttonPlay.Size = new System.Drawing.Size(45, 31);
             this.buttonPlay.TabIndex = 57;
-            this.buttonPlay.Text = "اجرا";
+            this.buttonPlay.Text = "Play";
             this.buttonPlay.UseVisualStyleBackColor = true;
             this.buttonPlay.Click += new System.EventHandler(this.buttonPlay_Click);
             // 
             // buttonPause
             // 
-            this.buttonPause.Font = new System.Drawing.Font("B Titr", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.buttonPause.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPause.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.buttonPause.Location = new System.Drawing.Point(1092, 94);
             this.buttonPause.Name = "buttonPause";
             this.buttonPause.Size = new System.Drawing.Size(45, 31);
             this.buttonPause.TabIndex = 58;
-            this.buttonPause.Text = "توقف";
+            this.buttonPause.Text = "Pause";
             this.buttonPause.UseVisualStyleBackColor = true;
             this.buttonPause.Click += new System.EventHandler(this.buttonPause_Click);
             // 
             // buttonPrevious
             // 
-            this.buttonPrevious.Font = new System.Drawing.Font("B Titr", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.buttonPrevious.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPrevious.Location = new System.Drawing.Point(981, 94);
             this.buttonPrevious.Name = "buttonPrevious";
             this.buttonPrevious.Size = new System.Drawing.Size(54, 31);
             this.buttonPrevious.TabIndex = 59;
-            this.buttonPrevious.Text = "فریم قبل";
+            this.buttonPrevious.Text = "Prev.";
             this.buttonPrevious.UseVisualStyleBackColor = true;
             this.buttonPrevious.Click += new System.EventHandler(this.buttonPrevious_Click);
             // 
             // buttonNext
             // 
-            this.buttonNext.Font = new System.Drawing.Font("B Titr", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.buttonNext.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonNext.Location = new System.Drawing.Point(1143, 94);
             this.buttonNext.Name = "buttonNext";
             this.buttonNext.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonNext.Size = new System.Drawing.Size(56, 31);
             this.buttonNext.TabIndex = 60;
-            this.buttonNext.Text = "فریم بعد";
+            this.buttonNext.Text = "Next";
             this.buttonNext.UseVisualStyleBackColor = true;
             this.buttonNext.Click += new System.EventHandler(this.buttonNext_Click);
             // 
@@ -426,11 +426,11 @@
             // 
             this.labelCurrent.AutoSize = true;
             this.labelCurrent.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelCurrent.Font = new System.Drawing.Font("B Nazanin", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.labelCurrent.Location = new System.Drawing.Point(1007, 188);
+            this.labelCurrent.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCurrent.Location = new System.Drawing.Point(1175, 188);
             this.labelCurrent.Name = "labelCurrent";
             this.labelCurrent.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelCurrent.Size = new System.Drawing.Size(16, 23);
+            this.labelCurrent.Size = new System.Drawing.Size(13, 17);
             this.labelCurrent.TabIndex = 62;
             this.labelCurrent.Text = "-";
             // 
@@ -438,13 +438,13 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.label6.Font = new System.Drawing.Font("B Nazanin", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label6.Location = new System.Drawing.Point(1130, 188);
+            this.label6.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(984, 188);
             this.label6.Name = "label6";
-            this.label6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label6.Size = new System.Drawing.Size(64, 23);
+            this.label6.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label6.Size = new System.Drawing.Size(100, 17);
             this.label6.TabIndex = 61;
-            this.label6.Text = "فریم جاری:";
+            this.label6.Text = "Current frame:";
             // 
             // trackBarErode
             // 
@@ -856,6 +856,16 @@
             this.tabPage7.TabIndex = 4;
             this.tabPage7.Text = "Speed Calculation";
             // 
+            // labelMotionThresholdValue
+            // 
+            this.labelMotionThresholdValue.AutoSize = true;
+            this.labelMotionThresholdValue.Font = new System.Drawing.Font("Cambria", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMotionThresholdValue.Location = new System.Drawing.Point(457, 490);
+            this.labelMotionThresholdValue.Name = "labelMotionThresholdValue";
+            this.labelMotionThresholdValue.Size = new System.Drawing.Size(16, 22);
+            this.labelMotionThresholdValue.TabIndex = 103;
+            this.labelMotionThresholdValue.Text = "-";
+            // 
             // trackBarMotionThreshold
             // 
             this.trackBarMotionThreshold.LargeChange = 50;
@@ -1056,18 +1066,6 @@
             this.trackBarViolationSet.Value = 90;
             this.trackBarViolationSet.Scroll += new System.EventHandler(this.trackBarViolationSet_Scroll);
             // 
-            // labelViolationSet
-            // 
-            this.labelViolationSet.AutoSize = true;
-            this.labelViolationSet.BackColor = System.Drawing.Color.Transparent;
-            this.labelViolationSet.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelViolationSet.Location = new System.Drawing.Point(217, 13);
-            this.labelViolationSet.Name = "labelViolationSet";
-            this.labelViolationSet.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.labelViolationSet.Size = new System.Drawing.Size(15, 20);
-            this.labelViolationSet.TabIndex = 104;
-            this.labelViolationSet.Text = "-";
-            // 
             // label27
             // 
             this.label27.AutoSize = true;
@@ -1091,6 +1089,18 @@
             this.label26.Size = new System.Drawing.Size(162, 20);
             this.label26.TabIndex = 102;
             this.label26.Text = "Max allowed speed:";
+            // 
+            // labelViolationSet
+            // 
+            this.labelViolationSet.AutoSize = true;
+            this.labelViolationSet.BackColor = System.Drawing.Color.Transparent;
+            this.labelViolationSet.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelViolationSet.Location = new System.Drawing.Point(217, 13);
+            this.labelViolationSet.Name = "labelViolationSet";
+            this.labelViolationSet.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.labelViolationSet.Size = new System.Drawing.Size(15, 20);
+            this.labelViolationSet.TabIndex = 104;
+            this.labelViolationSet.Text = "-";
             // 
             // tabPage9
             // 
@@ -1314,9 +1324,9 @@
             this.tabControl1.Controls.Add(this.tabPage8);
             this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Controls.Add(this.tabPage6);
+            this.tabControl1.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(952, 231);
             this.tabControl1.Name = "tabControl1";
-            this.tabControl1.RightToLeftLayout = true;
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(258, 379);
             this.tabControl1.TabIndex = 97;
@@ -1339,11 +1349,11 @@
             this.tabPage8.Controls.Add(this.label16);
             this.tabPage8.Controls.Add(this.labelVideoH);
             this.tabPage8.Controls.Add(this.label7);
-            this.tabPage8.Location = new System.Drawing.Point(4, 35);
+            this.tabPage8.Location = new System.Drawing.Point(4, 26);
             this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Size = new System.Drawing.Size(250, 340);
+            this.tabPage8.Size = new System.Drawing.Size(250, 349);
             this.tabPage8.TabIndex = 2;
-            this.tabPage8.Text = "میدان دید";
+            this.tabPage8.Text = "Basic Settings";
             // 
             // CalibrationConstantButton
             // 
@@ -1373,7 +1383,7 @@
             // 
             this.CalibrationConstantTextbox.Location = new System.Drawing.Point(51, 152);
             this.CalibrationConstantTextbox.Name = "CalibrationConstantTextbox";
-            this.CalibrationConstantTextbox.Size = new System.Drawing.Size(45, 34);
+            this.CalibrationConstantTextbox.Size = new System.Drawing.Size(45, 25);
             this.CalibrationConstantTextbox.TabIndex = 112;
             this.CalibrationConstantTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1382,7 +1392,7 @@
             this.labelPixelDensity.AutoSize = true;
             this.labelPixelDensity.BackColor = System.Drawing.Color.Transparent;
             this.labelPixelDensity.Font = new System.Drawing.Font("B Nazanin", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.labelPixelDensity.Location = new System.Drawing.Point(33, 198);
+            this.labelPixelDensity.Location = new System.Drawing.Point(209, 221);
             this.labelPixelDensity.Name = "labelPixelDensity";
             this.labelPixelDensity.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.labelPixelDensity.Size = new System.Drawing.Size(16, 23);
@@ -1393,13 +1403,13 @@
             // 
             this.label22.AutoSize = true;
             this.label22.BackColor = System.Drawing.Color.Transparent;
-            this.label22.Font = new System.Drawing.Font("B Titr", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label22.Location = new System.Drawing.Point(145, 195);
+            this.label22.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(11, 221);
             this.label22.Name = "label22";
-            this.label22.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label22.Size = new System.Drawing.Size(114, 26);
+            this.label22.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label22.Size = new System.Drawing.Size(159, 17);
             this.label22.TabIndex = 109;
-            this.label22.Text = "نسبت متر به پیکسل:";
+            this.label22.Text = "Meters to Pixels ratio:";
             this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Button_Ref_meter_Change
@@ -1431,7 +1441,7 @@
             this.labelROI_H.AutoSize = true;
             this.labelROI_H.BackColor = System.Drawing.Color.Transparent;
             this.labelROI_H.Font = new System.Drawing.Font("B Nazanin", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.labelROI_H.Location = new System.Drawing.Point(33, 83);
+            this.labelROI_H.Location = new System.Drawing.Point(209, 64);
             this.labelROI_H.Name = "labelROI_H";
             this.labelROI_H.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.labelROI_H.Size = new System.Drawing.Size(16, 23);
@@ -1442,20 +1452,20 @@
             // 
             this.label19.AutoSize = true;
             this.label19.BackColor = System.Drawing.Color.Transparent;
-            this.label19.Font = new System.Drawing.Font("B Titr", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label19.Location = new System.Drawing.Point(95, 80);
+            this.label19.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(11, 68);
             this.label19.Name = "label19";
-            this.label19.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label19.Size = new System.Drawing.Size(177, 26);
+            this.label19.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label19.Size = new System.Drawing.Size(116, 17);
             this.label19.TabIndex = 106;
-            this.label19.Text = "ناحیه موردنظر بر حسب پیکسل:";
+            this.label19.Text = "ROI Resolution:";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBox_Ref_meter
             // 
             this.textBox_Ref_meter.Location = new System.Drawing.Point(51, 112);
             this.textBox_Ref_meter.Name = "textBox_Ref_meter";
-            this.textBox_Ref_meter.Size = new System.Drawing.Size(45, 34);
+            this.textBox_Ref_meter.Size = new System.Drawing.Size(45, 25);
             this.textBox_Ref_meter.TabIndex = 105;
             this.textBox_Ref_meter.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1463,23 +1473,23 @@
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("B Nazanin", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label9.Location = new System.Drawing.Point(182, 45);
+            this.label9.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(11, 45);
             this.label9.Name = "label9";
-            this.label9.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label9.Size = new System.Drawing.Size(37, 23);
+            this.label9.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label9.Size = new System.Drawing.Size(54, 17);
             this.label9.TabIndex = 104;
-            this.label9.Text = "عرض:";
+            this.label9.Text = "Width:";
             // 
             // labelVideoW
             // 
             this.labelVideoW.AutoSize = true;
             this.labelVideoW.BackColor = System.Drawing.Color.Transparent;
-            this.labelVideoW.Font = new System.Drawing.Font("B Nazanin", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.labelVideoW.Location = new System.Drawing.Point(154, 45);
+            this.labelVideoW.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelVideoW.Location = new System.Drawing.Point(67, 45);
             this.labelVideoW.Name = "labelVideoW";
-            this.labelVideoW.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelVideoW.Size = new System.Drawing.Size(16, 23);
+            this.labelVideoW.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.labelVideoW.Size = new System.Drawing.Size(13, 17);
             this.labelVideoW.TabIndex = 103;
             this.labelVideoW.Text = "-";
             // 
@@ -1487,23 +1497,23 @@
             // 
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.Color.Transparent;
-            this.label16.Font = new System.Drawing.Font("B Nazanin", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label16.Location = new System.Drawing.Point(67, 45);
+            this.label16.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(116, 45);
             this.label16.Name = "label16";
-            this.label16.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label16.Size = new System.Drawing.Size(33, 23);
+            this.label16.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label16.Size = new System.Drawing.Size(58, 17);
             this.label16.TabIndex = 102;
-            this.label16.Text = "طول:";
+            this.label16.Text = "Height:";
             // 
             // labelVideoH
             // 
             this.labelVideoH.AutoSize = true;
             this.labelVideoH.BackColor = System.Drawing.Color.Transparent;
-            this.labelVideoH.Font = new System.Drawing.Font("B Nazanin", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.labelVideoH.Location = new System.Drawing.Point(33, 45);
+            this.labelVideoH.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelVideoH.Location = new System.Drawing.Point(187, 45);
             this.labelVideoH.Name = "labelVideoH";
-            this.labelVideoH.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelVideoH.Size = new System.Drawing.Size(16, 23);
+            this.labelVideoH.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.labelVideoH.Size = new System.Drawing.Size(13, 17);
             this.labelVideoH.TabIndex = 99;
             this.labelVideoH.Text = "-";
             // 
@@ -1511,13 +1521,13 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("B Titr", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label7.Location = new System.Drawing.Point(110, 14);
+            this.label7.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(11, 10);
             this.label7.Name = "label7";
-            this.label7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label7.Size = new System.Drawing.Size(158, 26);
+            this.label7.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label7.Size = new System.Drawing.Size(145, 17);
             this.label7.TabIndex = 101;
-            this.label7.Text = "ابعاد تصویر بر حسب پیکسل:";
+            this.label7.Text = "Resolution (pixels):";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tabPage5
@@ -1535,12 +1545,12 @@
             this.tabPage5.Controls.Add(this.trackBar_mog_history);
             this.tabPage5.Controls.Add(this.label4);
             this.tabPage5.Controls.Add(this.label_mog_history);
-            this.tabPage5.Location = new System.Drawing.Point(4, 25);
+            this.tabPage5.Location = new System.Drawing.Point(4, 26);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(250, 350);
+            this.tabPage5.Size = new System.Drawing.Size(250, 349);
             this.tabPage5.TabIndex = 0;
-            this.tabPage5.Text = "تفاضل پس زمینه";
+            this.tabPage5.Text = "Background Subtraction";
             // 
             // trackBar_mog_noiseSigma
             // 
@@ -1722,12 +1732,12 @@
             this.tabPage6.Controls.Add(this.label18);
             this.tabPage6.Controls.Add(this.trackBarErode);
             this.tabPage6.Controls.Add(this.label8);
-            this.tabPage6.Location = new System.Drawing.Point(4, 25);
+            this.tabPage6.Location = new System.Drawing.Point(4, 26);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(250, 350);
+            this.tabPage6.Size = new System.Drawing.Size(250, 349);
             this.tabPage6.TabIndex = 1;
-            this.tabPage6.Text = "فیلترها";
+            this.tabPage6.Text = "Filters";
             // 
             // trackBarFillHoles
             // 
@@ -1787,7 +1797,7 @@
             // بازکردنویدئوToolStripMenuItem
             // 
             this.بازکردنویدئوToolStripMenuItem.Name = "بازکردنویدئوToolStripMenuItem";
-            this.بازکردنویدئوToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.بازکردنویدئوToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
             this.بازکردنویدئوToolStripMenuItem.Text = "Open Video ...";
             this.بازکردنویدئوToolStripMenuItem.Click += new System.EventHandler(this.بازکردنویدئوToolStripMenuItem_Click);
             // 
@@ -1802,7 +1812,7 @@
             // کیلدهایراهنماToolStripMenuItem
             // 
             this.کیلدهایراهنماToolStripMenuItem.Name = "کیلدهایراهنماToolStripMenuItem";
-            this.کیلدهایراهنماToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.کیلدهایراهنماToolStripMenuItem.Size = new System.Drawing.Size(125, 26);
             this.کیلدهایراهنماToolStripMenuItem.Text = "Menu";
             // 
             // menuStrip1
@@ -1833,14 +1843,14 @@
             // میانبرهاToolStripMenuItem
             // 
             this.میانبرهاToolStripMenuItem.Name = "میانبرهاToolStripMenuItem";
-            this.میانبرهاToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.میانبرهاToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.میانبرهاToolStripMenuItem.Text = "Shortcuts";
             this.میانبرهاToolStripMenuItem.Click += new System.EventHandler(this.میانبرهاToolStripMenuItem_Click);
             // 
             // دربارهToolStripMenuItem
             // 
             this.دربارهToolStripMenuItem.Name = "دربارهToolStripMenuItem";
-            this.دربارهToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.دربارهToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.دربارهToolStripMenuItem.Text = "About";
             this.دربارهToolStripMenuItem.Click += new System.EventHandler(this.دربارهToolStripMenuItem_Click);
             // 
@@ -1879,16 +1889,6 @@
             this.checkBoxROIEnabled.TabIndex = 100;
             this.checkBoxROIEnabled.UseVisualStyleBackColor = true;
             this.checkBoxROIEnabled.CheckedChanged += new System.EventHandler(this.checkBoxROIEnabled_CheckedChanged);
-            // 
-            // labelMotionThresholdValue
-            // 
-            this.labelMotionThresholdValue.AutoSize = true;
-            this.labelMotionThresholdValue.Font = new System.Drawing.Font("Cambria", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMotionThresholdValue.Location = new System.Drawing.Point(457, 490);
-            this.labelMotionThresholdValue.Name = "labelMotionThresholdValue";
-            this.labelMotionThresholdValue.Size = new System.Drawing.Size(16, 22);
-            this.labelMotionThresholdValue.TabIndex = 103;
-            this.labelMotionThresholdValue.Text = "-";
             // 
             // Form1
             // 
