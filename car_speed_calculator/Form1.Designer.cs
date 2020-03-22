@@ -464,25 +464,25 @@
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("B Titr", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label8.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(184, 203);
             this.label8.Name = "label8";
-            this.label8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label8.Size = new System.Drawing.Size(46, 26);
+            this.label8.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label8.Size = new System.Drawing.Size(50, 17);
             this.label8.TabIndex = 67;
-            this.label8.Text = "کاهش";
+            this.label8.Text = "Erode";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("B Titr", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label10.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(164, 288);
             this.label10.Name = "label10";
-            this.label10.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label10.Size = new System.Drawing.Size(72, 26);
+            this.label10.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label10.Size = new System.Drawing.Size(71, 17);
             this.label10.TabIndex = 70;
-            this.label10.Text = "فیلتر گوسی";
+            this.label10.Text = "Gaussian";
             // 
             // trackBarGaussian
             // 
@@ -614,13 +614,13 @@
             // 
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Font = new System.Drawing.Font("B Titr", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label14.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(178, 242);
             this.label14.Name = "label14";
-            this.label14.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label14.Size = new System.Drawing.Size(53, 26);
+            this.label14.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label14.Size = new System.Drawing.Size(50, 17);
             this.label14.TabIndex = 82;
-            this.label14.Text = "گسترش";
+            this.label14.Text = "Dilate";
             // 
             // trackBarDilate
             // 
@@ -652,13 +652,13 @@
             // 
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Font = new System.Drawing.Font("B Titr", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label15.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(172, 101);
             this.label15.Name = "label15";
-            this.label15.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label15.Size = new System.Drawing.Size(61, 26);
+            this.label15.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label15.Size = new System.Drawing.Size(66, 17);
             this.label15.TabIndex = 86;
-            this.label15.Text = "باز کردن";
+            this.label15.Text = "Opening";
             // 
             // trackBarOpening
             // 
@@ -715,13 +715,13 @@
             // 
             this.label18.AutoSize = true;
             this.label18.BackColor = System.Drawing.Color.Transparent;
-            this.label18.Font = new System.Drawing.Font("B Titr", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label18.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.Location = new System.Drawing.Point(190, 16);
             this.label18.Name = "label18";
-            this.label18.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label18.Size = new System.Drawing.Size(38, 26);
+            this.label18.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label18.Size = new System.Drawing.Size(60, 17);
             this.label18.TabIndex = 90;
-            this.label18.Text = "بستن";
+            this.label18.Text = "Closing";
             // 
             // trackBarClosing
             // 
@@ -1357,12 +1357,12 @@
             // 
             // CalibrationConstantButton
             // 
-            this.CalibrationConstantButton.Font = new System.Drawing.Font("B Titr", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.CalibrationConstantButton.Location = new System.Drawing.Point(8, 151);
+            this.CalibrationConstantButton.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CalibrationConstantButton.Location = new System.Drawing.Point(184, 151);
             this.CalibrationConstantButton.Name = "CalibrationConstantButton";
-            this.CalibrationConstantButton.Size = new System.Drawing.Size(39, 31);
+            this.CalibrationConstantButton.Size = new System.Drawing.Size(59, 31);
             this.CalibrationConstantButton.TabIndex = 111;
-            this.CalibrationConstantButton.Text = "تغییر";
+            this.CalibrationConstantButton.Text = "Set";
             this.CalibrationConstantButton.UseVisualStyleBackColor = true;
             this.CalibrationConstantButton.Click += new System.EventHandler(this.CalibrationConstantButton_Click);
             // 
@@ -1370,18 +1370,18 @@
             // 
             this.label29.AutoSize = true;
             this.label29.BackColor = System.Drawing.Color.Transparent;
-            this.label29.Font = new System.Drawing.Font("B Titr", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label29.Location = new System.Drawing.Point(152, 155);
+            this.label29.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(3, 160);
             this.label29.Name = "label29";
-            this.label29.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label29.Size = new System.Drawing.Size(107, 26);
+            this.label29.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label29.Size = new System.Drawing.Size(133, 17);
             this.label29.TabIndex = 113;
-            this.label29.Text = "ثابت کالیبراسیون:";
+            this.label29.Text = "Calibration Const:";
             this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // CalibrationConstantTextbox
             // 
-            this.CalibrationConstantTextbox.Location = new System.Drawing.Point(51, 152);
+            this.CalibrationConstantTextbox.Location = new System.Drawing.Point(130, 152);
             this.CalibrationConstantTextbox.Name = "CalibrationConstantTextbox";
             this.CalibrationConstantTextbox.Size = new System.Drawing.Size(45, 25);
             this.CalibrationConstantTextbox.TabIndex = 112;
@@ -1414,12 +1414,12 @@
             // 
             // Button_Ref_meter_Change
             // 
-            this.Button_Ref_meter_Change.Font = new System.Drawing.Font("B Titr", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.Button_Ref_meter_Change.Location = new System.Drawing.Point(8, 111);
+            this.Button_Ref_meter_Change.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_Ref_meter_Change.Location = new System.Drawing.Point(184, 111);
             this.Button_Ref_meter_Change.Name = "Button_Ref_meter_Change";
-            this.Button_Ref_meter_Change.Size = new System.Drawing.Size(39, 31);
+            this.Button_Ref_meter_Change.Size = new System.Drawing.Size(59, 31);
             this.Button_Ref_meter_Change.TabIndex = 99;
-            this.Button_Ref_meter_Change.Text = "تغییر";
+            this.Button_Ref_meter_Change.Text = "Set";
             this.Button_Ref_meter_Change.UseVisualStyleBackColor = true;
             this.Button_Ref_meter_Change.Click += new System.EventHandler(this.Button_Ref_meter_Change_Click);
             // 
@@ -1427,13 +1427,13 @@
             // 
             this.label21.AutoSize = true;
             this.label21.BackColor = System.Drawing.Color.Transparent;
-            this.label21.Font = new System.Drawing.Font("B Titr", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label21.Location = new System.Drawing.Point(108, 115);
+            this.label21.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(11, 118);
             this.label21.Name = "label21";
-            this.label21.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label21.Size = new System.Drawing.Size(161, 26);
+            this.label21.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label21.Size = new System.Drawing.Size(100, 17);
             this.label21.TabIndex = 108;
-            this.label21.Text = "ناحیه موردنظر بر حسب متر:";
+            this.label21.Text = "ROI (meters):";
             this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // labelROI_H
@@ -1463,7 +1463,7 @@
             // 
             // textBox_Ref_meter
             // 
-            this.textBox_Ref_meter.Location = new System.Drawing.Point(51, 112);
+            this.textBox_Ref_meter.Location = new System.Drawing.Point(130, 112);
             this.textBox_Ref_meter.Name = "textBox_Ref_meter";
             this.textBox_Ref_meter.Size = new System.Drawing.Size(45, 25);
             this.textBox_Ref_meter.TabIndex = 105;
@@ -1567,13 +1567,13 @@
             // 
             this.label20.AutoSize = true;
             this.label20.BackColor = System.Drawing.Color.Transparent;
-            this.label20.Font = new System.Drawing.Font("B Titr", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label20.Location = new System.Drawing.Point(143, 203);
+            this.label20.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(13, 207);
             this.label20.Name = "label20";
-            this.label20.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label20.Size = new System.Drawing.Size(116, 26);
+            this.label20.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label20.Size = new System.Drawing.Size(86, 17);
             this.label20.TabIndex = 109;
-            this.label20.Text = "مقدار زیگمای نویز:";
+            this.label20.Text = "Noise sigma:";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label_mog_noiseSigma_
@@ -1604,13 +1604,13 @@
             // 
             this.label17.AutoSize = true;
             this.label17.BackColor = System.Drawing.Color.Transparent;
-            this.label17.Font = new System.Drawing.Font("B Titr", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label17.Location = new System.Drawing.Point(157, 136);
+            this.label17.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(13, 140);
             this.label17.Name = "label17";
-            this.label17.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label17.Size = new System.Drawing.Size(97, 26);
+            this.label17.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label17.Size = new System.Drawing.Size(121, 17);
             this.label17.TabIndex = 106;
-            this.label17.Text = "نسبت پس زمینه:";
+            this.label17.Text = "Background ratio:";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label_mog_backgroundRatio
@@ -1643,13 +1643,13 @@
             // 
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("B Titr", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label13.Location = new System.Drawing.Point(105, 73);
+            this.label13.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(13, 76);
             this.label13.Name = "label13";
-            this.label13.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label13.Size = new System.Drawing.Size(164, 26);
+            this.label13.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label13.Size = new System.Drawing.Size(208, 17);
             this.label13.TabIndex = 103;
-            this.label13.Text = "حداکثر تعداد پارامتر گوسی:";
+            this.label13.Text = "Max no. of Gaussian parameters:";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label_mog_nMixtures
@@ -1683,13 +1683,13 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("B Titr", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label4.Location = new System.Drawing.Point(58, 13);
+            this.label4.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(10, 17);
             this.label4.Name = "label4";
-            this.label4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label4.Size = new System.Drawing.Size(222, 26);
+            this.label4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label4.Size = new System.Drawing.Size(232, 17);
             this.label4.TabIndex = 100;
-            this.label4.Text = "تعداد فریم های درنظر گرفته شده قبلی:";
+            this.label4.Text = "Number of applied previous frames:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label_mog_history
@@ -1755,13 +1755,13 @@
             // 
             this.label23.AutoSize = true;
             this.label23.BackColor = System.Drawing.Color.Transparent;
-            this.label23.Font = new System.Drawing.Font("B Titr", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label23.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.Location = new System.Drawing.Point(173, 56);
             this.label23.Name = "label23";
-            this.label23.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label23.Size = new System.Drawing.Size(53, 26);
+            this.label23.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label23.Size = new System.Drawing.Size(31, 17);
             this.label23.TabIndex = 97;
-            this.label23.Text = "پرکردن";
+            this.label23.Text = "Fill";
             // 
             // checkBoxFillHoles
             // 
