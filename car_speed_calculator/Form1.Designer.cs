@@ -223,10 +223,10 @@
             this.button_select_video.BackColor = System.Drawing.Color.Transparent;
             this.button_select_video.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_select_video.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button_select_video.Location = new System.Drawing.Point(1092, 57);
+            this.button_select_video.Location = new System.Drawing.Point(1174, 57);
             this.button_select_video.Name = "button_select_video";
             this.button_select_video.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button_select_video.Size = new System.Drawing.Size(107, 31);
+            this.button_select_video.Size = new System.Drawing.Size(133, 31);
             this.button_select_video.TabIndex = 4;
             this.button_select_video.Text = "Choose Video ...";
             this.button_select_video.UseVisualStyleBackColor = false;
@@ -244,7 +244,7 @@
             // 
             this.labelSpeed.AutoSize = true;
             this.labelSpeed.Font = new System.Drawing.Font("Cambria", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSpeed.Location = new System.Drawing.Point(38, 490);
+            this.labelSpeed.Location = new System.Drawing.Point(16, 490);
             this.labelSpeed.Name = "labelSpeed";
             this.labelSpeed.Size = new System.Drawing.Size(162, 22);
             this.labelSpeed.TabIndex = 29;
@@ -254,7 +254,7 @@
             // 
             this.labelSpeedValue.AutoSize = true;
             this.labelSpeedValue.Font = new System.Drawing.Font("Cambria", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSpeedValue.Location = new System.Drawing.Point(248, 490);
+            this.labelSpeedValue.Location = new System.Drawing.Point(222, 490);
             this.labelSpeedValue.Name = "labelSpeedValue";
             this.labelSpeedValue.Size = new System.Drawing.Size(21, 22);
             this.labelSpeedValue.TabIndex = 30;
@@ -264,7 +264,7 @@
             // 
             this.KMPHLabel.AutoSize = true;
             this.KMPHLabel.Font = new System.Drawing.Font("Cambria", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.KMPHLabel.Location = new System.Drawing.Point(304, 490);
+            this.KMPHLabel.Location = new System.Drawing.Point(288, 490);
             this.KMPHLabel.Name = "KMPHLabel";
             this.KMPHLabel.Size = new System.Drawing.Size(61, 22);
             this.KMPHLabel.TabIndex = 31;
@@ -275,7 +275,7 @@
             this.SourceSelectLabel.AutoSize = true;
             this.SourceSelectLabel.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.SourceSelectLabel.Font = new System.Drawing.Font("Cambria", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SourceSelectLabel.Location = new System.Drawing.Point(1037, 25);
+            this.SourceSelectLabel.Location = new System.Drawing.Point(1104, 22);
             this.SourceSelectLabel.Name = "SourceSelectLabel";
             this.SourceSelectLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.SourceSelectLabel.Size = new System.Drawing.Size(126, 22);
@@ -286,7 +286,7 @@
             // 
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Cambria", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.Location = new System.Drawing.Point(1030, 660);
+            this.linkLabel1.Location = new System.Drawing.Point(1171, 661);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(176, 16);
             this.linkLabel1.TabIndex = 39;
@@ -310,7 +310,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(484, 660);
+            this.label1.Location = new System.Drawing.Point(552, 659);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(50, 17);
             this.label1.TabIndex = 50;
@@ -321,7 +321,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label2.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(294, 658);
+            this.label2.Location = new System.Drawing.Point(334, 657);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(54, 17);
             this.label2.TabIndex = 51;
@@ -332,7 +332,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label3.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(983, 142);
+            this.label3.Location = new System.Drawing.Point(1009, 141);
             this.label3.Name = "label3";
             this.label3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label3.Size = new System.Drawing.Size(121, 17);
@@ -344,7 +344,7 @@
             this.labelFps.AutoSize = true;
             this.labelFps.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.labelFps.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFps.Location = new System.Drawing.Point(1175, 142);
+            this.labelFps.Location = new System.Drawing.Point(1284, 141);
             this.labelFps.Name = "labelFps";
             this.labelFps.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.labelFps.Size = new System.Drawing.Size(13, 17);
@@ -356,7 +356,7 @@
             this.labelTotalFrames.AutoSize = true;
             this.labelTotalFrames.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.labelTotalFrames.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTotalFrames.Location = new System.Drawing.Point(1175, 164);
+            this.labelTotalFrames.Location = new System.Drawing.Point(1284, 167);
             this.labelTotalFrames.Name = "labelTotalFrames";
             this.labelTotalFrames.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.labelTotalFrames.Size = new System.Drawing.Size(13, 17);
@@ -368,7 +368,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label5.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(981, 164);
+            this.label5.Location = new System.Drawing.Point(1009, 167);
             this.label5.Name = "label5";
             this.label5.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label5.Size = new System.Drawing.Size(125, 17);
@@ -379,9 +379,9 @@
             // 
             this.buttonPlay.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPlay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.buttonPlay.Location = new System.Drawing.Point(1041, 94);
+            this.buttonPlay.Location = new System.Drawing.Point(1084, 94);
             this.buttonPlay.Name = "buttonPlay";
-            this.buttonPlay.Size = new System.Drawing.Size(45, 31);
+            this.buttonPlay.Size = new System.Drawing.Size(78, 31);
             this.buttonPlay.TabIndex = 57;
             this.buttonPlay.Text = "Play";
             this.buttonPlay.UseVisualStyleBackColor = true;
@@ -391,9 +391,9 @@
             // 
             this.buttonPause.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPause.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.buttonPause.Location = new System.Drawing.Point(1092, 94);
+            this.buttonPause.Location = new System.Drawing.Point(1174, 94);
             this.buttonPause.Name = "buttonPause";
-            this.buttonPause.Size = new System.Drawing.Size(45, 31);
+            this.buttonPause.Size = new System.Drawing.Size(68, 31);
             this.buttonPause.TabIndex = 58;
             this.buttonPause.Text = "Pause";
             this.buttonPause.UseVisualStyleBackColor = true;
@@ -402,9 +402,9 @@
             // buttonPrevious
             // 
             this.buttonPrevious.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPrevious.Location = new System.Drawing.Point(981, 94);
+            this.buttonPrevious.Location = new System.Drawing.Point(1004, 94);
             this.buttonPrevious.Name = "buttonPrevious";
-            this.buttonPrevious.Size = new System.Drawing.Size(54, 31);
+            this.buttonPrevious.Size = new System.Drawing.Size(74, 31);
             this.buttonPrevious.TabIndex = 59;
             this.buttonPrevious.Text = "Prev.";
             this.buttonPrevious.UseVisualStyleBackColor = true;
@@ -413,10 +413,10 @@
             // buttonNext
             // 
             this.buttonNext.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonNext.Location = new System.Drawing.Point(1143, 94);
+            this.buttonNext.Location = new System.Drawing.Point(1248, 94);
             this.buttonNext.Name = "buttonNext";
             this.buttonNext.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonNext.Size = new System.Drawing.Size(56, 31);
+            this.buttonNext.Size = new System.Drawing.Size(59, 31);
             this.buttonNext.TabIndex = 60;
             this.buttonNext.Text = "Next";
             this.buttonNext.UseVisualStyleBackColor = true;
@@ -427,7 +427,7 @@
             this.labelCurrent.AutoSize = true;
             this.labelCurrent.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.labelCurrent.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCurrent.Location = new System.Drawing.Point(1175, 188);
+            this.labelCurrent.Location = new System.Drawing.Point(1283, 192);
             this.labelCurrent.Name = "labelCurrent";
             this.labelCurrent.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.labelCurrent.Size = new System.Drawing.Size(13, 17);
@@ -439,7 +439,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label6.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(984, 188);
+            this.label6.Location = new System.Drawing.Point(1008, 192);
             this.label6.Name = "label6";
             this.label6.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label6.Size = new System.Drawing.Size(100, 17);
@@ -449,12 +449,12 @@
             // trackBarErode
             // 
             this.trackBarErode.LargeChange = 4;
-            this.trackBarErode.Location = new System.Drawing.Point(27, 210);
+            this.trackBarErode.Location = new System.Drawing.Point(116, 186);
             this.trackBarErode.Maximum = 12;
             this.trackBarErode.Minimum = 2;
             this.trackBarErode.Name = "trackBarErode";
             this.trackBarErode.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.trackBarErode.Size = new System.Drawing.Size(135, 56);
+            this.trackBarErode.Size = new System.Drawing.Size(232, 56);
             this.trackBarErode.SmallChange = 2;
             this.trackBarErode.TabIndex = 64;
             this.trackBarErode.Value = 10;
@@ -465,7 +465,7 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(184, 203);
+            this.label8.Location = new System.Drawing.Point(39, 183);
             this.label8.Name = "label8";
             this.label8.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label8.Size = new System.Drawing.Size(50, 17);
@@ -477,7 +477,7 @@
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(164, 288);
+            this.label10.Location = new System.Drawing.Point(39, 294);
             this.label10.Name = "label10";
             this.label10.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label10.Size = new System.Drawing.Size(71, 17);
@@ -487,12 +487,12 @@
             // trackBarGaussian
             // 
             this.trackBarGaussian.LargeChange = 10;
-            this.trackBarGaussian.Location = new System.Drawing.Point(27, 284);
+            this.trackBarGaussian.Location = new System.Drawing.Point(116, 284);
             this.trackBarGaussian.Maximum = 40;
             this.trackBarGaussian.Minimum = 5;
             this.trackBarGaussian.Name = "trackBarGaussian";
             this.trackBarGaussian.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.trackBarGaussian.Size = new System.Drawing.Size(135, 56);
+            this.trackBarGaussian.Size = new System.Drawing.Size(232, 56);
             this.trackBarGaussian.SmallChange = 5;
             this.trackBarGaussian.TabIndex = 69;
             this.trackBarGaussian.Value = 10;
@@ -501,13 +501,13 @@
             // trackBarRoiWidth
             // 
             this.trackBarRoiWidth.LargeChange = 10;
-            this.trackBarRoiWidth.Location = new System.Drawing.Point(434, 621);
+            this.trackBarRoiWidth.Location = new System.Drawing.Point(498, 621);
             this.trackBarRoiWidth.Margin = new System.Windows.Forms.Padding(1);
             this.trackBarRoiWidth.Maximum = 300;
             this.trackBarRoiWidth.Name = "trackBarRoiWidth";
             this.trackBarRoiWidth.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.trackBarRoiWidth.RightToLeftLayout = true;
-            this.trackBarRoiWidth.Size = new System.Drawing.Size(145, 56);
+            this.trackBarRoiWidth.Size = new System.Drawing.Size(172, 56);
             this.trackBarRoiWidth.SmallChange = 5;
             this.trackBarRoiWidth.TabIndex = 72;
             this.trackBarRoiWidth.Value = 200;
@@ -516,13 +516,13 @@
             // trackBarRoiH
             // 
             this.trackBarRoiH.LargeChange = 10;
-            this.trackBarRoiH.Location = new System.Drawing.Point(249, 621);
+            this.trackBarRoiH.Location = new System.Drawing.Point(275, 621);
             this.trackBarRoiH.Margin = new System.Windows.Forms.Padding(1);
             this.trackBarRoiH.Maximum = 300;
             this.trackBarRoiH.Name = "trackBarRoiH";
             this.trackBarRoiH.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.trackBarRoiH.RightToLeftLayout = true;
-            this.trackBarRoiH.Size = new System.Drawing.Size(145, 56);
+            this.trackBarRoiH.Size = new System.Drawing.Size(181, 56);
             this.trackBarRoiH.SmallChange = 5;
             this.trackBarRoiH.TabIndex = 73;
             this.trackBarRoiH.Value = 200;
@@ -531,13 +531,13 @@
             // trackBarRoiY
             // 
             this.trackBarRoiY.LargeChange = 10;
-            this.trackBarRoiY.Location = new System.Drawing.Point(625, 621);
+            this.trackBarRoiY.Location = new System.Drawing.Point(717, 621);
             this.trackBarRoiY.Margin = new System.Windows.Forms.Padding(1);
             this.trackBarRoiY.Maximum = 300;
             this.trackBarRoiY.Name = "trackBarRoiY";
             this.trackBarRoiY.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.trackBarRoiY.RightToLeftLayout = true;
-            this.trackBarRoiY.Size = new System.Drawing.Size(146, 56);
+            this.trackBarRoiY.Size = new System.Drawing.Size(183, 56);
             this.trackBarRoiY.SmallChange = 5;
             this.trackBarRoiY.TabIndex = 77;
             this.trackBarRoiY.Value = 200;
@@ -546,13 +546,13 @@
             // trackBarRoiX
             // 
             this.trackBarRoiX.LargeChange = 10;
-            this.trackBarRoiX.Location = new System.Drawing.Point(813, 621);
+            this.trackBarRoiX.Location = new System.Drawing.Point(928, 621);
             this.trackBarRoiX.Margin = new System.Windows.Forms.Padding(1);
             this.trackBarRoiX.Maximum = 500;
             this.trackBarRoiX.Name = "trackBarRoiX";
             this.trackBarRoiX.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.trackBarRoiX.RightToLeftLayout = true;
-            this.trackBarRoiX.Size = new System.Drawing.Size(146, 56);
+            this.trackBarRoiX.Size = new System.Drawing.Size(192, 56);
             this.trackBarRoiX.SmallChange = 5;
             this.trackBarRoiX.TabIndex = 76;
             this.trackBarRoiX.Value = 200;
@@ -563,7 +563,7 @@
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label11.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(632, 659);
+            this.label11.Location = new System.Drawing.Point(734, 659);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(140, 17);
             this.label11.TabIndex = 75;
@@ -574,7 +574,7 @@
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label12.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(809, 658);
+            this.label12.Location = new System.Drawing.Point(939, 658);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(161, 17);
             this.label12.TabIndex = 74;
@@ -583,7 +583,7 @@
             // checkBoxGaussianEnabled
             // 
             this.checkBoxGaussianEnabled.AutoSize = true;
-            this.checkBoxGaussianEnabled.Location = new System.Drawing.Point(224, 293);
+            this.checkBoxGaussianEnabled.Location = new System.Drawing.Point(11, 293);
             this.checkBoxGaussianEnabled.Name = "checkBoxGaussianEnabled";
             this.checkBoxGaussianEnabled.Size = new System.Drawing.Size(18, 17);
             this.checkBoxGaussianEnabled.TabIndex = 79;
@@ -593,7 +593,7 @@
             // checkBoxErode
             // 
             this.checkBoxErode.AutoSize = true;
-            this.checkBoxErode.Location = new System.Drawing.Point(224, 207);
+            this.checkBoxErode.Location = new System.Drawing.Point(11, 183);
             this.checkBoxErode.Name = "checkBoxErode";
             this.checkBoxErode.Size = new System.Drawing.Size(18, 17);
             this.checkBoxErode.TabIndex = 80;
@@ -603,7 +603,7 @@
             // checkBoxDilate
             // 
             this.checkBoxDilate.AutoSize = true;
-            this.checkBoxDilate.Location = new System.Drawing.Point(224, 247);
+            this.checkBoxDilate.Location = new System.Drawing.Point(11, 236);
             this.checkBoxDilate.Name = "checkBoxDilate";
             this.checkBoxDilate.Size = new System.Drawing.Size(18, 17);
             this.checkBoxDilate.TabIndex = 83;
@@ -615,7 +615,7 @@
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(178, 242);
+            this.label14.Location = new System.Drawing.Point(39, 236);
             this.label14.Name = "label14";
             this.label14.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label14.Size = new System.Drawing.Size(50, 17);
@@ -625,12 +625,12 @@
             // trackBarDilate
             // 
             this.trackBarDilate.LargeChange = 4;
-            this.trackBarDilate.Location = new System.Drawing.Point(27, 246);
+            this.trackBarDilate.Location = new System.Drawing.Point(116, 235);
             this.trackBarDilate.Maximum = 12;
             this.trackBarDilate.Minimum = 2;
             this.trackBarDilate.Name = "trackBarDilate";
             this.trackBarDilate.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.trackBarDilate.Size = new System.Drawing.Size(135, 56);
+            this.trackBarDilate.Size = new System.Drawing.Size(232, 56);
             this.trackBarDilate.SmallChange = 2;
             this.trackBarDilate.TabIndex = 81;
             this.trackBarDilate.Value = 12;
@@ -641,7 +641,7 @@
             this.checkBoxOpening.AutoSize = true;
             this.checkBoxOpening.Checked = true;
             this.checkBoxOpening.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBoxOpening.Location = new System.Drawing.Point(224, 105);
+            this.checkBoxOpening.Location = new System.Drawing.Point(11, 128);
             this.checkBoxOpening.Name = "checkBoxOpening";
             this.checkBoxOpening.Size = new System.Drawing.Size(18, 17);
             this.checkBoxOpening.TabIndex = 87;
@@ -653,7 +653,7 @@
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(172, 101);
+            this.label15.Location = new System.Drawing.Point(39, 128);
             this.label15.Name = "label15";
             this.label15.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label15.Size = new System.Drawing.Size(66, 17);
@@ -663,12 +663,12 @@
             // trackBarOpening
             // 
             this.trackBarOpening.LargeChange = 3;
-            this.trackBarOpening.Location = new System.Drawing.Point(27, 102);
+            this.trackBarOpening.Location = new System.Drawing.Point(116, 125);
             this.trackBarOpening.Maximum = 30;
             this.trackBarOpening.Minimum = 1;
             this.trackBarOpening.Name = "trackBarOpening";
             this.trackBarOpening.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.trackBarOpening.Size = new System.Drawing.Size(135, 56);
+            this.trackBarOpening.Size = new System.Drawing.Size(232, 56);
             this.trackBarOpening.TabIndex = 85;
             this.trackBarOpening.Value = 10;
             this.trackBarOpening.Scroll += new System.EventHandler(this.trackBarOpening_Scroll);
@@ -677,11 +677,11 @@
             // 
             this.labelOpeningValue.AutoSize = true;
             this.labelOpeningValue.BackColor = System.Drawing.Color.Transparent;
-            this.labelOpeningValue.Font = new System.Drawing.Font("B Titr", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.labelOpeningValue.Location = new System.Drawing.Point(10, 104);
+            this.labelOpeningValue.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelOpeningValue.Location = new System.Drawing.Point(354, 128);
             this.labelOpeningValue.Name = "labelOpeningValue";
             this.labelOpeningValue.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelOpeningValue.Size = new System.Drawing.Size(19, 21);
+            this.labelOpeningValue.Size = new System.Drawing.Size(13, 16);
             this.labelOpeningValue.TabIndex = 88;
             this.labelOpeningValue.Text = "-";
             this.labelOpeningValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -690,11 +690,11 @@
             // 
             this.labelClosingValue.AutoSize = true;
             this.labelClosingValue.BackColor = System.Drawing.Color.Transparent;
-            this.labelClosingValue.Font = new System.Drawing.Font("B Titr", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.labelClosingValue.Location = new System.Drawing.Point(10, 22);
+            this.labelClosingValue.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelClosingValue.Location = new System.Drawing.Point(354, 23);
             this.labelClosingValue.Name = "labelClosingValue";
             this.labelClosingValue.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelClosingValue.Size = new System.Drawing.Size(19, 21);
+            this.labelClosingValue.Size = new System.Drawing.Size(13, 16);
             this.labelClosingValue.TabIndex = 92;
             this.labelClosingValue.Text = "-";
             this.labelClosingValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -704,7 +704,7 @@
             this.checkBoxClosing.AutoSize = true;
             this.checkBoxClosing.Checked = true;
             this.checkBoxClosing.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBoxClosing.Location = new System.Drawing.Point(224, 23);
+            this.checkBoxClosing.Location = new System.Drawing.Point(11, 23);
             this.checkBoxClosing.Name = "checkBoxClosing";
             this.checkBoxClosing.Size = new System.Drawing.Size(18, 17);
             this.checkBoxClosing.TabIndex = 91;
@@ -716,7 +716,7 @@
             this.label18.AutoSize = true;
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(190, 16);
+            this.label18.Location = new System.Drawing.Point(39, 23);
             this.label18.Name = "label18";
             this.label18.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label18.Size = new System.Drawing.Size(60, 17);
@@ -726,12 +726,12 @@
             // trackBarClosing
             // 
             this.trackBarClosing.LargeChange = 3;
-            this.trackBarClosing.Location = new System.Drawing.Point(27, 19);
+            this.trackBarClosing.Location = new System.Drawing.Point(116, 19);
             this.trackBarClosing.Maximum = 30;
             this.trackBarClosing.Minimum = 1;
             this.trackBarClosing.Name = "trackBarClosing";
             this.trackBarClosing.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.trackBarClosing.Size = new System.Drawing.Size(135, 56);
+            this.trackBarClosing.Size = new System.Drawing.Size(233, 56);
             this.trackBarClosing.TabIndex = 89;
             this.trackBarClosing.Value = 10;
             this.trackBarClosing.Scroll += new System.EventHandler(this.trackBarClosing_Scroll);
@@ -740,11 +740,11 @@
             // 
             this.labelErodeValue.AutoSize = true;
             this.labelErodeValue.BackColor = System.Drawing.Color.Transparent;
-            this.labelErodeValue.Font = new System.Drawing.Font("B Titr", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.labelErodeValue.Location = new System.Drawing.Point(10, 209);
+            this.labelErodeValue.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelErodeValue.Location = new System.Drawing.Point(354, 186);
             this.labelErodeValue.Name = "labelErodeValue";
             this.labelErodeValue.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelErodeValue.Size = new System.Drawing.Size(19, 21);
+            this.labelErodeValue.Size = new System.Drawing.Size(13, 16);
             this.labelErodeValue.TabIndex = 93;
             this.labelErodeValue.Text = "-";
             this.labelErodeValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -753,11 +753,11 @@
             // 
             this.labelDilateValue.AutoSize = true;
             this.labelDilateValue.BackColor = System.Drawing.Color.Transparent;
-            this.labelDilateValue.Font = new System.Drawing.Font("B Titr", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.labelDilateValue.Location = new System.Drawing.Point(10, 246);
+            this.labelDilateValue.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDilateValue.Location = new System.Drawing.Point(354, 236);
             this.labelDilateValue.Name = "labelDilateValue";
             this.labelDilateValue.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelDilateValue.Size = new System.Drawing.Size(19, 21);
+            this.labelDilateValue.Size = new System.Drawing.Size(13, 16);
             this.labelDilateValue.TabIndex = 94;
             this.labelDilateValue.Text = "-";
             this.labelDilateValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -766,11 +766,11 @@
             // 
             this.labelGaussianValue.AutoSize = true;
             this.labelGaussianValue.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelGaussianValue.Font = new System.Drawing.Font("B Titr", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.labelGaussianValue.Location = new System.Drawing.Point(10, 293);
+            this.labelGaussianValue.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelGaussianValue.Location = new System.Drawing.Point(354, 294);
             this.labelGaussianValue.Name = "labelGaussianValue";
             this.labelGaussianValue.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelGaussianValue.Size = new System.Drawing.Size(19, 21);
+            this.labelGaussianValue.Size = new System.Drawing.Size(13, 16);
             this.labelGaussianValue.TabIndex = 95;
             this.labelGaussianValue.Text = "-";
             this.labelGaussianValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -860,7 +860,7 @@
             // 
             this.labelMotionThresholdValue.AutoSize = true;
             this.labelMotionThresholdValue.Font = new System.Drawing.Font("Cambria", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMotionThresholdValue.Location = new System.Drawing.Point(457, 490);
+            this.labelMotionThresholdValue.Location = new System.Drawing.Point(507, 490);
             this.labelMotionThresholdValue.Name = "labelMotionThresholdValue";
             this.labelMotionThresholdValue.Size = new System.Drawing.Size(16, 22);
             this.labelMotionThresholdValue.TabIndex = 103;
@@ -869,12 +869,12 @@
             // trackBarMotionThreshold
             // 
             this.trackBarMotionThreshold.LargeChange = 50;
-            this.trackBarMotionThreshold.Location = new System.Drawing.Point(252, 401);
+            this.trackBarMotionThreshold.Location = new System.Drawing.Point(212, 401);
             this.trackBarMotionThreshold.Maximum = 300;
             this.trackBarMotionThreshold.Minimum = 1;
             this.trackBarMotionThreshold.Name = "trackBarMotionThreshold";
             this.trackBarMotionThreshold.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.trackBarMotionThreshold.Size = new System.Drawing.Size(287, 56);
+            this.trackBarMotionThreshold.Size = new System.Drawing.Size(327, 56);
             this.trackBarMotionThreshold.TabIndex = 102;
             this.trackBarMotionThreshold.Value = 3;
             this.trackBarMotionThreshold.Scroll += new System.EventHandler(this.trackBarMotionThreshold_Scroll);
@@ -883,7 +883,7 @@
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(16, 416);
+            this.label25.Location = new System.Drawing.Point(16, 410);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(190, 20);
             this.label25.TabIndex = 54;
@@ -899,7 +899,7 @@
             this.columnROI,
             this.columnPPrev,
             this.columnPCurr});
-            this.listViewTracking.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listViewTracking.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listViewTracking.FullRowSelect = true;
             this.listViewTracking.GridLines = true;
             listViewGroup1.Header = "شناسه خودرو";
@@ -923,7 +923,6 @@
             this.listViewTracking.HoverSelection = true;
             this.listViewTracking.Location = new System.Drawing.Point(559, 16);
             this.listViewTracking.Name = "listViewTracking";
-            this.listViewTracking.RightToLeftLayout = true;
             this.listViewTracking.Size = new System.Drawing.Size(351, 517);
             this.listViewTracking.TabIndex = 53;
             this.listViewTracking.UseCompatibleStateImageBehavior = false;
@@ -1006,9 +1005,9 @@
             listViewGroup7,
             listViewGroup8});
             this.listViewViolation.HideSelection = false;
-            this.listViewViolation.Location = new System.Drawing.Point(87, 68);
+            this.listViewViolation.Location = new System.Drawing.Point(19, 68);
             this.listViewViolation.Name = "listViewViolation";
-            this.listViewViolation.Size = new System.Drawing.Size(788, 466);
+            this.listViewViolation.Size = new System.Drawing.Size(886, 466);
             this.listViewViolation.TabIndex = 106;
             this.listViewViolation.UseCompatibleStateImageBehavior = false;
             this.listViewViolation.View = System.Windows.Forms.View.Details;
@@ -1095,7 +1094,7 @@
             this.labelViolationSet.AutoSize = true;
             this.labelViolationSet.BackColor = System.Drawing.Color.Transparent;
             this.labelViolationSet.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelViolationSet.Location = new System.Drawing.Point(217, 13);
+            this.labelViolationSet.Location = new System.Drawing.Point(214, 20);
             this.labelViolationSet.Name = "labelViolationSet";
             this.labelViolationSet.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.labelViolationSet.Size = new System.Drawing.Size(15, 20);
@@ -1123,9 +1122,9 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(432, 210);
+            this.button1.Location = new System.Drawing.Point(417, 300);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(92, 31);
+            this.button1.Size = new System.Drawing.Size(115, 31);
             this.button1.TabIndex = 113;
             this.button1.Text = "Compare";
             this.button1.UseVisualStyleBackColor = true;
@@ -1140,6 +1139,7 @@
             this.columnHeader11,
             this.columnHeader12,
             this.columnHeader13});
+            this.listViewCalculatedXML.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listViewCalculatedXML.FullRowSelect = true;
             this.listViewCalculatedXML.GridLines = true;
             listViewGroup9.Header = "شناسه خودرو";
@@ -1160,11 +1160,10 @@
             listViewGroup11,
             listViewGroup12});
             this.listViewCalculatedXML.HideSelection = false;
-            this.listViewCalculatedXML.Location = new System.Drawing.Point(57, 77);
+            this.listViewCalculatedXML.Location = new System.Drawing.Point(15, 77);
             this.listViewCalculatedXML.MultiSelect = false;
             this.listViewCalculatedXML.Name = "listViewCalculatedXML";
-            this.listViewCalculatedXML.RightToLeftLayout = true;
-            this.listViewCalculatedXML.Size = new System.Drawing.Size(351, 458);
+            this.listViewCalculatedXML.Size = new System.Drawing.Size(396, 458);
             this.listViewCalculatedXML.TabIndex = 112;
             this.listViewCalculatedXML.UseCompatibleStateImageBehavior = false;
             this.listViewCalculatedXML.View = System.Windows.Forms.View.Details;
@@ -1184,18 +1183,18 @@
             // 
             this.columnHeader12.Text = "Exit frame";
             this.columnHeader12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader12.Width = 66;
+            this.columnHeader12.Width = 99;
             // 
             // columnHeader13
             // 
             this.columnHeader13.Text = "Calculated Speed";
             this.columnHeader13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader13.Width = 127;
+            this.columnHeader13.Width = 161;
             // 
             // LoadCalculatedXMLButton
             // 
             this.LoadCalculatedXMLButton.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LoadCalculatedXMLButton.Location = new System.Drawing.Point(57, 39);
+            this.LoadCalculatedXMLButton.Location = new System.Drawing.Point(15, 40);
             this.LoadCalculatedXMLButton.Name = "LoadCalculatedXMLButton";
             this.LoadCalculatedXMLButton.Size = new System.Drawing.Size(56, 31);
             this.LoadCalculatedXMLButton.TabIndex = 110;
@@ -1205,11 +1204,11 @@
             // 
             // textBoxCalculatedXMLLoader
             // 
-            this.textBoxCalculatedXMLLoader.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCalculatedXMLLoader.Location = new System.Drawing.Point(117, 44);
+            this.textBoxCalculatedXMLLoader.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCalculatedXMLLoader.Location = new System.Drawing.Point(77, 44);
             this.textBoxCalculatedXMLLoader.Name = "textBoxCalculatedXMLLoader";
             this.textBoxCalculatedXMLLoader.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBoxCalculatedXMLLoader.Size = new System.Drawing.Size(294, 26);
+            this.textBoxCalculatedXMLLoader.Size = new System.Drawing.Size(334, 23);
             this.textBoxCalculatedXMLLoader.TabIndex = 111;
             this.textBoxCalculatedXMLLoader.Text = "E:\\Dataset\\Dataset II - Speed Measurement\\Report.xml";
             // 
@@ -1218,7 +1217,7 @@
             this.label28.AutoSize = true;
             this.label28.BackColor = System.Drawing.Color.Transparent;
             this.label28.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(50, 13);
+            this.label28.Location = new System.Drawing.Point(11, 13);
             this.label28.Name = "label28";
             this.label28.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label28.Size = new System.Drawing.Size(263, 20);
@@ -1234,6 +1233,7 @@
             this.columnHeader2,
             this.columnHeader3,
             this.columnHeader4});
+            this.listViewXMLLoad.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listViewXMLLoad.FullRowSelect = true;
             this.listViewXMLLoad.GridLines = true;
             listViewGroup13.Header = "Vehicle ID";
@@ -1254,11 +1254,10 @@
             listViewGroup15,
             listViewGroup16});
             this.listViewXMLLoad.HideSelection = false;
-            this.listViewXMLLoad.Location = new System.Drawing.Point(558, 77);
+            this.listViewXMLLoad.Location = new System.Drawing.Point(539, 77);
             this.listViewXMLLoad.MultiSelect = false;
             this.listViewXMLLoad.Name = "listViewXMLLoad";
-            this.listViewXMLLoad.RightToLeftLayout = true;
-            this.listViewXMLLoad.Size = new System.Drawing.Size(351, 458);
+            this.listViewXMLLoad.Size = new System.Drawing.Size(378, 458);
             this.listViewXMLLoad.TabIndex = 108;
             this.listViewXMLLoad.UseCompatibleStateImageBehavior = false;
             this.listViewXMLLoad.View = System.Windows.Forms.View.Details;
@@ -1266,7 +1265,7 @@
             // columnHeader1
             // 
             this.columnHeader1.Text = "Lane";
-            this.columnHeader1.Width = 84;
+            this.columnHeader1.Width = 61;
             // 
             // columnHeader2
             // 
@@ -1284,12 +1283,12 @@
             // 
             this.columnHeader4.Text = "Ground-truth speed";
             this.columnHeader4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader4.Width = 88;
+            this.columnHeader4.Width = 138;
             // 
             // LoadXMLButton
             // 
             this.LoadXMLButton.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LoadXMLButton.Location = new System.Drawing.Point(555, 40);
+            this.LoadXMLButton.Location = new System.Drawing.Point(539, 40);
             this.LoadXMLButton.Name = "LoadXMLButton";
             this.LoadXMLButton.Size = new System.Drawing.Size(56, 31);
             this.LoadXMLButton.TabIndex = 106;
@@ -1299,11 +1298,11 @@
             // 
             // TextboxXMLLoader
             // 
-            this.TextboxXMLLoader.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextboxXMLLoader.Location = new System.Drawing.Point(615, 45);
+            this.TextboxXMLLoader.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextboxXMLLoader.Location = new System.Drawing.Point(601, 45);
             this.TextboxXMLLoader.Name = "TextboxXMLLoader";
             this.TextboxXMLLoader.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.TextboxXMLLoader.Size = new System.Drawing.Size(294, 26);
+            this.TextboxXMLLoader.Size = new System.Drawing.Size(316, 23);
             this.TextboxXMLLoader.TabIndex = 107;
             this.TextboxXMLLoader.Text = "E:\\Dataset\\Dataset II - Speed Measurement\\Set01_video01.xml";
             // 
@@ -1312,7 +1311,7 @@
             this.label24.AutoSize = true;
             this.label24.BackColor = System.Drawing.Color.Transparent;
             this.label24.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(554, 13);
+            this.label24.Location = new System.Drawing.Point(535, 13);
             this.label24.Name = "label24";
             this.label24.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label24.Size = new System.Drawing.Size(235, 20);
@@ -1328,7 +1327,7 @@
             this.tabControl1.Location = new System.Drawing.Point(952, 231);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(258, 379);
+            this.tabControl1.Size = new System.Drawing.Size(400, 379);
             this.tabControl1.TabIndex = 97;
             // 
             // tabPage8
@@ -1351,16 +1350,16 @@
             this.tabPage8.Controls.Add(this.label7);
             this.tabPage8.Location = new System.Drawing.Point(4, 26);
             this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Size = new System.Drawing.Size(250, 349);
+            this.tabPage8.Size = new System.Drawing.Size(397, 349);
             this.tabPage8.TabIndex = 2;
             this.tabPage8.Text = "Basic Settings";
             // 
             // CalibrationConstantButton
             // 
             this.CalibrationConstantButton.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CalibrationConstantButton.Location = new System.Drawing.Point(184, 151);
+            this.CalibrationConstantButton.Location = new System.Drawing.Point(299, 148);
             this.CalibrationConstantButton.Name = "CalibrationConstantButton";
-            this.CalibrationConstantButton.Size = new System.Drawing.Size(59, 31);
+            this.CalibrationConstantButton.Size = new System.Drawing.Size(73, 31);
             this.CalibrationConstantButton.TabIndex = 111;
             this.CalibrationConstantButton.Text = "Set";
             this.CalibrationConstantButton.UseVisualStyleBackColor = true;
@@ -1371,7 +1370,7 @@
             this.label29.AutoSize = true;
             this.label29.BackColor = System.Drawing.Color.Transparent;
             this.label29.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(3, 160);
+            this.label29.Location = new System.Drawing.Point(11, 156);
             this.label29.Name = "label29";
             this.label29.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label29.Size = new System.Drawing.Size(133, 17);
@@ -1381,9 +1380,9 @@
             // 
             // CalibrationConstantTextbox
             // 
-            this.CalibrationConstantTextbox.Location = new System.Drawing.Point(130, 152);
+            this.CalibrationConstantTextbox.Location = new System.Drawing.Point(188, 152);
             this.CalibrationConstantTextbox.Name = "CalibrationConstantTextbox";
-            this.CalibrationConstantTextbox.Size = new System.Drawing.Size(45, 25);
+            this.CalibrationConstantTextbox.Size = new System.Drawing.Size(105, 25);
             this.CalibrationConstantTextbox.TabIndex = 112;
             this.CalibrationConstantTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1391,11 +1390,11 @@
             // 
             this.labelPixelDensity.AutoSize = true;
             this.labelPixelDensity.BackColor = System.Drawing.Color.Transparent;
-            this.labelPixelDensity.Font = new System.Drawing.Font("B Nazanin", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.labelPixelDensity.Location = new System.Drawing.Point(209, 221);
+            this.labelPixelDensity.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPixelDensity.Location = new System.Drawing.Point(327, 195);
             this.labelPixelDensity.Name = "labelPixelDensity";
-            this.labelPixelDensity.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelPixelDensity.Size = new System.Drawing.Size(16, 23);
+            this.labelPixelDensity.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.labelPixelDensity.Size = new System.Drawing.Size(13, 17);
             this.labelPixelDensity.TabIndex = 110;
             this.labelPixelDensity.Text = "-";
             // 
@@ -1404,7 +1403,7 @@
             this.label22.AutoSize = true;
             this.label22.BackColor = System.Drawing.Color.Transparent;
             this.label22.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(11, 221);
+            this.label22.Location = new System.Drawing.Point(10, 195);
             this.label22.Name = "label22";
             this.label22.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label22.Size = new System.Drawing.Size(159, 17);
@@ -1415,9 +1414,9 @@
             // Button_Ref_meter_Change
             // 
             this.Button_Ref_meter_Change.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_Ref_meter_Change.Location = new System.Drawing.Point(184, 111);
+            this.Button_Ref_meter_Change.Location = new System.Drawing.Point(299, 107);
             this.Button_Ref_meter_Change.Name = "Button_Ref_meter_Change";
-            this.Button_Ref_meter_Change.Size = new System.Drawing.Size(59, 31);
+            this.Button_Ref_meter_Change.Size = new System.Drawing.Size(73, 31);
             this.Button_Ref_meter_Change.TabIndex = 99;
             this.Button_Ref_meter_Change.Text = "Set";
             this.Button_Ref_meter_Change.UseVisualStyleBackColor = true;
@@ -1428,7 +1427,7 @@
             this.label21.AutoSize = true;
             this.label21.BackColor = System.Drawing.Color.Transparent;
             this.label21.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(11, 118);
+            this.label21.Location = new System.Drawing.Point(11, 114);
             this.label21.Name = "label21";
             this.label21.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label21.Size = new System.Drawing.Size(100, 17);
@@ -1440,11 +1439,11 @@
             // 
             this.labelROI_H.AutoSize = true;
             this.labelROI_H.BackColor = System.Drawing.Color.Transparent;
-            this.labelROI_H.Font = new System.Drawing.Font("B Nazanin", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.labelROI_H.Location = new System.Drawing.Point(209, 64);
+            this.labelROI_H.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelROI_H.Location = new System.Drawing.Point(325, 75);
             this.labelROI_H.Name = "labelROI_H";
-            this.labelROI_H.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelROI_H.Size = new System.Drawing.Size(16, 23);
+            this.labelROI_H.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.labelROI_H.Size = new System.Drawing.Size(13, 17);
             this.labelROI_H.TabIndex = 107;
             this.labelROI_H.Text = "-";
             // 
@@ -1453,7 +1452,7 @@
             this.label19.AutoSize = true;
             this.label19.BackColor = System.Drawing.Color.Transparent;
             this.label19.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(11, 68);
+            this.label19.Location = new System.Drawing.Point(11, 76);
             this.label19.Name = "label19";
             this.label19.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label19.Size = new System.Drawing.Size(116, 17);
@@ -1463,9 +1462,9 @@
             // 
             // textBox_Ref_meter
             // 
-            this.textBox_Ref_meter.Location = new System.Drawing.Point(130, 112);
+            this.textBox_Ref_meter.Location = new System.Drawing.Point(188, 111);
             this.textBox_Ref_meter.Name = "textBox_Ref_meter";
-            this.textBox_Ref_meter.Size = new System.Drawing.Size(45, 25);
+            this.textBox_Ref_meter.Size = new System.Drawing.Size(105, 25);
             this.textBox_Ref_meter.TabIndex = 105;
             this.textBox_Ref_meter.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1474,7 +1473,7 @@
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(11, 45);
+            this.label9.Location = new System.Drawing.Point(25, 41);
             this.label9.Name = "label9";
             this.label9.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label9.Size = new System.Drawing.Size(54, 17);
@@ -1486,7 +1485,7 @@
             this.labelVideoW.AutoSize = true;
             this.labelVideoW.BackColor = System.Drawing.Color.Transparent;
             this.labelVideoW.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelVideoW.Location = new System.Drawing.Point(67, 45);
+            this.labelVideoW.Location = new System.Drawing.Point(107, 41);
             this.labelVideoW.Name = "labelVideoW";
             this.labelVideoW.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.labelVideoW.Size = new System.Drawing.Size(13, 17);
@@ -1498,7 +1497,7 @@
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(116, 45);
+            this.label16.Location = new System.Drawing.Point(185, 41);
             this.label16.Name = "label16";
             this.label16.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label16.Size = new System.Drawing.Size(58, 17);
@@ -1510,7 +1509,7 @@
             this.labelVideoH.AutoSize = true;
             this.labelVideoH.BackColor = System.Drawing.Color.Transparent;
             this.labelVideoH.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelVideoH.Location = new System.Drawing.Point(187, 45);
+            this.labelVideoH.Location = new System.Drawing.Point(280, 41);
             this.labelVideoH.Name = "labelVideoH";
             this.labelVideoH.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.labelVideoH.Size = new System.Drawing.Size(13, 17);
@@ -1548,18 +1547,18 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 26);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(250, 349);
+            this.tabPage5.Size = new System.Drawing.Size(392, 349);
             this.tabPage5.TabIndex = 0;
             this.tabPage5.Text = "Background Subtraction";
             // 
             // trackBar_mog_noiseSigma
             // 
             this.trackBar_mog_noiseSigma.LargeChange = 2;
-            this.trackBar_mog_noiseSigma.Location = new System.Drawing.Point(34, 227);
+            this.trackBar_mog_noiseSigma.Location = new System.Drawing.Point(21, 283);
             this.trackBar_mog_noiseSigma.Maximum = 2;
             this.trackBar_mog_noiseSigma.Name = "trackBar_mog_noiseSigma";
             this.trackBar_mog_noiseSigma.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.trackBar_mog_noiseSigma.Size = new System.Drawing.Size(197, 56);
+            this.trackBar_mog_noiseSigma.Size = new System.Drawing.Size(273, 56);
             this.trackBar_mog_noiseSigma.TabIndex = 108;
             this.trackBar_mog_noiseSigma.Scroll += new System.EventHandler(this.trackBar_mog_noiseSigma_Scroll);
             // 
@@ -1568,7 +1567,7 @@
             this.label20.AutoSize = true;
             this.label20.BackColor = System.Drawing.Color.Transparent;
             this.label20.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(13, 207);
+            this.label20.Location = new System.Drawing.Point(18, 257);
             this.label20.Name = "label20";
             this.label20.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label20.Size = new System.Drawing.Size(86, 17);
@@ -1580,11 +1579,11 @@
             // 
             this.label_mog_noiseSigma_.AutoSize = true;
             this.label_mog_noiseSigma_.BackColor = System.Drawing.Color.Transparent;
-            this.label_mog_noiseSigma_.Font = new System.Drawing.Font("B Titr", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label_mog_noiseSigma_.Location = new System.Drawing.Point(13, 227);
+            this.label_mog_noiseSigma_.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_mog_noiseSigma_.Location = new System.Drawing.Point(342, 283);
             this.label_mog_noiseSigma_.Name = "label_mog_noiseSigma_";
             this.label_mog_noiseSigma_.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label_mog_noiseSigma_.Size = new System.Drawing.Size(19, 21);
+            this.label_mog_noiseSigma_.Size = new System.Drawing.Size(13, 16);
             this.label_mog_noiseSigma_.TabIndex = 110;
             this.label_mog_noiseSigma_.Text = "-";
             this.label_mog_noiseSigma_.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1592,10 +1591,10 @@
             // trackBar_mog_backgroundRatio
             // 
             this.trackBar_mog_backgroundRatio.LargeChange = 2;
-            this.trackBar_mog_backgroundRatio.Location = new System.Drawing.Point(35, 160);
+            this.trackBar_mog_backgroundRatio.Location = new System.Drawing.Point(21, 187);
             this.trackBar_mog_backgroundRatio.Name = "trackBar_mog_backgroundRatio";
             this.trackBar_mog_backgroundRatio.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.trackBar_mog_backgroundRatio.Size = new System.Drawing.Size(197, 56);
+            this.trackBar_mog_backgroundRatio.Size = new System.Drawing.Size(273, 56);
             this.trackBar_mog_backgroundRatio.TabIndex = 105;
             this.trackBar_mog_backgroundRatio.Value = 5;
             this.trackBar_mog_backgroundRatio.Scroll += new System.EventHandler(this.trackBar_mog_backgroundRatio_Scroll);
@@ -1605,7 +1604,7 @@
             this.label17.AutoSize = true;
             this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(13, 140);
+            this.label17.Location = new System.Drawing.Point(18, 167);
             this.label17.Name = "label17";
             this.label17.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label17.Size = new System.Drawing.Size(121, 17);
@@ -1617,23 +1616,23 @@
             // 
             this.label_mog_backgroundRatio.AutoSize = true;
             this.label_mog_backgroundRatio.BackColor = System.Drawing.Color.Transparent;
-            this.label_mog_backgroundRatio.Font = new System.Drawing.Font("B Titr", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label_mog_backgroundRatio.Location = new System.Drawing.Point(14, 160);
+            this.label_mog_backgroundRatio.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_mog_backgroundRatio.Location = new System.Drawing.Point(342, 187);
             this.label_mog_backgroundRatio.Name = "label_mog_backgroundRatio";
             this.label_mog_backgroundRatio.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label_mog_backgroundRatio.Size = new System.Drawing.Size(19, 21);
+            this.label_mog_backgroundRatio.Size = new System.Drawing.Size(13, 16);
             this.label_mog_backgroundRatio.TabIndex = 107;
             this.label_mog_backgroundRatio.Text = "-";
             this.label_mog_backgroundRatio.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // trackBar_mog_nMixtures
             // 
-            this.trackBar_mog_nMixtures.Location = new System.Drawing.Point(35, 97);
+            this.trackBar_mog_nMixtures.Location = new System.Drawing.Point(21, 104);
             this.trackBar_mog_nMixtures.Maximum = 20;
             this.trackBar_mog_nMixtures.Minimum = 1;
             this.trackBar_mog_nMixtures.Name = "trackBar_mog_nMixtures";
             this.trackBar_mog_nMixtures.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.trackBar_mog_nMixtures.Size = new System.Drawing.Size(197, 56);
+            this.trackBar_mog_nMixtures.Size = new System.Drawing.Size(273, 56);
             this.trackBar_mog_nMixtures.SmallChange = 2;
             this.trackBar_mog_nMixtures.TabIndex = 102;
             this.trackBar_mog_nMixtures.Value = 15;
@@ -1644,7 +1643,7 @@
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(13, 76);
+            this.label13.Location = new System.Drawing.Point(18, 84);
             this.label13.Name = "label13";
             this.label13.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label13.Size = new System.Drawing.Size(208, 17);
@@ -1656,11 +1655,11 @@
             // 
             this.label_mog_nMixtures.AutoSize = true;
             this.label_mog_nMixtures.BackColor = System.Drawing.Color.Transparent;
-            this.label_mog_nMixtures.Font = new System.Drawing.Font("B Titr", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label_mog_nMixtures.Location = new System.Drawing.Point(14, 97);
+            this.label_mog_nMixtures.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_mog_nMixtures.Location = new System.Drawing.Point(341, 104);
             this.label_mog_nMixtures.Name = "label_mog_nMixtures";
             this.label_mog_nMixtures.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label_mog_nMixtures.Size = new System.Drawing.Size(19, 21);
+            this.label_mog_nMixtures.Size = new System.Drawing.Size(13, 16);
             this.label_mog_nMixtures.TabIndex = 104;
             this.label_mog_nMixtures.Text = "-";
             this.label_mog_nMixtures.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1668,12 +1667,12 @@
             // trackBar_mog_history
             // 
             this.trackBar_mog_history.LargeChange = 50;
-            this.trackBar_mog_history.Location = new System.Drawing.Point(34, 37);
+            this.trackBar_mog_history.Location = new System.Drawing.Point(21, 37);
             this.trackBar_mog_history.Maximum = 300;
             this.trackBar_mog_history.Minimum = 10;
             this.trackBar_mog_history.Name = "trackBar_mog_history";
             this.trackBar_mog_history.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.trackBar_mog_history.Size = new System.Drawing.Size(197, 56);
+            this.trackBar_mog_history.Size = new System.Drawing.Size(273, 56);
             this.trackBar_mog_history.SmallChange = 5;
             this.trackBar_mog_history.TabIndex = 99;
             this.trackBar_mog_history.Value = 15;
@@ -1684,7 +1683,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(10, 17);
+            this.label4.Location = new System.Drawing.Point(18, 13);
             this.label4.Name = "label4";
             this.label4.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label4.Size = new System.Drawing.Size(232, 17);
@@ -1696,11 +1695,11 @@
             // 
             this.label_mog_history.AutoSize = true;
             this.label_mog_history.BackColor = System.Drawing.Color.Transparent;
-            this.label_mog_history.Font = new System.Drawing.Font("B Titr", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label_mog_history.Location = new System.Drawing.Point(13, 37);
+            this.label_mog_history.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_mog_history.Location = new System.Drawing.Point(342, 37);
             this.label_mog_history.Name = "label_mog_history";
             this.label_mog_history.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label_mog_history.Size = new System.Drawing.Size(19, 21);
+            this.label_mog_history.Size = new System.Drawing.Size(13, 16);
             this.label_mog_history.TabIndex = 101;
             this.label_mog_history.Text = "-";
             this.label_mog_history.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1735,18 +1734,18 @@
             this.tabPage6.Location = new System.Drawing.Point(4, 26);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(250, 349);
+            this.tabPage6.Size = new System.Drawing.Size(392, 349);
             this.tabPage6.TabIndex = 1;
             this.tabPage6.Text = "Filters";
             // 
             // trackBarFillHoles
             // 
-            this.trackBarFillHoles.Location = new System.Drawing.Point(26, 57);
+            this.trackBarFillHoles.Location = new System.Drawing.Point(116, 69);
             this.trackBarFillHoles.Maximum = 100;
             this.trackBarFillHoles.Minimum = 1;
             this.trackBarFillHoles.Name = "trackBarFillHoles";
             this.trackBarFillHoles.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.trackBarFillHoles.Size = new System.Drawing.Size(135, 56);
+            this.trackBarFillHoles.Size = new System.Drawing.Size(232, 56);
             this.trackBarFillHoles.TabIndex = 96;
             this.trackBarFillHoles.Value = 10;
             this.trackBarFillHoles.Scroll += new System.EventHandler(this.trackBarFillHoles_Scroll);
@@ -1756,7 +1755,7 @@
             this.label23.AutoSize = true;
             this.label23.BackColor = System.Drawing.Color.Transparent;
             this.label23.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(173, 56);
+            this.label23.Location = new System.Drawing.Point(39, 73);
             this.label23.Name = "label23";
             this.label23.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label23.Size = new System.Drawing.Size(31, 17);
@@ -1766,7 +1765,7 @@
             // checkBoxFillHoles
             // 
             this.checkBoxFillHoles.AutoSize = true;
-            this.checkBoxFillHoles.Location = new System.Drawing.Point(224, 61);
+            this.checkBoxFillHoles.Location = new System.Drawing.Point(11, 73);
             this.checkBoxFillHoles.Name = "checkBoxFillHoles";
             this.checkBoxFillHoles.Size = new System.Drawing.Size(18, 17);
             this.checkBoxFillHoles.TabIndex = 98;
@@ -1777,11 +1776,11 @@
             // 
             this.labelFillHolesValue.AutoSize = true;
             this.labelFillHolesValue.BackColor = System.Drawing.Color.Transparent;
-            this.labelFillHolesValue.Font = new System.Drawing.Font("B Titr", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.labelFillHolesValue.Location = new System.Drawing.Point(9, 59);
+            this.labelFillHolesValue.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFillHolesValue.Location = new System.Drawing.Point(353, 72);
             this.labelFillHolesValue.Name = "labelFillHolesValue";
             this.labelFillHolesValue.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelFillHolesValue.Size = new System.Drawing.Size(19, 21);
+            this.labelFillHolesValue.Size = new System.Drawing.Size(13, 16);
             this.labelFillHolesValue.TabIndex = 99;
             this.labelFillHolesValue.Text = "-";
             this.labelFillHolesValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1827,7 +1826,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.menuStrip1.Size = new System.Drawing.Size(1219, 25);
+            this.menuStrip1.Size = new System.Drawing.Size(1364, 25);
             this.menuStrip1.TabIndex = 98;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -1859,9 +1858,9 @@
             this.button_ImageSet.BackColor = System.Drawing.Color.Transparent;
             this.button_ImageSet.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_ImageSet.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button_ImageSet.Location = new System.Drawing.Point(979, 57);
+            this.button_ImageSet.Location = new System.Drawing.Point(1004, 57);
             this.button_ImageSet.Name = "button_ImageSet";
-            this.button_ImageSet.Size = new System.Drawing.Size(107, 31);
+            this.button_ImageSet.Size = new System.Drawing.Size(158, 31);
             this.button_ImageSet.TabIndex = 99;
             this.button_ImageSet.Text = "Choose Image-set";
             this.button_ImageSet.UseVisualStyleBackColor = false;
@@ -1892,7 +1891,7 @@
             // 
             // Form1
             // 
-            this.ClientSize = new System.Drawing.Size(1219, 683);
+            this.ClientSize = new System.Drawing.Size(1364, 683);
             this.Controls.Add(this.checkBoxROIEnabled);
             this.Controls.Add(this.labelROIEnabled);
             this.Controls.Add(this.button_ImageSet);
