@@ -79,10 +79,10 @@ namespace car_speed_calculator
             InitializeComponent();
 
             // Initialize PictureBoxes
-            pictureBox4.ImageLocation = "placeholder-image.jpg";
-            pictureBoxDiffrence.ImageLocation = "placeholder-image.jpg";
-            pictureBoxPreprocess.ImageLocation = "placeholder-image.jpg";
-            pictureBoxROI.ImageLocation = "placeholder-image.jpg";
+            pictureBox4.Image = Properties.Resources.Initialize;
+            pictureBoxDiffrence.Image = Properties.Resources.Initialize;
+            pictureBoxPreprocess.Image = Properties.Resources.Initialize;
+            pictureBoxROI.Image = Properties.Resources.Initialize;
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBoxDiffrence.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBoxPreprocess.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -107,7 +107,7 @@ namespace car_speed_calculator
             if (dialog.ShowDialog() == DialogResult.OK) {
                 _capture = new VideoCapture(dialog.FileName);
                 if (dialog.FileName == "") {
-                    MessageBox.Show("ابتدا یک ویدئو برای اندازه گیری سرعت انتخاب کنید", "خطا", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Select a video for speed measurement", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 } else {
                     try {
                         // Initialize Lables, Trackbars, Parameters, etc.
@@ -126,7 +126,7 @@ namespace car_speed_calculator
                         _capture.ImageGrabbed += MyProcess;
                         _capture.Start();
                     } catch (Exception err) {
-                        MessageBox.Show("خطا در خواندن فایل ویدئویی \r\n" + err.ToString(), "خطا", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Error in reading the video file \r\n" + err.ToString(), "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }
@@ -189,7 +189,7 @@ namespace car_speed_calculator
             
             // Check End of Video
             if (FrameCount == TotalFrames) {
-                MessageBox.Show("پایان ویدئو", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("End of video", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 _capture.Dispose();
                 // Change UI
                 buttonNext.Invoke((MethodInvoker)delegate {
@@ -412,7 +412,7 @@ namespace car_speed_calculator
             try {
                 bm = fh.Apply(im.Bitmap);
             } catch (Exception e) {
-                MessageBox.Show("" + e.ToString(), "خطای سیستمی", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("" + e.ToString(), "System Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             im = new Image<Gray, byte>(bm);
@@ -432,7 +432,7 @@ namespace car_speed_calculator
             }
             catch (Exception e) {
                 play = false;
-                MessageBox.Show("خطا:" + e.ToString(), "خطای اجرا", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Error!:" + e.ToString(), "Execution Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }            
         }
 
@@ -502,7 +502,7 @@ namespace car_speed_calculator
                             }
                             
                         } catch (Exception err) {
-                            MessageBox.Show("" + err.ToString(), "خطا", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show("" + err.ToString(), "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
 
                     } else {
@@ -534,7 +534,7 @@ namespace car_speed_calculator
                     listViewTracking.Items.Add(item);
                 });
             } catch (Exception err) {
-                MessageBox.Show("" + err.ToString(), "خطا", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("" + err.ToString(), "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -588,7 +588,7 @@ namespace car_speed_calculator
             String VehicleIDCreated = "Reg" + ROI + "_Veh" + VehicleID_1;
 
             if (carSpeed > speedLimit)
-                violationStatus = "تخلف: " + (carSpeed - speedLimit) + " بیش از حد مجاز";
+                violationStatus = "Violation: " + (carSpeed - speedLimit) + " Exceeded";
 
             // Make thread to change UI
             try {
@@ -599,7 +599,7 @@ namespace car_speed_calculator
                     item.ImageKey = "Vehicle_" + VehicleID_1;
                 });
             } catch (Exception err) {
-                MessageBox.Show("" + err.ToString(), "خطا", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("" + err.ToString(), "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -737,9 +737,9 @@ namespace car_speed_calculator
             if (d.ShowDialog() == DialogResult.OK)
             {
                 string[] pathes = Directory.GetFiles(d.SelectedPath, "*.bmp");
-                MessageBox.Show("فولدر دارای " + pathes.Length + " عدد تصویر است!");
+                MessageBox.Show("Folder contains " + pathes.Length + " images!");
                 if (pathes.Length < 1)
-                    MessageBox.Show("ابتدا یک مجموعه تصویر برای اندازه گیری سرعت انتخاب کنید", "خطا");
+                    MessageBox.Show("Select a set of images first", "Error!");
                 else {
                     try
                     {
@@ -751,7 +751,7 @@ namespace car_speed_calculator
                     }
                     catch (Exception err)
                     {
-                        MessageBox.Show("خطا در خواندن فایل" + err.ToString(), "خطا");
+                        MessageBox.Show("Error in reading file" + err.ToString(), "Error!");
                     }
                 }
             }
@@ -793,12 +793,12 @@ namespace car_speed_calculator
                             listViewXMLLoad.Items.Add(ListViewitem);
                         });
                     } catch (Exception ListViewUpdateErr) {
-                        MessageBox.Show("خطای آپدیت لیست ویو:" + ListViewUpdateErr.ToString(), "خطا", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Error in updating list:" + ListViewUpdateErr.ToString(), "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
                 
             } catch (Exception xmlloadexception) {
-                MessageBox.Show("خطا در خواندن فایل" + xmlloadexception.ToString(), "خطا", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error in reading file" + xmlloadexception.ToString(), "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             
         }
@@ -848,14 +848,14 @@ namespace car_speed_calculator
                     }
                     catch (Exception ListViewUpdateErr)
                     {
-                        MessageBox.Show("خطای آپدیت لیست ویو:" + ListViewUpdateErr.ToString(), "خطا", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Error in updating the list view:" + ListViewUpdateErr.ToString(), "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
 
             }
             catch (Exception xmlloadexception)
             {
-                MessageBox.Show("خطا در خواندن فایل" + xmlloadexception.ToString(), "خطا", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error in reading file" + xmlloadexception.ToString(), "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -914,8 +914,8 @@ namespace car_speed_calculator
             Variance = Math.Round(Variance / count, 3);
             StandardDeviation = Math.Round(Variance, 3);
 
-            MessageBox.Show("میانگین: " + Mean + "\nخطای متوسط: " + MSE + "\nواریانس: " +
-                Variance + "\nانحراف معیار: " + StandardDeviation);
+            MessageBox.Show("Average: " + Mean + "\nMean error: " + MSE + "\nVariance: " +
+                Variance + "\nStandard Deviation: " + StandardDeviation);
         }
 
         private void trackBarFillHoles_Scroll(object sender, EventArgs e)
@@ -955,13 +955,13 @@ namespace car_speed_calculator
 
         private void میانبرهاToolStripMenuItem_Click(object sender, EventArgs e) {
             MessageBox.Show("Ctrl + ->\tNext Frame\n" + "Ctrl + <-\tPrevious Frame\n" + "P\tNext Play/Pause\n"
-                , "میانبرها");
+                , "Shortcuts");
         }
 
         private void دربارهToolStripMenuItem_Click(object sender, EventArgs e) {
-            MessageBox.Show("علی تورانی - کارشناسی ارشد مهندسی نرم افزار دانشگاه گیلان" + "\nشماره دانشجویی: 950122630008"
-                + "\nاستاد راهنما: دکتر اسدالله شاه بهرامی" + "\nاستاد مشاور: دکتر علیرضا آکوشیده"
-                , "درباره");
+            MessageBox.Show("Ali Tourani - M.Sc. software engineering - University of Guilan" + "\nStudent Number: 950122630008"
+                + "\nSupervisor: Dr. Asadollah Shahbahrami" + "\nAdviser: Dr. Alireza Akoushideh"
+                , "About");
         }
 
         // Shortcut Keys
@@ -1020,7 +1020,7 @@ namespace car_speed_calculator
                 XMLFile.Close();
             }
             catch (Exception err) {
-                MessageBox.Show("خطای نوشتن در XML: " + err.ToString());
+                MessageBox.Show("Error in writing to XML: " + err.ToString());
             }
             
         }

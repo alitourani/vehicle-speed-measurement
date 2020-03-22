@@ -984,7 +984,7 @@
             this.columnHeader14,
             this.columnHeader8,
             this.columnHeader9});
-            this.listViewViolation.Font = new System.Drawing.Font("Cambria", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listViewViolation.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listViewViolation.FullRowSelect = true;
             this.listViewViolation.GridLines = true;
             listViewGroup5.Header = "شناسه خودرو";
@@ -1035,7 +1035,7 @@
             // 
             this.columnHeader14.Text = "Frame number";
             this.columnHeader14.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.columnHeader14.Width = 94;
+            this.columnHeader14.Width = 143;
             // 
             // columnHeader8
             // 
@@ -1350,7 +1350,7 @@
             this.tabPage8.Controls.Add(this.label7);
             this.tabPage8.Location = new System.Drawing.Point(4, 26);
             this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Size = new System.Drawing.Size(397, 349);
+            this.tabPage8.Size = new System.Drawing.Size(392, 349);
             this.tabPage8.TabIndex = 2;
             this.tabPage8.Text = "Basic Settings";
             // 
