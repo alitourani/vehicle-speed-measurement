@@ -2,7 +2,7 @@
 
 This project is a vehicle speed measurement application for vision-based Intelligent Transportation Systems (ITS). These systems utilize roadway camera outputs to apply video processing techniques and extract the desired information, which is vehicle instantaneous speed in this special case. This approach is able to estimate the vehicles' speed by their **motion features** (in case a correct calibration is provided). Thus by analyzing each vehicle's motion parameters inside a pre-defined Region of Interest (ROI), the amount of displacement in sequential frames are provided, which is an essential parameter to calculate instantaneous speed.
 
-![Ali Tourani Vehicle Speed Measurement](http://alitourani.ir/wp-content/uploads/Ali-Tourani-Vehicle-Speed-Measurement-1.png "Ali Tourani Vehicle Speed Measurement")
+![Ali Tourani Vehicle Speed Measurement](Ali-Tourani-Vehicle-Speed-Measurement-1.png "Ali Tourani Vehicle Speed Measurement")
 
 ### Algorithms
 Each moving object (vehicle or non-vehicle) is detected as it enters the ROI by the means of **Mixture-of-Gaussian** background subtraction method. Then by applying **morphology transforms** including opening and closing, and FloodFill algorithm, the distinct parts of these objects turn into unified filled shapes. Then, some defined filtration functions leave behind only the objects with the highest possibility of being a vehicle. Detected vehicles are then tracked using **blob tracking **algorithm and their displacement among sequential frames are calculated for final speed measurement purpose. It should be noted that the process is not done in real-time and the outputs of the system have acceptable accuracy only if the configurations are correct based on the vehicle images/frames.
@@ -16,7 +16,7 @@ The project is implemented by **C#** EmguCV and AForge.Net image processing libr
 ### Sample Performance
 You can see a sample performance of the system in this [link](https://www.youtube.com/watch?v=Qs-alxle-FU "link").
 
-![Ali Tourani Vehicle Speed Measurement](http://alitourani.ir/wp-content/uploads/Ali-Tourani-Vehicle-Speed-Measurement-3.png "Ali Tourani Vehicle Speed Measurement")
+![Ali Tourani Vehicle Speed Measurement](Ali-Tourani-Vehicle-Speed-Measurement-2.png "Ali Tourani Vehicle Speed Measurement")
 
 ### Run the Project
 Simply Clone the project and install the require packages by NuGet Package Manager. Here's the list of the packages:
