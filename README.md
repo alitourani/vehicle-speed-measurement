@@ -32,6 +32,18 @@ Simply Clone the repository and install the required packages using NuGet Packag
 
 ## 🔗 Citation
 
-Please cite the following papers if you have utilized this project:
+Please cite the following paper if you have used this repo:
 
-- A. Tourani, A. Shahbahrami, A. Akoushideh, S. Khazaee, and C. Y Suen "**Motion-based Vehicle Speed Measurement for Intelligent Transportation Systems**," International Journal of Image, Graphics and Signal Processing, vol. 11, no. 4, pp. 42-54, 2019. ([link](https://www.researchgate.net/publication/332297032_Motion-based_Vehicle_Speed_Measurement_for_Intelligent_Transportation_Systems "link"))
+```
+@article{Tourani2019,
+	author = {Tourani, Ali and Shahbahrami, Asadollah and Akoushideh, Alireza and Khazaee, Saeed and Suen, Ching Y.},
+	title = {{Motion-based Vehicle Speed Measurement for Intelligent Transportation Systems}},
+	doi = {10.5815/ijigsp.2019.04.04},
+	issn = {20749074},
+	journal = {International Journal of Image, Graphics and Signal Processing},
+	number = {4},
+	pages = {42-54},
+	volume = {11},
+	year = {2019}
+}
+```
